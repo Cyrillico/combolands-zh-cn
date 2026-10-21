@@ -1,0 +1,46 @@
+[
+ {
+  "source": "Used to unlock upgrades in the Capital between runs",
+  "translation": "用于在每局之间 解锁主城升级"
+ },
+ {
+  "source": "Stop Selling",
+  "translation": "停止出售"
+ },
+ {
+  "source": "Sell Items",
+  "translation": "出售物品"
+ },
+ {
+  "source": "Welcome to Combolands!@[LMB] To select and place buildings@[RMB] To cancel building placement",
+  "translation": "欢迎来到 Combolands！ @ [LMB] 选择并放置建筑 @ [RMB] 取消建筑放置"
+ },
+ {
+  "source": "{Anything} on a {tile} is considered a {Building}, even things like [Trees] or [Flowers]",
+  "translation": "{地块} 上的 {任何物体} 都算作 {建筑}， 即使是 [Trees] 或 [Flowers]"
+ },
+ {
+  "source": "If a building on the map is {highlighted in blue}, it means the building you're currently placing {interacts} with it",
+  "translation": "地图上的建筑 若以 {蓝色高亮} 显示， 表示当前要放置的 建筑会与它 {互动}"
+ },
+ {
+  "source": "More information about the current state of the map can be found in the overlays panel by pressing the button above",
+  "translation": "点击上方按钮， 打开信息图层， 可查看地图 当前状态的 更多信息"
+ },
+ {
+  "source": "You can get more detail on buildings with @[LMB] and [RMB] @Extra information will always show up in the bottom right corner so it doesn't hide the map",
+  "translation": "使用 @ [LMB] 和 [RMB] @ 查看建筑详情。 详细信息始终 显示在右下角， 避免遮挡地图"
+ },
+ {
+  "source": "Your run will save at the {start} of each milestone",
+  "translation": "每个里程碑 {开始} 时， 会自动保存 本局进度"
+ },
+ {
+  "source": "[HousePlot] cares about being within [Range] of {existing} buildings on the map (blue highlights help here)",
+  "translation": "放置 [HousePlot] 时， 需考虑地图上 {已有} 建筑的 [Range] （蓝色高亮 可辅助判断）"
+ },
+ {
+  "source": "Each building can {trigger} a maximum of 10 times per week (unless otherwise specified)",
+  "translation": "每座建筑每周 最多 {触发} 10 次 （另有说明除外）"
+ }
+]

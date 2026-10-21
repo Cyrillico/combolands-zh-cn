@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>Combolands v7 文本对照</title>
+<style>
+:root{--bg:#fff;--fg:#1a1a1a;--muted:#6b7280;--line:#e5e7eb;--accent:#2563eb;--warn:#b45309}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.6 "Segoe UI","Microsoft YaHei",sans-serif}
+header{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);padding:16px 24px;z-index:2}
+h1{margin:0 0 6px;font-size:18px}
+.meta{color:var(--muted);font-size:12px}
+input{margin-top:10px;width:100%;max-width:460px;padding:8px 12px;border:1px solid var(--line);border-radius:8px;font-size:14px}
+table{width:100%;border-collapse:collapse}
+th,td{padding:8px 24px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+th{position:sticky;top:96px;background:#fafafa;font-size:12px;color:var(--muted);z-index:1}
+td.k{width:26%;color:var(--muted);font-family:ui-monospace,Consolas,monospace;font-size:12px}
+td.en{width:37%;color:#374151}
+td.zh{width:37%}
+tr.un td.zh{color:var(--warn)}
+tr.un td.zh::after{content:"  (未翻译/占位符)";font-size:11px;color:var(--warn)}
+tr:hover{background:#f8fafc}
+</style></head><body>
+<header>
+<h1>Combolands 简体中文补丁 v7 · 文本对照</h1>
+<div class="meta">适配 build 25997697 ｜ 共 1090 条，已翻译 1083 条 ｜ 灰色第一列为资源键，橙色为未翻译的占位符条目</div>
+<input id="q" placeholder="搜索原文、译文或键名…">
+</header>
+<table><thead><tr><th>Key</th><th>English</th><th>中文</th></tr></thead>
+<tbody id="tb"><tr class="tr"><td class="k">Building.Apiary.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @[TagScoreFlowers] for each [Flowers] [InRange]</td><td class="zh">{每 [Cooldown] 周触发：} @ [InRange] 每有一处 [Flowers] ， 获得 [TagScoreFlowers]</td></tr>
+<tr class="tr"><td class="k">Building.Apiary.Name</td><td class="en">Apiary</td><td class="zh">蜂房</td></tr>
+<tr class="tr"><td class="k">Building.Apothecary.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @Create [ActivationCount] [Herbs] on a random [Adjacent] tile [BREAK]{Passively:} [Nature] [InRange] is considered [Healing] and give [MoneyCount] when removed</td><td class="zh">{每 [Cooldown] 周触发：} @ 在随机 [Adjacent] 地块 生成 [ActivationCount] 处 [Herbs] [BREAK] {被动：} [InRange] 的 [Nature] 视为 [Healing] ， 被移除时 给予 [MoneyCount]</td></tr>
+<tr class="tr"><td class="k">Building.Apothecary.Name</td><td class="en">Apothecary</td><td class="zh">药剂铺</td></tr>
+<tr class="tr"><td class="k">Building.AppleOrchard.Description</td><td class="en">{Triggers when grows:} [BaseScore] [BREAK]{Passively:} has [MultParam] for each [Adjacent] [Apiary]</td><td class="zh">{成长时触发：} [BaseScore] [BREAK] {被动：} 每座 [Adjacent] 的 [Apiary] 使其获得 [MultParam]</td></tr>
+<tr class="tr"><td class="k">Building.AppleOrchard.Name</td><td class="en">Fruit Orchard</td><td class="zh">果园</td></tr>
+<tr class="tr"><td class="k">Building.ArcheryRange.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @[CategoryScoreHusbandry] for each [Husbandry] or [Woodworking] [InRange]</td><td class="zh">{每 [Cooldown] 周触发：} @ [InRange] 每有一座 [Husbandry] 或 [Woodworking] ， 获得 [CategoryScoreHusbandry]</td></tr>
+<tr class="tr"><td class="k">Building.ArcheryRange.Name</td><td class="en">Archery Range</td><td class="zh">靶场</td></tr>
+<tr class="tr"><td class="k">Building.Arsenal.Description</td><td class="en">{Triggers every [Cooldown] weeks:} [RemoveCount] [BREAK]Can only be created [Adjacent] to [Fortification]</td><td class="zh">{每 [Cooldown] 周触发：} [RemoveCount] [BREAK] 只能在与 [Fortification] [Adjacent] 的位置建造</td></tr>
+<tr class="tr"><td class="k">Building.Arsenal.Name</td><td class="en">Arsenal</td><td class="zh">军械库</td></tr>
+<tr class="tr"><td class="k">Building.Ballista.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @Rotates to face a random direction and {triggers} the tile it is facing</td><td class="zh">{每 [Cooldown] 周触发：} @ 随机转向， 并 {触发} 面朝的地块</td></tr>
+<tr class="tr"><td class="k">Building.Ballista.Name</td><td class="en">Ballista</td><td class="zh">弩炮</td></tr>
+<tr class="tr"><td class="k">Building.Balloon.Description</td><td class="en">{Passively:} other buildings [InRange] are considered [Luxury]</td><td class="zh">{被动：} [InRange] 的其他建筑 视为 [Luxury]</td></tr>
+<tr class="tr"><td class="k">Building.Balloon.Name</td><td class="en">Balloon Trader</td><td class="zh">热气球商人</td></tr>
+<tr class="tr"><td class="k">Building.BanditCamp.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @{Trigger} [ActivationCount] random [Adjacent] tile [BREAK][BaseScore] if a building is triggered in this way</td><td class="zh">{每 [Cooldown] 周触发：} @ {触发} [ActivationCount] 个随机 [Adjacent] 地块 [BREAK] 若以此方式 触发了建筑， 获得 [BaseScore]</td></tr>
+<tr class="tr"><td class="k">Building.BanditCamp.Name</td><td class="en">Bandit Camp</td><td class="zh">匪徒营地</td></tr>
+<tr class="tr"><td class="k">Building.Bank.Description</td><td class="en">{Triggers when a building [InRange] gains [Reroll] or [Remove] :} @Gain [MoneyCount]</td><td class="zh">{当 [InRange] 的建筑 获得 [Reroll] 或 [Remove] 时触发：} @ 获得 [MoneyCount]</td></tr>
+<tr class="tr"><td class="k">Building.Bank.Name</td><td class="en">Bank</td><td class="zh">银行</td></tr>
+<tr class="tr"><td class="k">Building.Banner.Description</td><td class="en">{Triggers only when removed:} @Give each [Adjacent] building [MultParam]</td><td class="zh">{仅移除时触发：} @ 每座 [Adjacent] 建筑 获得 [MultParam]</td></tr>
+<tr class="tr"><td class="k">Building.Banner.Name</td><td class="en">Banner</td><td class="zh">旗帜</td></tr>
+<tr class="tr"><td class="k">Building.Barn.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @[CategoryScoreHusbandry] for each [Husbandry] [InRange]</td><td class="zh">{每 [Cooldown] 周触发：} @ [InRange] 每有一座 [Husbandry] ， 获得 [CategoryScoreHusbandry]</td></tr>
+<tr class="tr"><td class="k">Building.Barn.Name</td><td class="en">Ranch</td><td class="zh">牧场</td></tr>
+<tr class="tr"><td class="k">Building.Barracks.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @[TagScoreRocks] for each [Rocks] [InRange]</td><td class="zh">{每 [Cooldown] 周触发：} @ [InRange] 每有一处 [Rocks] ， 获得 [TagScoreRocks]</td></tr>
+<tr class="tr"><td class="k">Building.Barracks.Name</td><td class="en">Barracks</td><td class="zh">兵营</td></tr>
+<tr class="tr"><td class="k">Building.BerryPicker.Description</td><td class="en">{Triggers when any [BerryBush] is [InRange] :} @[TagScoreBerryBush] for each [BerryBush] [InRange] and {transform} each into [BerryBushEmpty]</td><td class="zh">{当 [InRange] 存在 [BerryBush] 时触发：} @ [InRange] 每有一处 [BerryBush] ， 获得 [TagScoreBerryBush] ， 并将它们 {转化} 为 [BerryBushEmpty]</td></tr>
+<tr class="tr"><td class="k">Building.BerryPicker.Name</td><td class="en">Picker&#x27;s Hut</td><td class="zh">采摘者小屋</td></tr>
+<tr class="tr"><td class="k">Building.Blacksmith.Description</td><td class="en">{Triggers every [Cooldown] weeks: @[CategoryScoreManufacturer] for each [Manufacturer] or [Training] [InRange] [BREAK]{Passively:} removes [Adjacent] [Ore] to reduce max cooldown by [CooldownModificationParam]</td><td class="zh">{每 [Cooldown] 周触发：} @ [InRange] 每有一座 [Manufacturer] 或 [Training] ， 获得 [CategoryScoreManufacturer] [BREAK] {被动：} 移除 [Adjacent] 的 [Ore] ， 使冷却上限 减少 [CooldownModificationParam]</td></tr>
+<tr class="tr"><td class="k">Building.Blacksmith.Name</td><td class="en">Blacksmith</td><td class="zh">铁匠铺</td></tr>
+<tr class="tr"><td class="k">Building.Brewery.Description</td><td class="en">{Triggers when a building [InRange] transforms:} @[PercentageChance] chance to {trigger} [ActivationCount] random [Adjacent] building</td><td class="zh">{当 [InRange] 的建筑 转化时触发：} @ 有 [PercentageChance] 的概率 {触发} [ActivationCount] 座随机 [Adjacent] 建筑</td></tr>
+<tr class="tr"><td class="k">Building.Brewery.Name</td><td class="en">Brewery</td><td class="zh">酿酒坊</td></tr>
+<tr class="tr"><td class="k">Building.Campfire.Description</td><td class="en">{Passively:} provides [MultParam] to all [Adjacent] buildings [BREAK]{In [Cooldown] weeks:} transforms into [CampfireDepleted]</td><td class="zh">{被动：} 所有 [Adjacent] 建筑 获得 [MultParam] [BREAK] {[Cooldown] 周后：} 转化为 [CampfireDepleted]</td></tr>
+<tr class="tr"><td class="k">Building.Campfire.Name</td><td class="en">Campfire</td><td class="zh">篝火</td></tr>
+<tr class="tr"><td class="k">Building.CampfireDepleted.Description</td><td class="en">Does nothing @{When triggered:} transforms into [Campfire]</td><td class="zh">无被动效果 @ {被触发时：} 转化为 [Campfire]</td></tr>
+<tr class="tr"><td class="k">Building.CampfireDepleted.Name</td><td class="en">Ash</td><td class="zh">余烬</td></tr>
+<tr class="tr"><td class="k">Building.Canal.Description</td><td class="en">{Passively:} Counts as [Ocean] @Can be built over</td><td class="zh">{被动效果：}视为 [Ocean] @ 可以在其上方继续 建造</td></tr>
+<tr class="tr"><td class="k">Building.Canal.Name</td><td class="en">Canal</td><td class="zh">运河</td></tr>
+<tr class="tr"><td class="k">Building.Carpenter.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @[CategoryScoreWoodworking] for each [Woodworking] or [Ship] [InRange] [BREAK]{Passively:} removes [Adjacent] [Lumber] to gain [RangeModificationParam] [Range]</td><td class="zh">{每 [Cooldown] 周触发：} @ [InRange] 每有一座 [Woodworking] 或 [Ship] ， 获得 [CategoryScoreWoodworking] [BREAK] {被动：} 移除 [Adjacent] 的 [Lumber] ， 获得 [RangeModificationParam] [Range]</td></tr>
+<tr class="tr"><td class="k">Building.Carpenter.Name</td><td class="en">Carpenter</td><td class="zh">木匠</td></tr>
+<tr class="tr"><td class="k">Building.Church.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @[CategoryScoreSacred] for each [Sacred] [InRange]</td><td class="zh">{每 [Cooldown] 周触发：} @ [InRange] 每有一座 [Sacred] ， 获得 [CategoryScoreSacred]</td></tr>
+<tr class="tr"><td class="k">Building.Church.Name</td><td class="en">Church</td><td class="zh">教堂</td></tr>
+<tr class="tr"><td class="k">Building.Circus.Description</td><td class="en">{Triggers when a building [InRange] earns [Gold] :} @[CategoryScoreResidence] for each [Residence] [InRange]</td><td class="zh">{当 [InRange] 的建筑 获得 [Gold] 时触发：} @ [InRange] 每有一座 [Residence] ， 获得 [CategoryScoreResidence]</td></tr>
+<tr class="tr"><td class="k">Building.Circus.Name</td><td class="en">Circus</td><td class="zh">马戏团</td></tr>
+<tr class="tr"><td class="k">Building.Clipper.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @[MoneyCount] for every [ActivationCount] [Trader]  [Manufacturer] or [Luxury] [InRange] (rounded down)</td><td class="zh">{每 [Cooldown] 周触发：} @ [InRange] 每有 [ActivationCount] 座 [Trader] 、 [Manufacturer] 或 [Luxury] ， 获得 [MoneyCount] （向下取整）</td></tr>
+<tr class="tr"><td class="k">Building.Clipper.Name</td><td class="en">Clipper</td><td class="zh">快帆船</td></tr>
+<tr class="tr"><td class="k">Building.Composter.Description</td><td class="en">{Triggers when a building [InRange] is removed:} @Give each [Farm] [InRange] [MultParam] [BREAK]{Passively:} automatically {removes} any [Adjacent] [Manure] at the end of the week</td><td class="zh">{当 [InRange] 的建筑 被移除时触发：} @ [InRange] 的每座 [Farm] 获得 [MultParam] [BREAK] {被动：} 每周结束时 自动 {移除} 所有 [Adjacent] 的 [Manure]</td></tr>
+<tr class="tr"><td class="k">Building.Composter.Name</td><td class="en">Composter</td><td class="zh">堆肥场</td></tr>
+<tr class="tr"><td class="k">Building.Conduit.Description</td><td class="en">{When triggered:} {Trigger} up to [ActivationCount] other buildings [InRange]</td><td class="zh">{触发时：}{触发} [InRange] 内最多 [ActivationCount] 座其他建筑</td></tr>
+<tr class="tr"><td class="k">Building.Conduit.Name</td><td class="en">Conduit</td><td class="zh">导管</td></tr>
+<tr class="tr"><td class="k">Building.CorruptedFort.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @{Remove} [ActivationCount] random buildings [InRange] @Then, increase [Range] by [RangeModificationParam]</td><td class="zh">{每 [Cooldown] 周触发：} @ {移除} [InRange] 的 [ActivationCount] 座随机建筑 @ 然后将 [Range] 增加 [RangeModificationParam]</td></tr>
+<tr class="tr"><td class="k">Building.CorruptedFort.Name</td><td class="en">Corrupted Fort</td><td class="zh">腐化堡垒</td></tr>
+<tr class="tr"><td class="k">Building.CorruptedGrove.Description</td><td class="en">{Passively:} buildings [InRange] cannot gain [Reroll]  [Remove]  [Dismiss] or [Gold] @{Triggers every [Cooldown] weeks:} increase [Range] by [RangeModificationParam]</td><td class="zh">{被动：} [InRange] 的建筑 无法获得 [Reroll] 、 [Remove] 、 [Dismiss] 或 [Gold] @ {每 [Cooldown] 周触发：} 将 [Range] 增加 [RangeModificationParam]</td></tr>
+<tr class="tr"><td class="k">Building.CorruptedGrove.Name</td><td class="en">Corrupted Grove</td><td class="zh">腐化树林</td></tr>
+<tr class="tr"><td class="k">Building.CorruptedLantern.Description</td><td class="en">{Passively:} increases the cooldown of buildings [InRange] by [CooldownModificationParam] @{Triggers every [Cooldown] weeks:} increase [Range] by [RangeModificationParam]</td><td class="zh">{被动：} [InRange] 的建筑 冷却增加 [CooldownModificationParam] @ {每 [Cooldown] 周触发：} 将 [Range] 增加 [RangeModificationParam]</td></tr>
+<tr class="tr"><td class="k">Building.CorruptedLantern.Name</td><td class="en">Corrupted Lantern</td><td class="zh">腐化灯塔</td></tr>
+<tr class="tr"><td class="k">Building.CorruptedMine.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @{Create} [ActivationCount] [Rocks] on random tiles [InRange] @Then, increase [Range] by [RangeModificationParam]</td><td class="zh">{每 [Cooldown] 周触发：} @ 在 [InRange] 的随机地块 {生成} [ActivationCount] 处 [Rocks] @ 然后将 [Range] 增加 [RangeModificationParam]</td></tr>
+<tr class="tr"><td class="k">Building.CorruptedMine.Name</td><td class="en">Corrupted Mine</td><td class="zh">腐化矿井</td></tr>
+<tr class="tr"><td class="k">Building.CorruptedObelisk.Description</td><td class="en">{Passively:} buildings cannot be placed within [Range] of [CorruptedObelisk] @{Triggers every [Cooldown] weeks:} increase [Range] by [RangeModificationParam]</td><td class="zh">{被动：} 无法在 [CorruptedObelisk] 的 [Range] 内放置建筑 @ {每 [Cooldown] 周触发：} 将 [Range] 增加 [RangeModificationParam]</td></tr>
+<tr class="tr"><td class="k">Building.CorruptedObelisk.Name</td><td class="en">Corrupted Obelisk</td><td class="zh">腐化方尖碑</td></tr>
+<tr class="tr"><td class="k">Building.CorruptedShrine.Description</td><td class="en">{Passively:} buildings [InRange] have [BaseScore] [Range]
+@{Triggers every [Cooldown] weeks:} increase [Range] by [RangeModificationParam]</td><td class="zh">{被动：} [InRange] 建筑的 [Range] 为 [BaseScore] @ {每 [Cooldown] 周触发：} 将 [Range] 增加 [RangeModificationParam]</td></tr>
+<tr class="tr"><td class="k">Building.CorruptedShrine.Name</td><td class="en">Corrupted Shrine</td><td class="zh">腐化神龛</td></tr>
+<tr class="tr"><td class="k">Building.CorruptedTemple.Name</td><td class="en">Corrupted Temple</td><td class="zh">腐化神殿</td></tr>
+<tr class="tr"><td class="k">Building.CorruptedTower.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @{Transform} a building [InRange] into a random building of the same rarity@Then, increase [Range] by [RangeModificationParam]</td><td class="zh">{每 [Cooldown] 周触发：} @ 将 [InRange] 的一座建筑 {转化} 为同稀有度的 随机建筑 @ 然后将 [Range] 增加 [RangeModificationParam]</td></tr>
+<tr class="tr"><td class="k">Building.CorruptedTower.Name</td><td class="en">Corrupted Tower</td><td class="zh">腐化高塔</td></tr>
+<tr class="tr"><td class="k">Building.CottonField.Description</td><td class="en">{Triggers when grows:} each [Adjacent] building gains [MultParam]</td><td class="zh">{成长时触发：} 每座 [Adjacent] 建筑 获得 [MultParam]</td></tr>
+<tr class="tr"><td class="k">Building.CottonField.Name</td><td class="en">Cotton Field</td><td class="zh">棉花田</td></tr>
+<tr class="tr"><td class="k">Building.Crane.Description</td><td class="en">If a [Ship] [Range] overlaps [Crane] add the [Crane] [Range] to the [Ship]</td><td class="zh">若 [Ship] 的 [Range] 覆盖 [Crane] ， 则将该 [Crane] 的 [Range] 叠加到 [Ship] 上</td></tr>
+<tr class="tr"><td class="k">Building.Crane.Name</td><td class="en">Crane</td><td class="zh">起重机</td></tr>
+<tr class="tr"><td class="k">Building.Depot.Description</td><td class="en">{Triggers when [Resource] is created [InRange] :} @Remove it and create a copy [Adjacent] to [Depot]</td><td class="zh">{当 [InRange] 生成 [Resource] 时触发：} @ 将其移除， 并在与 [Depot] [Adjacent] 的位置 生成一个副本</td></tr>
+<tr class="tr"><td class="k">Building.Depot.Name</td><td class="en">Depot</td><td class="zh">仓库</td></tr>
+<tr class="tr"><td class="k">Building.Display.Adjacency</td><td class="en">adjacency</td><td class="zh">相邻关系</td></tr>
+<tr class="tr"><td class="k">Building.Display.Adjacent</td><td class="en">adjacent</td><td class="zh">相邻</td></tr>
+<tr class="tr"><td class="k">Building.Display.Connected</td><td class="en">connected</td><td class="zh">连通</td></tr>
+<tr class="tr"><td class="k">Building.Display.Cooldown</td><td class="en">cooldown</td><td class="zh">冷却</td></tr>
+<tr class="tr"><td class="k">Building.Display.Enchantment</td><td class="en">enchant</td><td class="zh">附魔</td></tr>
+<tr class="tr"><td class="k">Building.Display.InRange</td><td class="en">in range</td><td class="zh">范围内</td></tr>
+<tr class="tr"><td class="k">Building.Display.Mult</td><td class="en">mult</td><td class="zh">倍率</td></tr>
+<tr class="tr"><td class="k">Building.Display.Range</td><td class="en">range</td><td class="zh">范围</td></tr>
+<tr class="tr"><td class="k">Building.Display.TargetCount</td><td class="en">target count</td><td class="zh">目标数量</td></tr>
+<tr class="tr"><td class="k">Building.EffigyPyre.Description</td><td class="en">{Triggers after [Cooldown] weeks:} @Removes itself and {triggers} each [Adjacent] building </td><td class="zh">{[Cooldown] 周后触发：} @ 移除自身， 并 {触发} 每座 [Adjacent] 建筑 </td></tr>
+<tr class="tr"><td class="k">Building.EffigyPyre.Name</td><td class="en">Effigy Pyre</td><td class="zh">祭像火堆</td></tr>
+<tr class="tr"><td class="k">Building.Enclave.Description</td><td class="en">{Triggers when created:} [EnchantmentParam] [BREAK]Can only {ever} be placed on [Grass] [Adjacent] to a cliff</td><td class="zh">{建造时触发：} [EnchantmentParam] [BREAK] {始终} 只能放在 与悬崖 [Adjacent] 的 [Grass] 上</td></tr>
+<tr class="tr"><td class="k">Building.Enclave.Name</td><td class="en">Enclave</td><td class="zh">飞地</td></tr>
+<tr class="tr"><td class="k">Building.Factory.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @Open a free random pack [BREAK]Can only be created [Adjacent] to at least 5 [Industrial]</td><td class="zh">{每 [Cooldown] 周触发：} @ 免费开启 一个随机卡包 [BREAK] 建造位置必须与 至少 5 座 [Industrial] 建筑 [Adjacent]</td></tr>
+<tr class="tr"><td class="k">Building.Factory.Name</td><td class="en">Factory</td><td class="zh">工厂</td></tr>
+<tr class="tr"><td class="k">Building.FaerieRing.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @{Trigger} [ActivationCount] random [Adjacent] building</td><td class="zh">{每 [Cooldown] 周触发：} @ {触发} [ActivationCount] 座随机 [Adjacent] 建筑</td></tr>
+<tr class="tr"><td class="k">Building.FaerieRing.Name</td><td class="en">Faerie Ring</td><td class="zh">妖精环</td></tr>
+<tr class="tr"><td class="k">Building.FieldHospital.Description</td><td class="en">{When triggered:} @Give each [Healing] or [Training] [InRange] [MultParam] </td><td class="zh">{触发时：} @ [InRange] 的每座 [Healing] 或 [Training] 获得 [MultParam] </td></tr>
+<tr class="tr"><td class="k">Building.FieldHospital.Name</td><td class="en">Field Hospital</td><td class="zh">战地医院</td></tr>
+<tr class="tr"><td class="k">Building.FishFarm.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @{Create} [ActivationCount] [Fish] on an empty [Ocean] tile [InRange]</td><td class="zh">{每 [Cooldown] 周触发：} @ 在 [InRange] 的空置 [Ocean] 地块 {生成} [ActivationCount] 处 [Fish]</td></tr>
+<tr class="tr"><td class="k">Building.FishFarm.Name</td><td class="en">Fish Farm</td><td class="zh">养鱼场</td></tr>
+<tr class="tr"><td class="k">Building.FishTrap.Description</td><td class="en">{Triggers when created:} {Trigger} all [Fishing] [InRange] excluding other [FishTrap]</td><td class="zh">{建造时触发：} {触发} [InRange] 的所有 [Fishing] ， 其他 [FishTrap] 除外</td></tr>
+<tr class="tr"><td class="k">Building.FishTrap.Name</td><td class="en">Fish Trap</td><td class="zh">捕鱼陷阱</td></tr>
+<tr class="tr"><td class="k">Building.Fisher.Description</td><td class="en">{Passively:} [Fishing] [InRange] have additional [Mult] equal to the [Mult] of [Fisher] @Does not affect other [Fisher]</td><td class="zh">{被动：} [InRange] 的 [Fishing] 获得额外 [Mult] ， 数值等于 [Fisher] 的 [Mult] @ 不影响其他 [Fisher]</td></tr>
+<tr class="tr"><td class="k">Building.Fisher.Name</td><td class="en">Fishing Hut</td><td class="zh">渔夫小屋</td></tr>
+<tr class="tr"><td class="k">Building.FishingBoat.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @[CategoryScoreNature] for each [Nature] [InRange]</td><td class="zh">{每 [Cooldown] 周触发：} @ [InRange] 每有一处 [Nature] ， 获得 [CategoryScoreNature]</td></tr>
+<tr class="tr"><td class="k">Building.FishingBoat.Name</td><td class="en">Fishing Boat</td><td class="zh">渔船</td></tr>
+<tr class="tr"><td class="k">Building.Forester.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @{Create} [ActivationCount] [Trees] on a random tile [InRange]</td><td class="zh">{每 [Cooldown] 周触发：} @ 在 [InRange] 的随机地块 {生成} [ActivationCount] 处 [Trees]</td></tr>
+<tr class="tr"><td class="k">Building.Forester.Name</td><td class="en">Forester</td><td class="zh">护林人</td></tr>
+<tr class="tr"><td class="k">Building.Fortress.Description</td><td class="en">{Triggers when a building [InRange] is removed:} @[CategoryScoreFortification] for each [Fortification] or [Ship] [InRange]</td><td class="zh">{当 [InRange] 的建筑 被移除时触发：} @ [InRange] 每有一座 [Fortification] 或 [Ship] ， 获得 [CategoryScoreFortification]</td></tr>
+<tr class="tr"><td class="k">Building.Fortress.Name</td><td class="en">Fortress</td><td class="zh">要塞</td></tr>
+<tr class="tr"><td class="k">Building.Fountain.Description</td><td class="en">{Triggers whenever an [Adjacent] building transforms:} @[PercentageChance] chance for [MoneyCount] [BREAK][Crop] [Adjacent] to [Fountain] grow in 1 week
+</td><td class="zh">{每当 [Adjacent] 建筑 转化时触发：} @ 有 [PercentageChance] 的概率 获得 [MoneyCount] [BREAK] 与 [Fountain] [Adjacent] 的 [Crop] 一周即可成熟
+</td></tr>
+<tr class="tr"><td class="k">Building.Fountain.Name</td><td class="en">Fountain</td><td class="zh">喷泉</td></tr>
+<tr class="tr"><td class="k">Building.Galleon.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @[CategoryScoreMartial] for each [Martial] [InRange]</td><td class="zh">{每 [Cooldown] 周触发：} @ [InRange] 每有一座 [Martial] ， 获得 [CategoryScoreMartial]</td></tr>
+<tr class="tr"><td class="k">Building.Galleon.Name</td><td class="en">Galleon</td><td class="zh">大帆船</td></tr>
+<tr class="tr"><td class="k">Building.GardenersCottage.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @Create a copy of [ActivationCount] [Adjacent] [Nature] on a random tile [InRange]</td><td class="zh">{每 [Cooldown] 周触发：} @ 复制 [ActivationCount] 处 [Adjacent] 的 [Nature] ， 放到 [InRange] 的随机地块上</td></tr>
+<tr class="tr"><td class="k">Building.GardenersCottage.Name</td><td class="en">Gardener&#x27;s Cottage</td><td class="zh">园丁小屋</td></tr>
+<tr class="tr"><td class="k">Building.GoldPan.Description</td><td class="en">{Triggers when created:} [MoneyCount] [BREAK]Can only be created [Adjacent] to [Trees]</td><td class="zh">{建造时触发：} [MoneyCount] [BREAK] 只能在与 [Trees] [Adjacent] 的位置建造</td></tr>
+<tr class="tr"><td class="k">Building.GoldPan.Name</td><td class="en">Gold Pan</td><td class="zh">淘金盘</td></tr>
+<tr class="tr"><td class="k">Building.GrainSilo.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @Gain a [Blueprint] of a random [Adjacent] [Farm][BREAK][Blueprint] gained by [GrainSilo] only have 1 charge</td><td class="zh">{每 [Cooldown] 周触发：} @ 随机选一座 [Adjacent] 的 [Farm] ， 获得其 [Blueprint] [BREAK] [GrainSilo] 提供的 [Blueprint] 只能使用 1 次</td></tr>
+<tr class="tr"><td class="k">Building.GrainSilo.Name</td><td class="en">Grain Silo</td><td class="zh">粮仓</td></tr>
+<tr class="tr"><td class="k">Building.Granary.Description</td><td class="en">{Triggers when created:} @Harvest all [Crop] [InRange] transforming them back into empty fields</td><td class="zh">{建造时触发：} @ 收获 [InRange] 的所有 [Crop] ， 将它们转化回 空田地</td></tr>
+<tr class="tr"><td class="k">Building.Granary.Name</td><td class="en">Granary</td><td class="zh">谷仓</td></tr>
+<tr class="tr"><td class="k">Building.Graveyard.Description</td><td class="en">{Triggers whenever an [Adjacent] building is removed:} @Gain a random [Blueprint] of the same rarity</td><td class="zh">{每当 [Adjacent] 建筑被移除时触发：} @ 获得一个同稀有度 的随机 [Blueprint]</td></tr>
+<tr class="tr"><td class="k">Building.Graveyard.Name</td><td class="en">Graveyard</td><td class="zh">墓园</td></tr>
+<tr class="tr"><td class="k">Building.Grove.Description</td><td class="en">{Triggers every [Cooldown] weeks:} [RerollCount] [BREAK]Can only be created [Adjacent] to [Trees]</td><td class="zh">{每 [Cooldown] 周触发：} [RerollCount] [BREAK] 只能在与 [Trees] [Adjacent] 的位置建造</td></tr>
+<tr class="tr"><td class="k">Building.Grove.Name</td><td class="en">Grove</td><td class="zh">林地</td></tr>
+<tr class="tr"><td class="k">Building.GuardTower.Description</td><td class="en">{Triggers when a building [InRange] is removed:} @{Trigger} [ActivationCount] random [Adjacent] building</td><td class="zh">{当 [InRange] 的建筑 被移除时触发：} @ {触发} [ActivationCount] 座随机 [Adjacent] 建筑</td></tr>
+<tr class="tr"><td class="k">Building.GuardTower.Name</td><td class="en">Guard Tower</td><td class="zh">警戒塔</td></tr>
+<tr class="tr"><td class="k">Building.Harvester.Description</td><td class="en">{Triggers when another building is created [InRange] :} @{Trigger} [ActivationCount] random [Adjacent] building</td><td class="zh">{当 [InRange] 建造其他建筑时 触发：} @ {触发} [ActivationCount] 座随机 [Adjacent] 建筑</td></tr>
+<tr class="tr"><td class="k">Building.Harvester.Name</td><td class="en">Harvester</td><td class="zh">收割机</td></tr>
+<tr class="tr"><td class="k">Building.HerbGarden.Description</td><td class="en">{Triggers when created:} @[RerollCount] and {trigger} all [Adjacent] [Healing] excluding other [HerbGarden] [BREAK]{Passively:} counts as [Herbs]</td><td class="zh">{建造时触发：} @ 获得 [RerollCount] 并{触发}所有 [Adjacent] 的 [Healing] （其他 [HerbGarden] 除外） [BREAK] {被动效果：}视为 [Herbs]</td></tr>
+<tr class="tr"><td class="k">Building.HerbGarden.Name</td><td class="en">Herb Garden</td><td class="zh">药草园</td></tr>
+<tr class="tr"><td class="k">Building.Herbalist.Description</td><td class="en">{Triggers when created:} @[TagScoreHerbs] for each [Herbs] [InRange]</td><td class="zh">{建造时触发：} @ [InRange] 每有一处 [Herbs] ， 获得 [TagScoreHerbs]</td></tr>
+<tr class="tr"><td class="k">Building.Herbalist.Name</td><td class="en">Herbalist</td><td class="zh">草药师</td></tr>
+<tr class="tr"><td class="k">Building.Hideout.Description</td><td class="en">{Triggers whenever an [Adjacent] building scores:} [BaseScore] and [MoneyCount]</td><td class="zh">{每当 [Adjacent] 建筑 得分时触发：} [BaseScore] 和 [MoneyCount]</td></tr>
+<tr class="tr"><td class="k">Building.Hideout.Name</td><td class="en">Hideout</td><td class="zh">藏身处</td></tr>
+<tr class="tr"><td class="k">Building.HouseHomestead.Description</td><td class="en">{Triggers when [InRange] of or [Adjacent] to [Healing] or [Trader] :} @[BaseScore] and {transform} into [HouseTenement]</td><td class="zh">{处于 [Healing] 或 [Trader] 的 [InRange] 或与其 [Adjacent] 时触发：} @ 获得 [BaseScore] ， 并 {转化} 为 [HouseTenement]</td></tr>
+<tr class="tr"><td class="k">Building.HouseHomestead.Name</td><td class="en">Homestead</td><td class="zh">宅地</td></tr>
+<tr class="tr"><td class="k">Building.HouseHut.Description</td><td class="en">{Triggers when [InRange] of or [Adjacent] to [Provisioner] :} @[BaseScore] and {transform} into [HouseHomestead]</td><td class="zh">{处于 [Provisioner] 的 [InRange] 或与其 [Adjacent] 时触发：} @ 获得 [BaseScore] ， 并 {转化} 为 [HouseHomestead]</td></tr>
+<tr class="tr"><td class="k">Building.HouseHut.Name</td><td class="en">Hut</td><td class="zh">棚屋</td></tr>
+<tr class="tr"><td class="k">Building.HousePlot.Description</td><td class="en">{Triggers when [InRange] of or [Adjacent] to [Irrigator] :} @[BaseScore] and {transform} into [HouseHut]</td><td class="zh">{处于 [Irrigator] 的 [InRange] 或与其 [Adjacent] 时触发：} @ 获得 [BaseScore] ， 并 {转化} 为 [HouseHut]</td></tr>
+<tr class="tr"><td class="k">Building.HousePlot.Name</td><td class="en">Plot</td><td class="zh">宅基地</td></tr>
+<tr class="tr"><td class="k">Building.HouseResidence.Description</td><td class="en">Highest level of [House] @{When triggered:} [BaseScore]</td><td class="zh">[House] 的最高等级 @ {触发时：} [BaseScore]</td></tr>
+<tr class="tr"><td class="k">Building.HouseResidence.Name</td><td class="en">Estate</td><td class="zh">庄园</td></tr>
+<tr class="tr"><td class="k">Building.HouseTenement.Description</td><td class="en">{Triggers when [InRange] of or [Adjacent] to [Entertainment] or [Training] :} @[BaseScore] and {transform} into [HouseTownhouse]</td><td class="zh">{处于 [Entertainment] 或 [Training] 的 [InRange] 或与其 [Adjacent] 时触发：} @ 获得 [BaseScore] ， 并 {转化} 为 [HouseTownhouse]</td></tr>
+<tr class="tr"><td class="k">Building.HouseTenement.Name</td><td class="en">Tenement</td><td class="zh">公寓楼</td></tr>
+<tr class="tr"><td class="k">Building.HouseTownhouse.Description</td><td class="en">{Triggers when [InRange] of or [Adjacent] to [Luxury] or [Sacred] :} @[BaseScore] and {transform} into [HouseResidence]</td><td class="zh">{处于 [Luxury] 或 [Sacred] 的 [InRange] 或与其 [Adjacent] 时触发：} @ 获得 [BaseScore] ， 并 {转化} 为 [HouseResidence]</td></tr>
+<tr class="tr"><td class="k">Building.HouseTownhouse.Name</td><td class="en">Townhouse</td><td class="zh">联排住宅</td></tr>
+<tr class="tr"><td class="k">Building.HuntingLodge.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @[TagScoreTrees] for each [Trees] [InRange]</td><td class="zh">{每 [Cooldown] 周触发：} @ [InRange] 每有一处 [Trees] ， 获得 [TagScoreTrees]</td></tr>
+<tr class="tr"><td class="k">Building.HuntingLodge.Name</td><td class="en">Hunting Lodge</td><td class="zh">猎人小屋</td></tr>
+<tr class="tr"><td class="k">Building.Inn.Description</td><td class="en">{Triggers when created:} @Your next roll is guaranteed to contain [Rare] or better buildings @Can only be created [Adjacent] to [Residence] or [Training]</td><td class="zh">{建造时触发：} @ 下一次建筑抽取必 定包含 [Rare] 或更高稀有度建筑 @ 只能建造在 [Residence] 或 [Training] 的 [Adjacent] 位置</td></tr>
+<tr class="tr"><td class="k">Building.Inn.Name</td><td class="en">Inn</td><td class="zh">客栈</td></tr>
+<tr class="tr"><td class="k">Building.Irrigation.Description</td><td class="en">Other [Adjacent] buildings are considered [Farm] @Must be created [Connected] to [Reservoir] or [Irrigation] @Does not connect diagonally [BREAK][Crop] [Adjacent] to [Irrigation] grow in 1 week</td><td class="zh">其他 [Adjacent] 建筑 视为 [Farm] @ 必须与 [Reservoir] 或 [Irrigation] [Connected] @ 不支持对角连接 [BREAK] 与 [Irrigation] [Adjacent] 的 [Crop] 一周即可成熟</td></tr>
+<tr class="tr"><td class="k">Building.Irrigation.Name</td><td class="en">Irrigation</td><td class="zh">灌溉渠</td></tr>
+<tr class="tr"><td class="k">Building.Jeweller.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @{Remove} [ActivationCount] random [Adjacent] building to give all equipped [Heirloom] [BaseScore] sell value. If the building is [Luxury] give them [CategoryScoreMetalworking] instead</td><td class="zh">{每 [Cooldown] 周触发：} @ {移除} [ActivationCount] 座随机 [Adjacent] 建筑， 使所有已装备 [Heirloom] 的售价 增加 [BaseScore] 。 若移除的是 [Luxury] ， 则改为 [CategoryScoreMetalworking]</td></tr>
+<tr class="tr"><td class="k">Building.Jeweller.Name</td><td class="en">Jeweller</td><td class="zh">珠宝匠</td></tr>
+<tr class="tr"><td class="k">Building.JoustingArena.Description</td><td class="en">{Triggers when an [Adjacent] building is removed:} [MoneyCount]</td><td class="zh">{当 [Adjacent] 建筑被移除时触发：} [MoneyCount]</td></tr>
+<tr class="tr"><td class="k">Building.JoustingArena.Name</td><td class="en">Jousting Arena</td><td class="zh">比武场</td></tr>
+<tr class="tr"><td class="k">Building.KelpField.Description</td><td class="en">{Triggers when removed:} [RerollCount]</td><td class="zh">{移除时触发：} [RerollCount]</td></tr>
+<tr class="tr"><td class="k">Building.KelpField.Name</td><td class="en">Kelp Field</td><td class="zh">海带田</td></tr>
+<tr class="tr"><td class="k">Building.Kitchen.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @[RarityScoreCommon] for each [Common] [InRange]</td><td class="zh">{每 [Cooldown] 周触发：} @ [InRange] 每有一座 [Common] 建筑， 获得 [RarityScoreCommon]</td></tr>
+<tr class="tr"><td class="k">Building.Kitchen.Name</td><td class="en">Kitchen</td><td class="zh">厨房</td></tr>
+<tr class="tr"><td class="k">Building.Lamppost.Description</td><td class="en">{Passively:} reduces the cooldown of [Adjacent] buildings by [CooldownModificationParam]</td><td class="zh">{被动：} [Adjacent] 建筑的冷却 减少 [CooldownModificationParam]</td></tr>
+<tr class="tr"><td class="k">Building.Lamppost.Name</td><td class="en">Lamppost</td><td class="zh">路灯</td></tr>
+<tr class="tr"><td class="k">Building.Lantern.Description</td><td class="en">{Triggers whenever [Nature] is created [Adjacent] :} [RerollCount]</td><td class="zh">{每当 [Adjacent] 位置 生成 [Nature] 时触发：} [RerollCount]</td></tr>
+<tr class="tr"><td class="k">Building.Lantern.Name</td><td class="en">Stone Lantern</td><td class="zh">石灯笼</td></tr>
+<tr class="tr"><td class="k">Building.Lighthouse.Description</td><td class="en">{Passively:} reduces the cooldown of [Ship] [InRange] by [CooldownModificationParam]</td><td class="zh">{被动效果：}使 [InRange] 内 [Ship] 的冷却减少 [CooldownModificationParam]</td></tr>
+<tr class="tr"><td class="k">Building.Lighthouse.Name</td><td class="en">Lighthouse</td><td class="zh">灯塔</td></tr>
+<tr class="tr"><td class="k">Building.LodgingHouse.Description</td><td class="en">{Triggers when created:} @Gain [ActivationCount] random [Residence]  [Blueprint] from any unlocked guild</td><td class="zh">{建造时触发：} @ 从已解锁公会中 获得 [ActivationCount] 张随机 [Residence] [Blueprint]</td></tr>
+<tr class="tr"><td class="k">Building.LodgingHouse.Name</td><td class="en">Lodging House</td><td class="zh">旅舍</td></tr>
+<tr class="tr"><td class="k">Building.Lumberyard.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @Create [ActivationCount] [Lumber] on a random [Adjacent] tile [BREAK]Can only be created [Adjacent] to [Trees]</td><td class="zh">{每 [Cooldown] 周触发：} @ 在随机 [Adjacent] 地块 生成 [ActivationCount] 处 [Lumber] [BREAK] 只能在与 [Trees] [Adjacent] 的位置建造</td></tr>
+<tr class="tr"><td class="k">Building.Lumberyard.Name</td><td class="en">Lumberyard</td><td class="zh">木材场</td></tr>
+<tr class="tr"><td class="k">Building.MagicPortal.Description</td><td class="en">Any tile [Adjacent] to any [MagicPortal] is considered [Adjacent] to all [MagicPortal]</td><td class="zh">任意 [MagicPortal] [Adjacent] 的地块， 也视为与所有其他 [MagicPortal] [Adjacent]</td></tr>
+<tr class="tr"><td class="k">Building.MagicPortal.Name</td><td class="en">Portal</td><td class="zh">传送门</td></tr>
+<tr class="tr"><td class="k">Building.MagicRuin.Description</td><td class="en">{When removed:} Gain a random [Potion]</td><td class="zh">{移除时：} 获得一个随机 [Potion]</td></tr>
+<tr class="tr"><td class="k">Building.MagicRuin.Name</td><td class="en">Magical Ruin</td><td class="zh">魔法遗迹</td></tr>
+<tr class="tr"><td class="k">Building.Manure.Description</td><td class="en">{Triggers when removed:} [MoneyCount]</td><td class="zh">{移除时触发：} [MoneyCount]</td></tr>
+<tr class="tr"><td class="k">Building.Manure.Name</td><td class="en">Manure</td><td class="zh">肥料堆</td></tr>
+<tr class="tr"><td class="k">Building.Marketplace.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @{Trigger} all [Adjacent] [Stall] [BREAK]{When created:} gain a random [Stall] [Blueprint]</td><td class="zh">{每 [Cooldown] 周触发：} @ {触发} 所有 [Adjacent] 的 [Stall] [BREAK] {建造时：} 获得一张随机 [Stall] [Blueprint]</td></tr>
+<tr class="tr"><td class="k">Building.Marketplace.Name</td><td class="en">Marketplace</td><td class="zh">集市</td></tr>
+<tr class="tr"><td class="k">Building.Mason.Description</td><td class="en">{Triggers when created:} @Gain [ActivationCount] random [BuildingUpgrade] [BREAK]Can only be created [Adjacent] to another non [Nature] building</td><td class="zh">{建造时触发：} @ 获得 [ActivationCount] 个随机 [BuildingUpgrade] [BREAK] 只能建造在另一座 非 [Nature] 建筑的 [Adjacent] 位置</td></tr>
+<tr class="tr"><td class="k">Building.Mason.Name</td><td class="en">Mason</td><td class="zh">石匠</td></tr>
+<tr class="tr"><td class="k">Building.Mine.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @Create [ActivationCount] [Ore] on a random [Adjacent] tile [BREAK]Can only be created [Adjacent] to [Rocks]</td><td class="zh">{每 [Cooldown] 周触发：} @ 在随机 [Adjacent] 地块 生成 [ActivationCount] 处 [Ore] [BREAK] 只能在与 [Rocks] [Adjacent] 的位置建造</td></tr>
+<tr class="tr"><td class="k">Building.Mine.Name</td><td class="en">Mine</td><td class="zh">矿井</td></tr>
+<tr class="tr"><td class="k">Building.Nitrary.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @Remove [ActivationCount] random [Nature] or [Resource] [InRange] @[BaseScore] for each removed</td><td class="zh">{每 [Cooldown] 周触发：} @ 移除 [InRange] 的 [ActivationCount] 处随机 [Nature] 或 [Resource] @ 每移除一处， 获得 [BaseScore]</td></tr>
+<tr class="tr"><td class="k">Building.Nitrary.Name</td><td class="en">Nitrary</td><td class="zh">硝石场</td></tr>
+<tr class="tr"><td class="k">Building.NomadWagon.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @{Removes} itself and {creates} a [NomadWagon] on an [Adjacent] tile</td><td class="zh">{每 [Cooldown] 周触发：} @ {移除} 自身， 并在一个 [Adjacent] 地块 {生成} [NomadWagon]</td></tr>
+<tr class="tr"><td class="k">Building.NomadWagon.Name</td><td class="en">Nomad&#x27;s Wagon</td><td class="zh">游牧马车</td></tr>
+<tr class="tr"><td class="k">Building.Obelisk.Description</td><td class="en">{Passively:} any buildings [Adjacent] to [Obelisk] have [MultParam] [BREAK]Can be created on top of another [Obelisk] to give [Adjacent] buildings additional [MultParam]</td><td class="zh">{被动效果：} [Obelisk] [Adjacent] 的建筑拥有 [MultParam] [BREAK] 可建造在另一座 [Obelisk] 上，使 [Adjacent] 建筑额外获得 [MultParam]</td></tr>
+<tr class="tr"><td class="k">Building.Obelisk.Name</td><td class="en">Obelisk</td><td class="zh">方尖碑</td></tr>
+<tr class="tr"><td class="k">Building.OceanTemple.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @{Create} [ActivationCount] [KelpField] on random tiles [InRange] [BREAK]{Passively:} [Nature] [InRange] is considered [Sacred]</td><td class="zh">{每 [Cooldown] 周触发：} @ 在 [InRange] 的随机地块 {生成} [ActivationCount] 处 [KelpField] [BREAK] {被动：} [InRange] 的 [Nature] 视为 [Sacred]</td></tr>
+<tr class="tr"><td class="k">Building.OceanTemple.Name</td><td class="en">Ocean Shrine</td><td class="zh">海洋神龛</td></tr>
+<tr class="tr"><td class="k">Building.Outpost.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @Trigger a random [Adjacent] building if [Outpost] is the only other building [Adjacent] to it</td><td class="zh">{每 [Cooldown] 周触发：} @ 随机触发一座 [Adjacent] 建筑， 但 [Outpost] 必须是唯一 与该建筑 [Adjacent] 的其他建筑</td></tr>
+<tr class="tr"><td class="k">Building.Outpost.Name</td><td class="en">Outpost</td><td class="zh">前哨站</td></tr>
+<tr class="tr"><td class="k">Building.Palisade.Description</td><td class="en">{Passively:} any tile inside an enclosed area of [Palisade] is considered to be [Frontier] instead of its original guild @Does not connect diagonally</td><td class="zh">{被动效果：} [Palisade] 围成区域内的地块 视为 [Frontier] ， 而不是其原公会类 别 @ 不进行对角连接</td></tr>
+<tr class="tr"><td class="k">Building.Palisade.Name</td><td class="en">Palisade</td><td class="zh">木栅栏</td></tr>
+<tr class="tr"><td class="k">Building.Park.Description</td><td class="en">{Passively:} [Nature] [Adjacent] to [Park] is considered [Residence] and [Common]</td><td class="zh">{被动：} 与 [Park] [Adjacent] 的 [Nature] 视为 [Residence] 和 [Common]</td></tr>
+<tr class="tr"><td class="k">Building.Park.Name</td><td class="en">Park</td><td class="zh">公园</td></tr>
+<tr class="tr"><td class="k">Building.PirateShip.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @[BaseScore] and {create} [ActivationCount] [TreasureChest] on a random tile [InRange]</td><td class="zh">{每 [Cooldown] 周触发：} @ 获得 [BaseScore] ， 并在 [InRange] 的随机地块 {生成} [ActivationCount] 个 [TreasureChest]</td></tr>
+<tr class="tr"><td class="k">Building.PirateShip.Name</td><td class="en">Pirate Ship</td><td class="zh">海盗船</td></tr>
+<tr class="tr"><td class="k">Building.Plateau.Description</td><td class="en">{Passively:} Counts as [Grass] @Can be built over</td><td class="zh">{被动效果：}视为 [Grass] @ 可以在其上方继续 建造</td></tr>
+<tr class="tr"><td class="k">Building.Plateau.Name</td><td class="en">Plateau</td><td class="zh">高地</td></tr>
+<tr class="tr"><td class="k">Building.Plaza.Description</td><td class="en">{Passively:} buildings [Adjacent] to a [Plaza] ignore [Range] placement restrictions</td><td class="zh">{被动效果：} [Plaza] [Adjacent] 的建筑无视 [Range] 放置限制</td></tr>
+<tr class="tr"><td class="k">Building.Plaza.Name</td><td class="en">Plaza</td><td class="zh">广场</td></tr>
+<tr class="tr"><td class="k">Building.Port.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @[CategoryScoreShip] for each [Ship]  [Trader] or [Luxury] [InRange] [BREAK]{When created:} gain a [Plateau] [Blueprint] with 2 charges</td><td class="zh">{每 [Cooldown] 周触发：} @ [InRange] 每有一座 [Ship] 、 [Trader] 或 [Luxury] ， 获得 [CategoryScoreShip] [BREAK] {建造时：} 获得一张可用 2 次的 [Plateau] [Blueprint]</td></tr>
+<tr class="tr"><td class="k">Building.Port.Name</td><td class="en">Port</td><td class="zh">港口</td></tr>
+<tr class="tr"><td class="k">Building.PostOffice.Description</td><td class="en">{Whenever the tile directly below a [PostOffice] triggers:} @{Trigger} the tile directly above the [PostOffice]</td><td class="zh">{每当 [PostOffice] 正下方的地块触发 时： } @ {触发} [PostOffice] 正上方的地块</td></tr>
+<tr class="tr"><td class="k">Building.PostOffice.Name</td><td class="en">Post Office</td><td class="zh">邮局</td></tr>
+<tr class="tr"><td class="k">Building.Quarry.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @Create [ActivationCount] [Rocks] on a random tile [InRange]</td><td class="zh">{每 [Cooldown] 周触发：} @ 在 [InRange] 的随机地块 生成 [ActivationCount] 处 [Rocks]</td></tr>
+<tr class="tr"><td class="k">Building.Quarry.Name</td><td class="en">Quarry</td><td class="zh">采石场</td></tr>
+<tr class="tr"><td class="k">Building.Quay.Description</td><td class="en">Other [Adjacent] buildings are considered [Ship] @Must be created [Connected] to [Port] or [Crane] or another [Quay] @Does not connect diagonally</td><td class="zh">其他 [Adjacent] 建筑视为 [Ship] @ 必须与 [Port] 、 [Crane] 或另一座 [Quay] [Connected] 建造 @ 不进行对角连接</td></tr>
+<tr class="tr"><td class="k">Building.Quay.Name</td><td class="en">Quay</td><td class="zh">码头</td></tr>
+<tr class="tr"><td class="k">Building.Rail.Description</td><td class="en">{Passively:} Any tile [Adjacent] to a [Rail] is considered [Adjacent] to all [Connected] [Rail] @Does not connect diagonally</td><td class="zh">{被动：} 与 [Rail] [Adjacent] 的地块， 视为与所有 [Connected] 的 [Rail] [Adjacent] @ 不支持对角连接</td></tr>
+<tr class="tr"><td class="k">Building.Rail.Name</td><td class="en">Railway</td><td class="zh">铁路</td></tr>
+<tr class="tr"><td class="k">Building.Reliquary.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @[BaseScore] (30 x total equipped [Heirloom] sell value)[BREAK]Can only be created [Adjacent] to [Rocks]</td><td class="zh">{每 [Cooldown] 周触发：} @ 获得 [BaseScore] （30 × 已装备 [Heirloom] 总出售价值） [BREAK] 只能建造在 [Rocks] 的 [Adjacent] 位置</td></tr>
+<tr class="tr"><td class="k">Building.Reliquary.Name</td><td class="en">Reliquary</td><td class="zh">圣物匣</td></tr>
+<tr class="tr"><td class="k">Building.Reservoir.Description</td><td class="en">{Triggers when created:} Gain [Irrigation] [Blueprint] [BREAK][Crop] [Adjacent] to [Reservoir] grow in 1 week</td><td class="zh">{建造时触发：} 获得 [Irrigation] [Blueprint] [BREAK] 与 [Reservoir] [Adjacent] 的 [Crop] 一周即可成熟</td></tr>
+<tr class="tr"><td class="k">Building.Reservoir.Name</td><td class="en">Reservoir</td><td class="zh">蓄水池</td></tr>
+<tr class="tr"><td class="k">Building.Ruin.Description</td><td class="en">{When removed:} Gain a random [BuildingUpgrade]</td><td class="zh">{移除时：} 获得一个随机 [BuildingUpgrade]</td></tr>
+<tr class="tr"><td class="k">Building.Ruin.Name</td><td class="en">Ruin</td><td class="zh">遗迹</td></tr>
+<tr class="tr"><td class="k">Building.Sawmill.Description</td><td class="en">{Triggers every [Cooldown] weeks: @{Trigger} up to [ActivationCount] [Engineering] or [Manufacturer] [InRange] [BREAK]{Passively:} removes [Adjacent] [Lumber] to affect [BaseScore] more targets</td><td class="zh">{每 [Cooldown] 周触发：} @ {触发} [InRange] 最多 [ActivationCount] 座 [Engineering] 或 [Manufacturer] [BREAK] {被动：} 移除 [Adjacent] 的 [Lumber] ， 目标数量 增加 [BaseScore]</td></tr>
+<tr class="tr"><td class="k">Building.Sawmill.Name</td><td class="en">Sawmill</td><td class="zh">锯木厂</td></tr>
+<tr class="tr"><td class="k">Building.Scaffolding.Description</td><td class="en">{Passively:} Any building created on [Scaffolding] gains [MultParam] @Can be built over</td><td class="zh">{被动效果：}建造在 [Scaffolding] 上的建筑获得 [MultParam] @ 可以在其上方继续 建造</td></tr>
+<tr class="tr"><td class="k">Building.Scaffolding.Name</td><td class="en">Scaffolding</td><td class="zh">脚手架</td></tr>
+<tr class="tr"><td class="k">Building.Scarecrow.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @[CategoryScoreFarm] for each [Farm] [InRange]</td><td class="zh">{每 [Cooldown] 周触发：} @ [InRange] 每有一座 [Farm] ， 获得 [CategoryScoreFarm]</td></tr>
+<tr class="tr"><td class="k">Building.Scarecrow.Name</td><td class="en">Scarecrow</td><td class="zh">稻草人</td></tr>
+<tr class="tr"><td class="k">Building.SeaweedFarm.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @[TileTypeScoreOcean] for each empty [Ocean] [InRange]</td><td class="zh">{每 [Cooldown] 周触发：} @ [InRange] 每有一格 空置 [Ocean] ， 获得 [TileTypeScoreOcean]</td></tr>
+<tr class="tr"><td class="k">Building.SeaweedFarm.Name</td><td class="en">Seaweed Farm</td><td class="zh">海藻养殖场</td></tr>
+<tr class="tr"><td class="k">Building.Sewer.Description</td><td class="en">{Triggers when created:} @{Remove} all [Adjacent] non [Infrastructure]</td><td class="zh">{建造时触发：} @ {移除}所有 [Adjacent] 的非 [Infrastructure]</td></tr>
+<tr class="tr"><td class="k">Building.Sewer.Name</td><td class="en">Sewer</td><td class="zh">下水道</td></tr>
+<tr class="tr"><td class="k">Building.Shaman.Description</td><td class="en">{Triggers when another building [InRange] gains [Reroll] :}@[CategoryScoreFrontier] for each [Frontier] [InRange]</td><td class="zh">{当 [InRange] 的其他建筑 获得 [Reroll] 时触发：} @ [InRange] 每有一座 [Frontier] ， 获得 [CategoryScoreFrontier]</td></tr>
+<tr class="tr"><td class="k">Building.Shaman.Name</td><td class="en">Shaman</td><td class="zh">萨满</td></tr>
+<tr class="tr"><td class="k">Building.ShantyTown.Description</td><td class="en">{Passively:} every week, each [Connected] [ShantyTown] has a [PercentageChance] chance to create another [ShantyTown] on a random tile [Connected] to the group</td><td class="zh">{被动效果：}每周，每个 [Connected] 的 [ShantyTown] 都有 [PercentageChance] 概率在与该群组 [Connected] 的随机地块生成另 一座 [ShantyTown]</td></tr>
+<tr class="tr"><td class="k">Building.ShantyTown.Name</td><td class="en">Slums</td><td class="zh">贫民区</td></tr>
+<tr class="tr"><td class="k">Building.SheepFarm.Description</td><td class="en">{Triggers when created:} @[TileTypeScoreGrass] for each [Adjacent] empty [Grass] @{Create} [Manure] on a random empty [Adjacent] [Grass]</td><td class="zh">{建造时触发：} @ 每有一格 [Adjacent] 的空置 [Grass] ， 获得 [TileTypeScoreGrass] @ 在随机空置的 [Adjacent] [Grass] 上 {生成} [Manure]</td></tr>
+<tr class="tr"><td class="k">Building.SheepFarm.Name</td><td class="en">Farmyard</td><td class="zh">农家庭院</td></tr>
+<tr class="tr"><td class="k">Building.Shrine.Description</td><td class="en">{Triggers every [Cooldown] weeks:}@[BaseScore] (50 x number of [Reroll] )[BREAK]Can only be created [Adjacent] to at least 3 [Nature]</td><td class="zh">{每 [Cooldown] 周触发：} @ 获得 [BaseScore] （50 × [Reroll] 数量） [BREAK] 只能建造在至少 3 个 [Nature] 的 [Adjacent] 位置</td></tr>
+<tr class="tr"><td class="k">Building.Shrine.Name</td><td class="en">Shrine</td><td class="zh">神龛</td></tr>
+<tr class="tr"><td class="k">Building.Smelter.Description</td><td class="en">{Triggers every [Cooldown] weeks: [BaseScore] [BREAK]{Passively:} removes [Adjacent] [Ore] to gain [MultParam]</td><td class="zh">{每 [Cooldown] 周触发：} [BaseScore] [BREAK] {被动：} 移除 [Adjacent] 的 [Ore] ， 获得 [MultParam]</td></tr>
+<tr class="tr"><td class="k">Building.Smelter.Name</td><td class="en">Smelter</td><td class="zh">冶炼厂</td></tr>
+<tr class="tr"><td class="k">Building.SparringYard.Description</td><td class="en">{Triggers when created:} @[RemoveCount] and {trigger} all [Training] [InRange]</td><td class="zh">{建造时触发：} @ 获得 [RemoveCount] ， 并 {触发} [InRange] 的所有 [Training]</td></tr>
+<tr class="tr"><td class="k">Building.SparringYard.Name</td><td class="en">Sparring Dummy</td><td class="zh">训练假人</td></tr>
+<tr class="tr"><td class="k">Building.Stable.Description</td><td class="en">{Passively:} buildings [Adjacent] to a [Stable] gain the [Stable] [Range] @Does not apply to other [Adjacent] [Stable]</td><td class="zh">{被动效果：} [Stable] [Adjacent] 的建筑获得该 [Stable] 的 [Range] @ 不作用于其他 [Adjacent] [Stable]</td></tr>
+<tr class="tr"><td class="k">Building.Stable.Name</td><td class="en">Stable</td><td class="zh">马厩</td></tr>
+<tr class="tr"><td class="k">Building.StallBotany.Description</td><td class="en">{Triggers when created:} @[CategoryScoreNature] for each [Nature] or [Resource] [InRange]</td><td class="zh">{建造时触发：} @ [InRange] 每有一处 [Nature] 或 [Resource] ， 获得 [CategoryScoreNature]</td></tr>
+<tr class="tr"><td class="k">Building.StallBotany.Name</td><td class="en">Botanist&#x27;s Stall</td><td class="zh">植物学家摊位</td></tr>
+<tr class="tr"><td class="k">Building.StallDeli.Description</td><td class="en">{Triggers when created:} @[CategoryScoreHusbandry] for each [Husbandry]  [Fishing] or [Healing] [InRange]</td><td class="zh">{建造时触发：} @ [InRange] 每有一座 [Husbandry] 、 [Fishing] 或 [Healing] ， 获得 [CategoryScoreHusbandry]</td></tr>
+<tr class="tr"><td class="k">Building.StallDeli.Name</td><td class="en">Deli Stall</td><td class="zh">熟食摊</td></tr>
+<tr class="tr"><td class="k">Building.StallGrocer.Description</td><td class="en">{Triggers when created:} @[CategoryScoreFarm] for each [Farm]  [Crop] or [Residence] [InRange]</td><td class="zh">{建造时触发：} @ [InRange] 每有一处 [Farm] 、 [Crop] 或 [Residence] ， 获得 [CategoryScoreFarm]</td></tr>
+<tr class="tr"><td class="k">Building.StallGrocer.Name</td><td class="en">Grocer&#x27;s Stall</td><td class="zh">杂货摊</td></tr>
+<tr class="tr"><td class="k">Building.StallSupplies.Description</td><td class="en">{Triggers when created:} @[CategoryScoreManufacturer] for each [Manufacturer]  [Training] or [Engineering] [InRange]</td><td class="zh">{建造时触发：} @ [InRange] 每有一座 [Manufacturer] 、 [Training] 或 [Engineering] ， 获得 [CategoryScoreManufacturer]</td></tr>
+<tr class="tr"><td class="k">Building.StallSupplies.Name</td><td class="en">Supplies Stall</td><td class="zh">补给摊</td></tr>
+<tr class="tr"><td class="k">Building.Statue.Description</td><td class="en">{Triggers when created:} @Gain [CouncilVote] for [ActivationCount] random councillor already on your council [BREAK]Can only be created [Adjacent] to [Nature]</td><td class="zh">{建造时触发：} @ 为议会中已有的 [ActivationCount] 名随机议员各获得 1 张 [CouncilVote] [BREAK] 只能建造在 [Nature] 的 [Adjacent] 位置</td></tr>
+<tr class="tr"><td class="k">Building.Statue.Name</td><td class="en">Statue</td><td class="zh">雕像</td></tr>
+<tr class="tr"><td class="k">Building.Stockpile.Description</td><td class="en">{Triggers when created:} @[TileTypeScoreSand] for each empty [Sand] or [Grass] [InRange] </td><td class="zh">{建造时触发：} @ [InRange] 每有一格 空置的 [Sand] 或 [Grass] ， 获得 [TileTypeScoreSand] </td></tr>
+<tr class="tr"><td class="k">Building.Stockpile.Name</td><td class="en">Stockpile</td><td class="zh">堆料场</td></tr>
+<tr class="tr"><td class="k">Building.SunflowerFarm.Description</td><td class="en">{When grown, triggers every [Cooldown] weeks:} @[CategoryScoreCrop] for each other [Crop] [InRange] [BREAK]{Passively:} counts as [Flowers]</td><td class="zh">{成长后每 [Cooldown] 周触发：} @ [InRange] 每有一处 其他 [Crop] ， 获得 [CategoryScoreCrop] [BREAK] {被动：} 视为 [Flowers]</td></tr>
+<tr class="tr"><td class="k">Building.SunflowerFarm.Name</td><td class="en">Sunflower Field</td><td class="zh">向日葵田</td></tr>
+<tr class="tr"><td class="k">Building.Tannery.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @[CategoryScoreHusbandry] for each [Husbandry] [InRange]</td><td class="zh">{每 [Cooldown] 周触发：} @ [InRange] 每有一座 [Husbandry] ， 获得 [CategoryScoreHusbandry]</td></tr>
+<tr class="tr"><td class="k">Building.Tannery.Name</td><td class="en">Tannery</td><td class="zh">制革厂</td></tr>
+<tr class="tr"><td class="k">Building.TaxCollector.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @{Transform} [ActivationCount] random [House] [InRange] into [HousePlot]</td><td class="zh">{每 [Cooldown] 周触发：} @ 将 [InRange] 的 [ActivationCount] 座随机 [House] {转化} 为 [HousePlot]</td></tr>
+<tr class="tr"><td class="k">Building.TaxCollector.Name</td><td class="en">Tax Collector</td><td class="zh">税务官</td></tr>
+<tr class="tr"><td class="k">Building.Temple.Description</td><td class="en">When all 4 wings of the temple are created [Adjacent] in the correct positions, gain a special [Legendary] [Heirloom] [BREAK]Cannot be removed</td><td class="zh">当神殿的 4 个翼部以正确位置 彼此 [Adjacent] 建造完成时， 获得一件特殊 [Legendary] [Heirloom] [BREAK] 无法移除</td></tr>
+<tr class="tr"><td class="k">Building.TempleEastWing.Name</td><td class="en">Temple North-East Wing</td><td class="zh">神殿东北翼</td></tr>
+<tr class="tr"><td class="k">Building.TempleNorthWing.Name</td><td class="en">Temple North-West Wing</td><td class="zh">神殿西北翼</td></tr>
+<tr class="tr"><td class="k">Building.TempleSouthWing.Name</td><td class="en">Temple South-East Wing</td><td class="zh">神殿东南翼</td></tr>
+<tr class="tr"><td class="k">Building.TempleWestWing.Name</td><td class="en">Temple South-West Wing</td><td class="zh">神殿西南翼</td></tr>
+<tr class="tr"><td class="k">Building.ToolShed.Description</td><td class="en">{Triggers when [Resource] created [InRange] :} @[CategoryScoreEngineering] for each [Engineering]  [Woodworking] or [Resource] [InRange]</td><td class="zh">{当 [InRange] 生成 [Resource] 时触发：} @ [InRange] 每有一处 [Engineering] 、 [Woodworking] 或 [Resource] ， 获得 [CategoryScoreEngineering]</td></tr>
+<tr class="tr"><td class="k">Building.ToolShed.Name</td><td class="en">Tool Shed</td><td class="zh">工具棚</td></tr>
+<tr class="tr"><td class="k">Building.TownBell.Description</td><td class="en">{Passively:} buildings [Adjacent] to [TownBell] have [RangeModificationParam] [Range]</td><td class="zh">{被动：} 与 [TownBell] [Adjacent] 的建筑 获得 [RangeModificationParam] [Range]</td></tr>
+<tr class="tr"><td class="k">Building.TownBell.Name</td><td class="en">Town Bell</td><td class="zh">城镇钟</td></tr>
+<tr class="tr"><td class="k">Building.TownHall.Description</td><td class="en">{Triggers when created:} @[CategoryScoreResidence] for each [Residence] [Connected] to the [TownHall]</td><td class="zh">{建造时触发：} @ 每有一座与 [TownHall] [Connected] 的 [Residence] ， 获得 [CategoryScoreResidence]</td></tr>
+<tr class="tr"><td class="k">Building.TownHall.Name</td><td class="en">Town Hall</td><td class="zh">市政厅</td></tr>
+<tr class="tr"><td class="k">Building.TradingPost.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @[BaseScore] for each unique building [InRange]</td><td class="zh">{每 [Cooldown] 周触发：} @ [InRange] 每有一种 不同的建筑， 获得 [BaseScore]</td></tr>
+<tr class="tr"><td class="k">Building.TradingPost.Name</td><td class="en">Trading Post</td><td class="zh">贸易站</td></tr>
+<tr class="tr"><td class="k">Building.TrainingRing.Description</td><td class="en">{Triggers when created:} @[TileTypeScoreSand] for each empty [Sand] [InRange]</td><td class="zh">{建造时触发：} @ [InRange] 每有一格 空置 [Sand] ， 获得 [TileTypeScoreSand]</td></tr>
+<tr class="tr"><td class="k">Building.TrainingRing.Name</td><td class="en">Training Ring</td><td class="zh">训练场</td></tr>
+<tr class="tr"><td class="k">Building.Trapper.Description</td><td class="en">{Passively:} other [Adjacent] buildings are considered [Husbandry]</td><td class="zh">{被动效果：}其他 [Adjacent] 建筑视为 [Husbandry]</td></tr>
+<tr class="tr"><td class="k">Building.Trapper.Name</td><td class="en">Trapper&#x27;s Lodge</td><td class="zh">捕兽人小屋</td></tr>
+<tr class="tr"><td class="k">Building.Trawler.Description</td><td class="en">{Every [Cooldown] weeks:} @{Trigger} [ActivationCount] random [Fishing] [InRange] @Must be created at least 2 tiles away from [Grass] or [Sand]</td><td class="zh">{每 [Cooldown] 周：} @ {触发} [InRange] 内 [ActivationCount] 个随机 [Fishing] @ 必须建造在距离 [Grass] 或 [Sand] 至少 2 格的位置</td></tr>
+<tr class="tr"><td class="k">Building.Trawler.Name</td><td class="en">Trawler</td><td class="zh">拖网渔船</td></tr>
+<tr class="tr"><td class="k">Building.TreasureChest.Description</td><td class="en">{Triggers when removed:} [MoneyCount]</td><td class="zh">{移除时触发：} [MoneyCount]</td></tr>
+<tr class="tr"><td class="k">Building.TreasureChest.Name</td><td class="en">Treasure Chest</td><td class="zh">宝箱</td></tr>
+<tr class="tr"><td class="k">Building.Treasury.Description</td><td class="en">{Triggers when another building [InRange] earns [Gold] :} @{Trigger} [ActivationCount] random [Adjacent] building</td><td class="zh">{当 [InRange] 的其他建筑 获得 [Gold] 时触发：} @ {触发} [ActivationCount] 座随机 [Adjacent] 建筑</td></tr>
+<tr class="tr"><td class="k">Building.Treasury.Name</td><td class="en">Treasury</td><td class="zh">国库</td></tr>
+<tr class="tr"><td class="k">Building.University.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @[CategoryScoreTraining] for each [Training] or [Healing] [InRange]</td><td class="zh">{每 [Cooldown] 周触发：} @ [InRange] 每有一座 [Training] 或 [Healing] ， 获得 [CategoryScoreTraining]</td></tr>
+<tr class="tr"><td class="k">Building.University.Name</td><td class="en">Academy</td><td class="zh">学院</td></tr>
+<tr class="tr"><td class="k">Building.Vault.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @[BaseScore] (10 x [Gold] count )[BREAK]Cannot be placed adjacent to anything else</td><td class="zh">{每 [Cooldown] 周触发：} @ 获得 [BaseScore] （10 × [Gold] 数量） [BREAK] 不能与任何其他建 筑相邻放置</td></tr>
+<tr class="tr"><td class="k">Building.Vault.Name</td><td class="en">Vault</td><td class="zh">金库</td></tr>
+<tr class="tr"><td class="k">Building.Vineyard.Description</td><td class="en">{Triggers when grows:} [MoneyCount]</td><td class="zh">{成长时触发：} [MoneyCount]</td></tr>
+<tr class="tr"><td class="k">Building.Vineyard.Name</td><td class="en">Vineyard</td><td class="zh">葡萄园</td></tr>
+<tr class="tr"><td class="k">Building.Wall.Description</td><td class="en">{Passively:} Any tile inside an enclosed area of [Wall] gains [MultParam] @Does not connect diagonally</td><td class="zh">{被动：} [Wall] 围合区域内的 每格地块 获得 [MultParam] @ 不支持对角连接</td></tr>
+<tr class="tr"><td class="k">Building.Wall.Name</td><td class="en">Wall</td><td class="zh">城墙</td></tr>
+<tr class="tr"><td class="k">Building.Warehouse.Description</td><td class="en">{Passively:} whenever another building [InRange] scores, add that score to [Warehouse] (excluding other [Warehouse] ) @{When triggered:} score equal to the stored score</td><td class="zh">{被动效果：}每当 [InRange] 内的其他建筑得分 时， 将该分数储存在 [Warehouse] 中（其他 [Warehouse] 除外） @ {触发时： }获得等同于已储存 分数的得分</td></tr>
+<tr class="tr"><td class="k">Building.Warehouse.Name</td><td class="en">Warehouse</td><td class="zh">仓储中心</td></tr>
+<tr class="tr"><td class="k">Building.WatchTower.Description</td><td class="en">{Triggers when created:} @[CategoryScoreNature] for each [Nature] [InRange] [BREAK]{When removed:} create [Trees] on each [Adjacent] tile</td><td class="zh">{建造时触发：} @ [InRange] 每有一处 [Nature] ， 获得 [CategoryScoreNature] [BREAK] {移除时：} 在每格 [Adjacent] 地块 生成 [Trees]</td></tr>
+<tr class="tr"><td class="k">Building.WatchTower.Name</td><td class="en">Watch Tower</td><td class="zh">瞭望塔</td></tr>
+<tr class="tr"><td class="k">Building.WayStation.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @{Trigger} [ActivationCount] random [Adjacent] building [BREAK]{Passively:} counts as [Rail] @Every time [Neutral] is created [Adjacent] reduce current cooldown by 1</td><td class="zh">{每 [Cooldown] 周触发：} @ {触发} [ActivationCount] 座随机 [Adjacent] 建筑 [BREAK] {被动效果：}视为 [Rail] @ 每当在 [Adjacent] 位置建造 [Neutral] 时，当前冷却减少 1</td></tr>
+<tr class="tr"><td class="k">Building.WayStation.Name</td><td class="en">Way Station</td><td class="zh">驿站</td></tr>
+<tr class="tr"><td class="k">Building.Well.Description</td><td class="en">{Passively:} [Crop] [Adjacent] to a [Well] grow faster, taking 1 week instead of the usual duration</td><td class="zh">{被动：} 与 [Well] [Adjacent] 的 [Crop] 生长加快， 一周即可成熟</td></tr>
+<tr class="tr"><td class="k">Building.Well.Name</td><td class="en">Well</td><td class="zh">水井</td></tr>
+<tr class="tr"><td class="k">Building.WheatField.Description</td><td class="en">{Triggers when grows:} [RerollCount] and [RemoveCount]</td><td class="zh">{成长时触发：} [RerollCount] 和 [RemoveCount]</td></tr>
+<tr class="tr"><td class="k">Building.WheatField.Name</td><td class="en">Wheat Field</td><td class="zh">麦田</td></tr>
+<tr class="tr"><td class="k">Building.Windmill.Description</td><td class="en">{Triggers whenever an [Adjacent] [Crop] transforms:} @[CategoryScoreResidence] for each [Residence] or [Training] [InRange]</td><td class="zh">{每当 [Adjacent] 的 [Crop] 转化时触发：} @ [InRange] 每有一座 [Residence] 或 [Training] ， 获得 [CategoryScoreResidence]</td></tr>
+<tr class="tr"><td class="k">Building.Windmill.Name</td><td class="en">Windmill</td><td class="zh">风车</td></tr>
+<tr class="tr"><td class="k">Building.WitchHut.Description</td><td class="en">{Triggers whenever another building is created [InRange] :} @[CategoryScoreHealing] for each [Healing] or [Sacred] [InRange]</td><td class="zh">{当 [InRange] 建造其他建筑时 触发：} @ [InRange] 每有一座 [Healing] 或 [Sacred] ， 获得 [CategoryScoreHealing]</td></tr>
+<tr class="tr"><td class="k">Building.WitchHut.Name</td><td class="en">Witch&#x27;s Hut</td><td class="zh">女巫小屋</td></tr>
+<tr class="tr"><td class="k">Building.WizardsTower.Description</td><td class="en">{Triggers when created:} @Gain [ActivationCount] random [Potion] [BREAK]Cannot be placed [Adjacent] to anything else</td><td class="zh">{建造时触发：} @ 获得 [ActivationCount] 瓶随机 [Potion] [BREAK] 不能与任何 其他建筑 [Adjacent]</td></tr>
+<tr class="tr"><td class="k">Building.WizardsTower.Name</td><td class="en">Wizard&#x27;s Tower</td><td class="zh">巫师塔</td></tr>
+<tr class="tr"><td class="k">Building.Woodcutter.Description</td><td class="en">{Triggers every [Cooldown] weeks:} @[TagScoreTrees] and {remove} [ActivationCount] [Trees] [InRange]</td><td class="zh">{每 [Cooldown] 周触发：} @ 获得 [TagScoreTrees] ， 并 {移除} [InRange] 的 [ActivationCount] 处 [Trees]</td></tr>
+<tr class="tr"><td class="k">Building.Woodcutter.Name</td><td class="en">Woodcutter</td><td class="zh">伐木工</td></tr>
+<tr class="tr"><td class="k">Building.Workshop.Description</td><td class="en">{Triggers when [Resource] removed [InRange]:} [MoneyCount]</td><td class="zh">{当 [InRange] 的 [Resource] 被移除时触发：} [MoneyCount]</td></tr>
+<tr class="tr"><td class="k">Building.Workshop.Name</td><td class="en">Workshop</td><td class="zh">工坊</td></tr>
+<tr class="tr"><td class="k">BuildingPlacement.CountRemaining</td><td class="en">{0} left to place</td><td class="zh">还可放置 {0} 个</td></tr>
+<tr class="tr"><td class="k">BuildingPlacement.InRangeOfError</td><td class="en">Other {0} in range</td><td class="zh">范围内已有其他{0}</td></tr>
+<tr class="tr"><td class="k">BuildingPlacement.TooCloseToError</td><td class="en">Too close to {0}</td><td class="zh">距离{0}太近</td></tr>
+<tr class="tr"><td class="k">BuildingUpgrade.BluePaint.Description</td><td class="en">For the next [Cooldown] weeks, target building gains: {Whenever triggered, gain [DismissCount]} [BREAK]Buildings can only have 1 paint at a time</td><td class="zh">接下来的 [Cooldown] 周内， 目标建筑获得： {每次触发时， 获得 [DismissCount]} [BREAK] 每座建筑同时 只能有一种涂料</td></tr>
+<tr class="tr"><td class="k">BuildingUpgrade.BluePaint.Name</td><td class="en">Blue Paint</td><td class="zh">蓝色涂料</td></tr>
+<tr class="tr"><td class="k">BuildingUpgrade.ChangeActivationCount.Description</td><td class="en">If a building affects limited number of targets, increase that number by [TriggerCountModificationParam] [BREAK]e.g. create 1 [Trees] -&gt; create 2 [Trees]</td><td class="zh">若建筑的 目标数量有限， 将其增加 [TriggerCountModificationParam] [BREAK] 例如：生成 1 处 [Trees] → 生成 2 处 [Trees]</td></tr>
+<tr class="tr"><td class="k">BuildingUpgrade.ChangeActivationCount.Name</td><td class="en">Plumbing</td><td class="zh">管道工程</td></tr>
+<tr class="tr"><td class="k">BuildingUpgrade.ChangeCount.Description</td><td class="en">Reduces the max cooldown of a building by [CooldownModificationParam]</td><td class="zh">将建筑的 冷却上限 减少 [CooldownModificationParam]</td></tr>
+<tr class="tr"><td class="k">BuildingUpgrade.ChangeCount.Name</td><td class="en">Timber Framing</td><td class="zh">木构架</td></tr>
+<tr class="tr"><td class="k">BuildingUpgrade.ChangeMult.Description</td><td class="en">Give a building [MultParam]</td><td class="zh">给予一座建筑 [MultParam]</td></tr>
+<tr class="tr"><td class="k">BuildingUpgrade.ChangeMult.Name</td><td class="en">Masonry</td><td class="zh">砌筑</td></tr>
+<tr class="tr"><td class="k">BuildingUpgrade.ChangeRange.Description</td><td class="en">Give a building [RangeModificationParam] [Range]</td><td class="zh">给予一座建筑 [RangeModificationParam] [Range]</td></tr>
+<tr class="tr"><td class="k">BuildingUpgrade.ChangeRange.Name</td><td class="en">Winch</td><td class="zh">绞盘</td></tr>
+<tr class="tr"><td class="k">BuildingUpgrade.GoldPaint.Description</td><td class="en">For the next [Cooldown] weeks, target building gains: {Whenever triggered, gain [MoneyCount]} [BREAK]Buildings can only have 1 paint at a time)</td><td class="zh">接下来的 [Cooldown] 周内， 目标建筑获得： {每次触发时， 获得 [MoneyCount]} [BREAK] 每座建筑同时 只能有一种涂料</td></tr>
+<tr class="tr"><td class="k">BuildingUpgrade.GoldPaint.Name</td><td class="en">Gold Paint</td><td class="zh">金色涂料</td></tr>
+<tr class="tr"><td class="k">BuildingUpgrade.GreenPaint.Description</td><td class="en">For the next [Cooldown] weeks, target building gains: {Whenever triggered, gain [RerollCount]} [BREAK]Buildings can only have 1 paint at a time</td><td class="zh">接下来的 [Cooldown] 周内， 目标建筑获得： {每次触发时， 获得 [RerollCount]} [BREAK] 每座建筑同时 只能有一种涂料</td></tr>
+<tr class="tr"><td class="k">BuildingUpgrade.GreenPaint.Name</td><td class="en">Green Paint</td><td class="zh">绿色涂料</td></tr>
+<tr class="tr"><td class="k">BuildingUpgrade.NegBlackPaint.Description</td><td class="en">When created, after [Cooldown] weeks, {remove} this building [BREAK]Buildings can only have 1 paint at a time</td><td class="zh">建造后经过 [Cooldown] 周，{移除}此建筑 [BREAK] 每座建筑同时只能 拥有 1 种涂料</td></tr>
+<tr class="tr"><td class="k">BuildingUpgrade.NegBlackPaint.Name</td><td class="en">Dark Paint</td><td class="zh">黑色涂料</td></tr>
+<tr class="tr"><td class="k">BuildingUpgrade.NegChangeCount.Description</td><td class="en">Increases a building&#x27;s max cooldown by [CooldownModificationParam] when created</td><td class="zh">建造时， 使建筑的最大冷却 增加 [CooldownModificationParam]</td></tr>
+<tr class="tr"><td class="k">BuildingUpgrade.NegChangeCount.Name</td><td class="en">Increased Cooldown</td><td class="zh">延长冷却</td></tr>
+<tr class="tr"><td class="k">BuildingUpgrade.NegChangeMult.Description</td><td class="en">Give a building [MultParam] when created</td><td class="zh">建造时， 建筑获得 [MultParam]</td></tr>
+<tr class="tr"><td class="k">BuildingUpgrade.NegChangeMult.Name</td><td class="en">Reduced Mult</td><td class="zh">降低倍率</td></tr>
+<tr class="tr"><td class="k">BuildingUpgrade.NegChangeRange.Description</td><td class="en">Gives a building [RangeModificationParam] [Range] when created</td><td class="zh">建造时，使建筑获得 [RangeModificationParam] [Range]</td></tr>
+<tr class="tr"><td class="k">BuildingUpgrade.NegChangeRange.Name</td><td class="en">Reduced Range</td><td class="zh">缩短范围</td></tr>
+<tr class="tr"><td class="k">BuildingUpgrade.PurplePaint.Description</td><td class="en">For the next [Cooldown] weeks, target building gains: {Whenever triggered, gain [EnchantmentParam]} [BREAK]Buildings can only have 1 paint at a time</td><td class="zh">接下来的 [Cooldown] 周内， 目标建筑获得： {每次触发时， 获得 [EnchantmentParam]} [BREAK] 每座建筑同时 只能有一种涂料</td></tr>
+<tr class="tr"><td class="k">BuildingUpgrade.PurplePaint.Name</td><td class="en">Purple Paint</td><td class="zh">紫色涂料</td></tr>
+<tr class="tr"><td class="k">BuildingUpgrade.RainbowPaint.Description</td><td class="en">Target building permanently gains [Wild] making it count as every category and guild at once [BREAK][Wild] buildings do not gain [Mult] from [CouncilVote] [BREAK]Buildings can only have 1 paint at a time</td><td class="zh">目标建筑永久获得 [Wild] ， 因此同时视为所有 类别和公会 [BREAK] [Wild] 建筑不会从 [CouncilVote] 获得 [Mult] [BREAK] 每座建筑同时只能 拥有 1 种涂料</td></tr>
+<tr class="tr"><td class="k">BuildingUpgrade.RainbowPaint.Name</td><td class="en">Rainbow Paint</td><td class="zh">彩虹涂料</td></tr>
+<tr class="tr"><td class="k">BuildingUpgrade.RedPaint.Description</td><td class="en">For the next [Cooldown] weeks, target building gains: {Whenever triggered, gain [RemoveCount]} [BREAK]Buildings can only have 1 paint at a time</td><td class="zh">接下来的 [Cooldown] 周内， 目标建筑获得： {每次触发时， 获得 [RemoveCount]} [BREAK] 每座建筑同时 只能有一种涂料</td></tr>
+<tr class="tr"><td class="k">BuildingUpgrade.RedPaint.Name</td><td class="en">Red Paint</td><td class="zh">红色涂料</td></tr>
+<tr class="tr"><td class="k">BuildingUpgrade.SpectralPaint.Description</td><td class="en">Permanently modify target building&#x27;s affected category to one of your choice [BREAK]You may only select a new category that already exists on the map [BREAK]Buildings can only have 1 paint at a time</td><td class="zh">永久改变 目标建筑 作用的类别， 改为你所选的类别 [BREAK] 只能选择 地图上已有的类别 [BREAK] 每座建筑同时 只能有一种涂料</td></tr>
+<tr class="tr"><td class="k">BuildingUpgrade.SpectralPaint.Name</td><td class="en">Ghost Paint</td><td class="zh">幽灵涂料</td></tr>
+<tr class="tr"><td class="k">BuildingUpgrade.WhitePaint.Description</td><td class="en">For the next [Cooldown] weeks, target building gains: {Whenever triggered, [BaseScore]} [BREAK]Buildings can only have 1 paint at a time</td><td class="zh">接下来的 [Cooldown] 周内， 目标建筑获得： {每次触发时， [BaseScore]} [BREAK] 每座建筑同时 只能有一种涂料</td></tr>
+<tr class="tr"><td class="k">BuildingUpgrade.WhitePaint.Name</td><td class="en">White Paint</td><td class="zh">白色涂料</td></tr>
+<tr class="tr"><td class="k">Category.Agricultural.Desc</td><td class="en">The [Agricultural] guild focuses on growing of and harvesting [Crop]  [Farm] and animal [Husbandry]</td><td class="zh">[Agricultural] 公会专注于 种植和收获 [Crop] ， 以及经营 [Farm] 与 [Husbandry]</td></tr>
+<tr class="tr"><td class="k">Category.Agricultural.Name</td><td class="en">Agricultural</td><td class="zh">农业</td></tr>
+<tr class="tr"><td class="k">Category.Arcane.Name</td><td class="en">Arcane</td><td class="zh">奥术</td></tr>
+<tr class="tr"><td class="k">Category.Civic.Desc</td><td class="en">The [Civic] guild revolves around upgrading of [House] and more broadly affects [Residence] and [Sacred] @Has a secondary focus on building rarity</td><td class="zh">[Civic] 公会以升级 [House] 为核心， 也影响 [Residence] 和 [Sacred] @ 同时关注 建筑的稀有度</td></tr>
+<tr class="tr"><td class="k">Category.Civic.Name</td><td class="en">Civic</td><td class="zh">市政</td></tr>
+<tr class="tr"><td class="k">Category.Commercial.Desc</td><td class="en">The [Commercial] guild is intent on earning [Gold] by using market [Stall]  [Trader]  [Entertainment] and [Luxury] </td><td class="zh">[Commercial] 公会借助 [Stall] 、 [Trader] 、 [Entertainment] 和 [Luxury] 赚取 [Gold] </td></tr>
+<tr class="tr"><td class="k">Category.Commercial.Name</td><td class="en">Commercial</td><td class="zh">商贸</td></tr>
+<tr class="tr"><td class="k">Category.Consumable.Name</td><td class="en">Consumable</td><td class="zh">消耗品</td></tr>
+<tr class="tr"><td class="k">Category.Crop.Name</td><td class="en">Crop</td><td class="zh">作物</td></tr>
+<tr class="tr"><td class="k">Category.Engineering.Name</td><td class="en">Engineering</td><td class="zh">工程</td></tr>
+<tr class="tr"><td class="k">Category.Entertainment.Name</td><td class="en">Entertainment</td><td class="zh">娱乐</td></tr>
+<tr class="tr"><td class="k">Category.Farm.Name</td><td class="en">Farm</td><td class="zh">农场</td></tr>
+<tr class="tr"><td class="k">Category.Fishing.Name</td><td class="en">Fishing</td><td class="zh">渔业</td></tr>
+<tr class="tr"><td class="k">Category.Fortification.Name</td><td class="en">Fortification</td><td class="zh">防御工事</td></tr>
+<tr class="tr"><td class="k">Category.Frontier.Desc</td><td class="en">The [Frontier] guild is concerned with [Nature], with secondary focuses on [Healing]  [Husbandry] and [Sacred] @Many buildings interact with [Reroll]</td><td class="zh">[Frontier] 公会以 [Nature] 为核心， 兼顾 [Healing] 、 [Husbandry] 和 [Sacred] @ 许多建筑与 [Reroll] 相互配合</td></tr>
+<tr class="tr"><td class="k">Category.Frontier.Name</td><td class="en">Frontier</td><td class="zh">边疆</td></tr>
+<tr class="tr"><td class="k">Category.Gem.Name</td><td class="en">Gem</td><td class="zh">宝石</td></tr>
+<tr class="tr"><td class="k">Category.Hazard.Name</td><td class="en">Hazard</td><td class="zh">灾厄</td></tr>
+<tr class="tr"><td class="k">Category.Healing.Name</td><td class="en">Healing</td><td class="zh">治疗</td></tr>
+<tr class="tr"><td class="k">Category.Heirloom.Name</td><td class="en">Heirloom</td><td class="zh">传家宝</td></tr>
+<tr class="tr"><td class="k">Category.House.Name</td><td class="en">House</td><td class="zh">住宅</td></tr>
+<tr class="tr"><td class="k">Category.Husbandry.Name</td><td class="en">Husbandry</td><td class="zh">畜牧</td></tr>
+<tr class="tr"><td class="k">Category.Industrial.Desc</td><td class="en">The [Industrial] guild is centered around the supply chains of creation and consumption of [Resource] @Categories include [Manufacturer]  [Engineering] and [Woodworking]</td><td class="zh">[Industrial] 公会围绕 [Resource] 的生产与消耗 运作供应链 @ 类别包括 [Manufacturer] 、 [Engineering] 和 [Woodworking]</td></tr>
+<tr class="tr"><td class="k">Category.Industrial.Name</td><td class="en">Industrial</td><td class="zh">工业</td></tr>
+<tr class="tr"><td class="k">Category.Infrastructure.Name</td><td class="en">Infrastructure</td><td class="zh">基础设施</td></tr>
+<tr class="tr"><td class="k">Category.Irrigator.Name</td><td class="en">Irrigator</td><td class="zh">灌溉设施</td></tr>
+<tr class="tr"><td class="k">Category.Luxury.Name</td><td class="en">Luxury</td><td class="zh">奢华</td></tr>
+<tr class="tr"><td class="k">Category.Manufacturer.Name</td><td class="en">Manufacturer</td><td class="zh">制造业</td></tr>
+<tr class="tr"><td class="k">Category.Marine.Desc</td><td class="en">The [Marine] guild is the only [Ocean] bound guild, focusing on [Ship]  [Fishing] and intersecting with other guilds</td><td class="zh">[Marine] 是唯一以 [Ocean] 为主场的公会， 专注于 [Ship] 和 [Fishing] ， 也与其他公会配合</td></tr>
+<tr class="tr"><td class="k">Category.Marine.Name</td><td class="en">Maritime</td><td class="zh">海事</td></tr>
+<tr class="tr"><td class="k">Category.Martial.Desc</td><td class="en">The [Martial] guild revolves around [Remove] @Categories focuses include [Training]  [Fortification] and [Healing]</td><td class="zh">[Martial] 公会以 [Remove] 为核心 @ 主要类别包括 [Training] 、 [Fortification] 和 [Healing]</td></tr>
+<tr class="tr"><td class="k">Category.Martial.Name</td><td class="en">Martial</td><td class="zh">军事</td></tr>
+<tr class="tr"><td class="k">Category.Monument.Name</td><td class="en">Monument</td><td class="zh">纪念建筑</td></tr>
+<tr class="tr"><td class="k">Category.Nature.Name</td><td class="en">Nature</td><td class="zh">自然</td></tr>
+<tr class="tr"><td class="k">Category.Neutral.Name</td><td class="en">Neutral</td><td class="zh">中立</td></tr>
+<tr class="tr"><td class="k">Category.None.Name</td><td class="en">None</td><td class="zh">无</td></tr>
+<tr class="tr"><td class="k">Category.Provisioner.Name</td><td class="en">Provisioner</td><td class="zh">补给</td></tr>
+<tr class="tr"><td class="k">Category.Random.Name</td><td class="en">Random Category</td><td class="zh">随机类别</td></tr>
+<tr class="tr"><td class="k">Category.Residence.Name</td><td class="en">Residence</td><td class="zh">居住</td></tr>
+<tr class="tr"><td class="k">Category.Resource.Name</td><td class="en">Resource</td><td class="zh">资源</td></tr>
+<tr class="tr"><td class="k">Category.Rogues.Name</td><td class="en">Rogues</td><td class="zh">盗贼</td></tr>
+<tr class="tr"><td class="k">Category.Ruins.Name</td><td class="en">Ruins</td><td class="zh">废墟</td></tr>
+<tr class="tr"><td class="k">Category.Sacred.Name</td><td class="en">Sacred</td><td class="zh">神圣</td></tr>
+<tr class="tr"><td class="k">Category.Ship.Name</td><td class="en">Ship</td><td class="zh">船只</td></tr>
+<tr class="tr"><td class="k">Category.Stall.Name</td><td class="en">Stall</td><td class="zh">摊位</td></tr>
+<tr class="tr"><td class="k">Category.Tome.Name</td><td class="en">Tome</td><td class="zh">典籍</td></tr>
+<tr class="tr"><td class="k">Category.Trader.Name</td><td class="en">Trader</td><td class="zh">贸易</td></tr>
+<tr class="tr"><td class="k">Category.Training.Name</td><td class="en">Training</td><td class="zh">训练</td></tr>
+<tr class="tr"><td class="k">Category.Wild.Name</td><td class="en">Wild</td><td class="zh">百搭</td></tr>
+<tr class="tr"><td class="k">Category.Woodworking.Name</td><td class="en">Woodworking</td><td class="zh">木工</td></tr>
+<tr class="tr"><td class="k">CharacterData.Admiral.Effect.Heirloom</td><td class="en">Gain a [CaptainsHat] heirloom</td><td class="zh">获得一件 [CaptainsHat] 传家宝</td></tr>
+<tr class="tr"><td class="k">CharacterData.Admiral.Effect.ShipRange</td><td class="en">All [Ship] gain [AdmiralRangeModificationParam] range</td><td class="zh">所有 [Ship] 的范围 增加 [AdmiralRangeModificationParam]</td></tr>
+<tr class="tr"><td class="k">CharacterData.Antiquarian.Effect.GainBoxOrShelf</td><td class="en">Randomly gain one of [JewelleryBox] or [Bookshelf]</td><td class="zh">随机获得 [JewelleryBox] 或 [Bookshelf] 中的一个</td></tr>
+<tr class="tr"><td class="k">CharacterData.Antiquarian.Effect.GainChest</td><td class="en">Gain an [Heirloom] chest which only contains [Uncommon] or better</td><td class="zh">获得一个 [Heirloom] 宝箱， 仅含 [Uncommon] 或更高稀有度物品</td></tr>
+<tr class="tr"><td class="k">CharacterData.Antiquarian.Effect.GainTomeOrGem</td><td class="en">Gain a random [Tome] or [Gem]</td><td class="zh">获得一个随机 [Tome] 或 [Gem]</td></tr>
+<tr class="tr"><td class="k">CharacterData.Artist.Effect.GainPaint</td><td class="en">Gain a random paint [BuildingSupply]</td><td class="zh">获得一个随机 涂料 [BuildingUpgrade]</td></tr>
+<tr class="tr"><td class="k">CharacterData.Artist.Effect.GainSlot</td><td class="en">Gain an extra [Consumable] slot</td><td class="zh">获得一个额外 [Consumable] 栏位</td></tr>
+<tr class="tr"><td class="k">CharacterData.Druid.Effect.NatureIsSacred</td><td class="en">All [Nature] is also considered [Sacred]</td><td class="zh">所有 [Nature] 同时视为 [Sacred]</td></tr>
+<tr class="tr"><td class="k">CharacterData.Effect.BasicMult</td><td class="en">[Category1] and [Category2] [CouncilGenericMult]</td><td class="zh">[Category1] 和 [Category2] 获得 [CouncilGenericMult]</td></tr>
+<tr class="tr"><td class="k">CharacterData.Effect.Pack.Both</td><td class="en">Get a free [Blueprint] pack containing [Category1] and [Category2]</td><td class="zh">免费获得一个包含 [Category1] 和 [Category2] 的 [Blueprint] 卡包</td></tr>
+<tr class="tr"><td class="k">CharacterData.Effect.Pack.One</td><td class="en">Get a free [Blueprint] pack containing [Category1]</td><td class="zh">免费获得一个包含 [Category1] 的 [Blueprint] 卡包</td></tr>
+<tr class="tr"><td class="k">CharacterData.Farmer.Effect.Harvest</td><td class="en">Harvest all [Crop] on the map, {transforming} them into empty fields</td><td class="zh">收获地图上所有 [Crop] ，将其{转化}为空田地</td></tr>
+<tr class="tr"><td class="k">CharacterData.Farmer.Effect.Heirloom</td><td class="en">Gain a [Scythe] [Heirloom]</td><td class="zh">获得一个 [Scythe] [Heirloom]</td></tr>
+<tr class="tr"><td class="k">CharacterData.Farmer.Effect.IrrigationBlueprint</td><td class="en">Gain a [Reservoir] [Blueprint]</td><td class="zh">获得一个 [Reservoir] [Blueprint]</td></tr>
+<tr class="tr"><td class="k">CharacterData.Fool.Effect.Heirloom</td><td class="en">Gain a [JesterHat] [Heirloom]</td><td class="zh">获得一个 [JesterHat] [Heirloom]</td></tr>
+<tr class="tr"><td class="k">CharacterData.Inventor.Effect.Mult</td><td class="en">When an [Engineering] is created, give [Adjacent] buildings [InventorMultParam]</td><td class="zh">建造 [Engineering] 时， [Adjacent] 建筑 获得 [InventorMultParam]</td></tr>
+<tr class="tr"><td class="k">CharacterData.Inventor.Effect.Reroll</td><td class="en">When a building [InRange] of [Provisioner] triggers, it has a [InventorPercentageChance] chance to gain [InventorRerollCount]</td><td class="zh">当 [Provisioner] 的 [InRange] 有建筑触发时， 有 [InventorPercentageChance] 的概率 获得 [InventorRerollCount]</td></tr>
+<tr class="tr"><td class="k">CharacterData.Merchant.Effect.GainGold</td><td class="en">Gain [CouncilGenericMoney]</td><td class="zh">获得 [CouncilGenericMoney]</td></tr>
+<tr class="tr"><td class="k">CharacterData.Merchant.Effect.ShopCheaper</td><td class="en">Items and packs in the shop are [MerchantPercentageChance] cheaper</td><td class="zh">商店中的物品和卡 包价格降低 [MerchantPercentageChance]</td></tr>
+<tr class="tr"><td class="k">CharacterData.Merchant.Effect.TradersGiveGold</td><td class="en">[Trader] have a [MerchantPercentageChance] to give [MerchantMoneyCount] whenever triggered</td><td class="zh">[Trader] 每次触发时，有 [MerchantPercentageChance] 概率获得 [MerchantMoneyCount]</td></tr>
+<tr class="tr"><td class="k">CharacterData.Politician.Effect.ChangeGuilds</td><td class="en">Reselect guilds mid-run</td><td class="zh">可在本局途中重新 选择公会</td></tr>
+<tr class="tr"><td class="k">CharacterData.Politician.Effect.OtherVote</td><td class="en">Gain a random [CouncilVote] for a different [CouncilMember]</td><td class="zh">获得一张随机 [CouncilVote] ， 对应另一名 [CouncilMember]</td></tr>
+<tr class="tr"><td class="k">CharacterData.Ranger.Effect.FishingHuntMult</td><td class="en">If a [Husbandry] and a [Fishing] are [Adjacent] both gain [RangerMultParam]</td><td class="zh">若 [Husbandry] 与 [Fishing] 彼此 [Adjacent] ，两者都获得 [RangerMultParam]</td></tr>
+<tr class="tr"><td class="k">CharacterData.Ranger.Effect.TreesHunt</td><td class="en">[Trees] is considered [Husbandry]</td><td class="zh">[Trees] 视为 [Husbandry]</td></tr>
+<tr class="tr"><td class="k">CharacterData.Sensei.Effect.Range</td><td class="en">[Training] passively have [SenseiRangeModificationParam] [Range] for every 3 [Adjacent] [Nature]</td><td class="zh">[Training] 每与 3 处 [Nature] [Adjacent] ， 被动获得 [SenseiRangeModificationParam] [Range]</td></tr>
+<tr class="tr"><td class="k">CharacterData.Sensei.Effect.Reroll</td><td class="en">Whenever [Woodworking] is created, it gains [SenseiRemoveCount]</td><td class="zh">每当建造 [Woodworking] 时，使其获得 [SenseiRemoveCount]</td></tr>
+<tr class="tr"><td class="k">CharacterData.Spymaster.Effect.AddGuild</td><td class="en">Add the secret [Rogues] guild buildings to this run&#x27;s pool. Unlocks the [Spymaster] permanently</td><td class="zh">将秘密的 [Rogues] 公会建筑加入本局 建筑池， 并永久解锁 [Spymaster]</td></tr>
+<tr class="tr"><td class="k">CharacterData.Spymaster.Effect.Bribery</td><td class="en">Enables bribery, which allows instant completion of milestones for [Gold]</td><td class="zh">解锁贿赂：可花费 [Gold] 立即完成里程碑</td></tr>
+<tr class="tr"><td class="k">CharacterData.Spymaster.Effect.CouncilVote</td><td class="en">Gain a random [CouncilVote] of another existing council member</td><td class="zh">为另一名已在议会 中的议员随机获得 1 张 [CouncilVote]</td></tr>
+<tr class="tr"><td class="k">CharacterData.Tycoon.Effect.Landlord</td><td class="en">Evict all [Residence] on the map (unless they are also [Fortification] ), {transforming} them into [HousePlot] @Gain [TycoonMoneyCount] for each</td><td class="zh">驱逐地图上所有 [Residence] ， 将其 {转化} 为 [HousePlot] ， 同时属于 [Fortification] 的除外 @ 每处获得 [TycoonMoneyCount]</td></tr>
+<tr class="tr"><td class="k">CharacterData.Tycoon.Effect.NatureIsResource</td><td class="en">All [Nature] is also considered [Resource]</td><td class="zh">所有 [Nature] 同时视为 [Resource]</td></tr>
+<tr class="tr"><td class="k">CharacterData.Witch.Effect.HazardAdj</td><td class="en">[Healing] have [WitchRangeModificationParam] [Range] - If they are [InRange] of [Hazard] they have [WitchBaseScore] instead</td><td class="zh">[Healing] 获得 [WitchRangeModificationParam] [Range] ； 若处于 [Hazard] 的 [InRange] ， 则改为 [WitchBaseScore]</td></tr>
+<tr class="tr"><td class="k">CharacterData.Witch.Effect.HazardDouble</td><td class="en">If a building is {triggered} by something else while [InRange] of [Hazard] - it is {triggered} again</td><td class="zh">若建筑位于 [Hazard] 的 [InRange] 内并被其他效果{触 发}， 则再次{触发}一次</td></tr>
+<tr class="tr"><td class="k">CharacterData.Wizard.Effect.AddGuild</td><td class="en">Add the secret [Arcane] guild buildings to this run&#x27;s pool. Unlocks the [Wizard] permanently</td><td class="zh">将隐藏的 [Arcane] 公会建筑 加入本局建筑池， 并永久解锁 [Wizard]</td></tr>
+<tr class="tr"><td class="k">CharacterData.Wizard.Effect.Potion</td><td class="en">Gain a random [Potion]</td><td class="zh">获得一个随机 [Potion]</td></tr>
+<tr class="tr"><td class="k">CharacterData.Wizard.Effect.PurplePaint</td><td class="en">Add [BsPurplePaint] to this run&#x27;s [BuildingUpgrade] pool</td><td class="zh">将 [BsPurplePaint] 加入本局 [BuildingUpgrade] 池</td></tr>
+<tr class="tr"><td class="k">CouncilCharacter.Admiral.Description</td><td class="en">The proud [Admiral] joins the council. His bold strategies favour [Ship] and [Fortification]</td><td class="zh">自豪的 [Admiral] 加入议会。 他的大胆战略 有利于 [Ship] 和 [Fortification]</td></tr>
+<tr class="tr"><td class="k">CouncilCharacter.Admiral.Name</td><td class="en">Admiral</td><td class="zh">海军上将</td></tr>
+<tr class="tr"><td class="k">CouncilCharacter.Antiquarian.Description</td><td class="en">The discerning [Antiquarian] joins the council. She sources [Heirlooms]  [Gem] and [Tome]</td><td class="zh">眼光独到的 [Antiquarian] 加入议会。 她搜集 [Heirloom] 、 [Gem] 和 [Tome]</td></tr>
+<tr class="tr"><td class="k">CouncilCharacter.Antiquarian.Name</td><td class="en">Antiquarian</td><td class="zh">古物学家</td></tr>
+<tr class="tr"><td class="k">CouncilCharacter.Artist.Description</td><td class="en">The inspired [Artist] joins the council. She provides paints and benefits [Consumable]</td><td class="zh">才华横溢的 [Artist] 加入议会。 她会提供涂料， 并强化 [Consumable]</td></tr>
+<tr class="tr"><td class="k">CouncilCharacter.Artist.Name</td><td class="en">Artist</td><td class="zh">艺术家</td></tr>
+<tr class="tr"><td class="k">CouncilCharacter.Druid.Description</td><td class="en">The hermetic [Druid] joins the council. Drawing from mysterious powers, he improves [Nature] and [Sacred]</td><td class="zh">隐居的 [Druid] 加入议会。 他借助神秘力量强 化 [Nature] 与 [Sacred]</td></tr>
+<tr class="tr"><td class="k">CouncilCharacter.Druid.Name</td><td class="en">Druid</td><td class="zh">德鲁伊</td></tr>
+<tr class="tr"><td class="k">CouncilCharacter.Farmer.Description</td><td class="en">The green-thumbed [Farmer] joins the council. Her intricate knowledge benefits [Farm] and [Irrigator]</td><td class="zh">经验丰富的 [Farmer] 加入议会。 她的专业知识强化 [Farm] 与 [Irrigator]</td></tr>
+<tr class="tr"><td class="k">CouncilCharacter.Farmer.Name</td><td class="en">Cultivator</td><td class="zh">农艺师</td></tr>
+<tr class="tr"><td class="k">CouncilCharacter.Fool.Description</td><td class="en">The droll [Fool] joins the council. Despite his antics, he benefits [Entertainment] and [Stall]</td><td class="zh">诙谐的 [Fool] 加入议会。 虽然举止滑稽， 却能强化 [Entertainment] 与 [Stall]</td></tr>
+<tr class="tr"><td class="k">CouncilCharacter.Fool.Name</td><td class="en">Fool</td><td class="zh">弄臣</td></tr>
+<tr class="tr"><td class="k">CouncilCharacter.Inventor.Description</td><td class="en">The chaotic [Inventor] joins the council. His experiments benefit [Engineering] and [Provisioner]</td><td class="zh">疯狂的 [Inventor] 加入议会。 他的实验强化 [Engineering] 与 [Provisioner]</td></tr>
+<tr class="tr"><td class="k">CouncilCharacter.Inventor.Name</td><td class="en">Inventor</td><td class="zh">发明家</td></tr>
+<tr class="tr"><td class="k">CouncilCharacter.Merchant.Description</td><td class="en">The shrewd [Merchant] joins the council. His avaricious schemes focus on [Trader] and generating [Gold]</td><td class="zh">精明的 [Merchant] 加入议会。 他的逐利手段专注 于 [Trader] 和赚取 [Gold]</td></tr>
+<tr class="tr"><td class="k">CouncilCharacter.Merchant.Name</td><td class="en">Merchant</td><td class="zh">商人</td></tr>
+<tr class="tr"><td class="k">CouncilCharacter.Politician.Description</td><td class="en">The astute [Politician] joins the council. His ploys benefit [Monument] and [Luxury] and even allow you to change guilds mid-run</td><td class="zh">老练的 [Politician] 加入议会。 他的谋略强化 [Monument] 与 [Luxury] ， 甚至允许你在本局 途中更换公会</td></tr>
+<tr class="tr"><td class="k">CouncilCharacter.Politician.Name</td><td class="en">Politician</td><td class="zh">政客</td></tr>
+<tr class="tr"><td class="k">CouncilCharacter.Ranger.Description</td><td class="en">The solitary [Ranger] joins the council. She has returned from the wilds to oversee [Husbandry] and [Fishing]</td><td class="zh">独行的 [Ranger] 加入议会。 她从荒野归来， 负责强化 [Husbandry] 与 [Fishing]</td></tr>
+<tr class="tr"><td class="k">CouncilCharacter.Ranger.Name</td><td class="en">Ranger</td><td class="zh">游侠</td></tr>
+<tr class="tr"><td class="k">CouncilCharacter.Sensei.Description</td><td class="en">The wise [Sensei] joins the council. His discipline supports both [Training] and [Woodworking]</td><td class="zh">睿智的 [Sensei] 加入议会。 他的修行同时强化 [Training] 与 [Woodworking]</td></tr>
+<tr class="tr"><td class="k">CouncilCharacter.Sensei.Name</td><td class="en">Warrior</td><td class="zh">武士</td></tr>
+<tr class="tr"><td class="k">CouncilCharacter.Spymaster.Description</td><td class="en">The cunning [Spymaster] joins the council. She enables bribery and provides access to the [Rogues] guild </td><td class="zh">狡猾的 [Spymaster] 加入议会。 她解锁贿赂， 并允许你使用 [Rogues] 公会 </td></tr>
+<tr class="tr"><td class="k">CouncilCharacter.Spymaster.Name</td><td class="en">Spymaster</td><td class="zh">间谍大师</td></tr>
+<tr class="tr"><td class="k">CouncilCharacter.Tycoon.Description</td><td class="en">The ruthless [Tycoon] joins the council. He has a stranglehold on [Manufacturer] and [Residence]</td><td class="zh">冷酷的 [Tycoon] 加入议会。 他牢牢掌控 [Manufacturer] 与 [Residence]</td></tr>
+<tr class="tr"><td class="k">CouncilCharacter.Tycoon.Name</td><td class="en">Tycoon</td><td class="zh">大亨</td></tr>
+<tr class="tr"><td class="k">CouncilCharacter.Witch.Description</td><td class="en">The occult [Witch] joins the council. Her ministrations benefit [Arcane] and [Healing] and she is not afraid of [Hazard]</td><td class="zh">神秘的 [Witch] 加入议会。 她的秘术强化 [Arcane] 与 [Healing] ，并且无惧 [Hazard]</td></tr>
+<tr class="tr"><td class="k">CouncilCharacter.Witch.Name</td><td class="en">Witch</td><td class="zh">女巫</td></tr>
+<tr class="tr"><td class="k">CouncilCharacter.Wizard.Description</td><td class="en">The mystical [Wizard] joins the council. He creates [Potion] and gives you access to the [Arcane] guild</td><td class="zh">神秘莫测的 [Wizard] 加入议会。他会制造 [Potion] ，并让你解锁 [Arcane] 公会</td></tr>
+<tr class="tr"><td class="k">CouncilCharacter.Wizard.Name</td><td class="en">Wizard</td><td class="zh">巫师</td></tr>
+<tr class="tr"><td class="k">CouncilVote.FavourAdmiral.Description</td><td class="en">Add a [CouncilVote] for the [Admiral]</td><td class="zh">为 [Admiral] 增加 1 张 [CouncilVote]</td></tr>
+<tr class="tr"><td class="k">CouncilVote.FavourAdmiral.Name</td><td class="en">Admiral Vote</td><td class="zh">海军上将选票</td></tr>
+<tr class="tr"><td class="k">CouncilVote.FavourAntiquarian.Description</td><td class="en">Add a [CouncilVote] for the [Antiquarian]</td><td class="zh">为 [Antiquarian] 增加 1 张 [CouncilVote]</td></tr>
+<tr class="tr"><td class="k">CouncilVote.FavourAntiquarian.Name</td><td class="en">Antiquarian Vote</td><td class="zh">古物学家选票</td></tr>
+<tr class="tr"><td class="k">CouncilVote.FavourArtist.Description</td><td class="en">Add a [CouncilVote] for the [Artist]</td><td class="zh">为 [Artist] 增加一张 [CouncilVote]</td></tr>
+<tr class="tr"><td class="k">CouncilVote.FavourArtist.Name</td><td class="en">Artist Vote</td><td class="zh">艺术家选票</td></tr>
+<tr class="tr"><td class="k">CouncilVote.FavourDruid.Description</td><td class="en">Add a [CouncilVote] for the [Druid]</td><td class="zh">为 [Druid] 增加 1 张 [CouncilVote]</td></tr>
+<tr class="tr"><td class="k">CouncilVote.FavourDruid.Name</td><td class="en">Druid Vote</td><td class="zh">德鲁伊选票</td></tr>
+<tr class="tr"><td class="k">CouncilVote.FavourFarmer.Description</td><td class="en">Add a [CouncilVote] for the [Farmer]</td><td class="zh">为 [Farmer] 增加一张 [CouncilVote]</td></tr>
+<tr class="tr"><td class="k">CouncilVote.FavourFarmer.Name</td><td class="en">Cultivator Vote</td><td class="zh">农艺师选票</td></tr>
+<tr class="tr"><td class="k">CouncilVote.FavourFool.Description</td><td class="en">Add a [CouncilVote] for the [Fool]</td><td class="zh">为 [Fool] 增加 1 张 [CouncilVote]</td></tr>
+<tr class="tr"><td class="k">CouncilVote.FavourFool.Name</td><td class="en">Fool Vote</td><td class="zh">弄臣选票</td></tr>
+<tr class="tr"><td class="k">CouncilVote.FavourInventor.Description</td><td class="en">Add a [CouncilVote] for the [Inventor]</td><td class="zh">为 [Inventor] 增加 1 张 [CouncilVote]</td></tr>
+<tr class="tr"><td class="k">CouncilVote.FavourInventor.Name</td><td class="en">Inventor Vote</td><td class="zh">发明家选票</td></tr>
+<tr class="tr"><td class="k">CouncilVote.FavourMerchant.Description</td><td class="en">Add a [CouncilVote] for the [Merchant]</td><td class="zh">为 [Merchant] 增加 1 张 [CouncilVote]</td></tr>
+<tr class="tr"><td class="k">CouncilVote.FavourMerchant.Name</td><td class="en">Merchant Vote</td><td class="zh">商人选票</td></tr>
+<tr class="tr"><td class="k">CouncilVote.FavourPolitician.Description</td><td class="en">Add a [CouncilVote] for the [Politician]</td><td class="zh">为 [Politician] 增加一张 [CouncilVote]</td></tr>
+<tr class="tr"><td class="k">CouncilVote.FavourPolitician.Name</td><td class="en">Politician Vote</td><td class="zh">政客选票</td></tr>
+<tr class="tr"><td class="k">CouncilVote.FavourRanger.Description</td><td class="en">Add a [CouncilVote] for the [Ranger]</td><td class="zh">为 [Ranger] 增加一张 [CouncilVote]</td></tr>
+<tr class="tr"><td class="k">CouncilVote.FavourRanger.Name</td><td class="en">Ranger Vote</td><td class="zh">游侠选票</td></tr>
+<tr class="tr"><td class="k">CouncilVote.FavourSensei.Description</td><td class="en">Add a [CouncilVote] for the [Sensei]</td><td class="zh">为 [Sensei] 增加一张 [CouncilVote]</td></tr>
+<tr class="tr"><td class="k">CouncilVote.FavourSensei.Name</td><td class="en">Warrior Vote</td><td class="zh">武士选票</td></tr>
+<tr class="tr"><td class="k">CouncilVote.FavourSpymaster.Description</td><td class="en">Add a [CouncilVote] for the [Spymaster]</td><td class="zh">为 [Spymaster] 增加 1 张 [CouncilVote]</td></tr>
+<tr class="tr"><td class="k">CouncilVote.FavourSpymaster.Name</td><td class="en">Spymaster Vote</td><td class="zh">间谍大师选票</td></tr>
+<tr class="tr"><td class="k">CouncilVote.FavourTycoon.Description</td><td class="en">Add a [CouncilVote] for the [Tycoon]</td><td class="zh">为 [Tycoon] 增加一张 [CouncilVote]</td></tr>
+<tr class="tr"><td class="k">CouncilVote.FavourTycoon.Name</td><td class="en">Tycoon Vote</td><td class="zh">大亨选票</td></tr>
+<tr class="tr"><td class="k">CouncilVote.FavourWitch.Description</td><td class="en">Add a [CouncilVote] for the [Witch]</td><td class="zh">为 [Witch] 增加 1 张 [CouncilVote]</td></tr>
+<tr class="tr"><td class="k">CouncilVote.FavourWitch.Name</td><td class="en">Witch Vote</td><td class="zh">女巫选票</td></tr>
+<tr class="tr"><td class="k">CouncilVote.FavourWizard.Description</td><td class="en">Add a [CouncilVote] for the [Wizard]</td><td class="zh">为 [Wizard] 增加一张 [CouncilVote]</td></tr>
+<tr class="tr"><td class="k">CouncilVote.FavourWizard.Name</td><td class="en">Wizard Vote</td><td class="zh">巫师选票</td></tr>
+<tr class="tr"><td class="k">GameItemType.BlueprintPack.Common.Name</td><td class="en">Common Blueprint Satchel</td><td class="zh">普通蓝图包</td></tr>
+<tr class="tr"><td class="k">GameItemType.BlueprintPack.Masterwork.Name</td><td class="en">Masterwork Blueprint Satchel</td><td class="zh">杰作蓝图包</td></tr>
+<tr class="tr"><td class="k">GameItemType.BlueprintPack.Rare.Name</td><td class="en">Rare Blueprint Satchel</td><td class="zh">稀有蓝图包</td></tr>
+<tr class="tr"><td class="k">GameItemType.BlueprintPack.Uncommon.Name</td><td class="en">Uncommon Blueprint Satchel</td><td class="zh">罕见蓝图包</td></tr>
+<tr class="tr"><td class="k">GameItemType.Booster.Name</td><td class="en">Pack</td><td class="zh">卡包</td></tr>
+<tr class="tr"><td class="k">GameItemType.CouncilMember.Name</td><td class="en">Council Member</td><td class="zh">议员</td></tr>
+<tr class="tr"><td class="k">GameItemType.LargeBlueprintPack.Name</td><td class="en">Large Blueprint Satchel</td><td class="zh">大型蓝图包</td></tr>
+<tr class="tr"><td class="k">GameItemType.LargeBuildingSuppliesPack.Name</td><td class="en">Large Pile of Materials</td><td class="zh">大型材料堆</td></tr>
+<tr class="tr"><td class="k">GameItemType.LargeFavourPack.Name</td><td class="en">Large Voting Ballot</td><td class="zh">大型选票包</td></tr>
+<tr class="tr"><td class="k">GameItemType.LargeHeirloomPack.Name</td><td class="en">Large Heirloom Chest</td><td class="zh">大型传家宝箱</td></tr>
+<tr class="tr"><td class="k">GameItemType.LargeSpellPack.Name</td><td class="en">Large Potion Bag</td><td class="zh">大型药剂包</td></tr>
+<tr class="tr"><td class="k">GameItemType.SmallBlueprintPack.Name</td><td class="en">Small Blueprint Satchel</td><td class="zh">小型蓝图包</td></tr>
+<tr class="tr"><td class="k">GameItemType.SmallBuildingSuppliesPack.Name</td><td class="en">Small Pile of Materials</td><td class="zh">小型材料堆</td></tr>
+<tr class="tr"><td class="k">GameItemType.SmallFavourPack.Name</td><td class="en">Small Voting Ballot</td><td class="zh">小型选票包</td></tr>
+<tr class="tr"><td class="k">GameItemType.SmallHeirloomPack.Name</td><td class="en">Small Heirloom Chest</td><td class="zh">小型传家宝箱</td></tr>
+<tr class="tr"><td class="k">GameItemType.SmallSpellPack.Name</td><td class="en">Small Potion Bag</td><td class="zh">小型药剂包</td></tr>
+<tr class="tr"><td class="k">GuildCombo.AgriCivic</td><td class="en">Crofter&#x27;s Collective</td><td class="zh">佃农合作社</td></tr>
+<tr class="tr"><td class="k">GuildCombo.AgriCommercial</td><td class="en">Cash Croppers</td><td class="zh">经济作物农</td></tr>
+<tr class="tr"><td class="k">GuildCombo.AgriIndustrial</td><td class="en">Produce Processors</td><td class="zh">农产加工商</td></tr>
+<tr class="tr"><td class="k">GuildCombo.AgriMaritime</td><td class="en">Coastal Cultivators</td><td class="zh">沿海耕作者</td></tr>
+<tr class="tr"><td class="k">GuildCombo.AgriMartial</td><td class="en">Quartermasters</td><td class="zh">军需官</td></tr>
+<tr class="tr"><td class="k">GuildCombo.CivicCommercial</td><td class="en">Merchants</td><td class="zh">商人协会</td></tr>
+<tr class="tr"><td class="k">GuildCombo.CivicIndustrial</td><td class="en">Unionists</td><td class="zh">工会成员</td></tr>
+<tr class="tr"><td class="k">GuildCombo.CivicMaritime</td><td class="en">Harbourmasters</td><td class="zh">港务长</td></tr>
+<tr class="tr"><td class="k">GuildCombo.CommercialIndustrial</td><td class="en">Merchandisers</td><td class="zh">经销商</td></tr>
+<tr class="tr"><td class="k">GuildCombo.CommercialMaritime</td><td class="en">Merchant Marine</td><td class="zh">商船队</td></tr>
+<tr class="tr"><td class="k">GuildCombo.FrontierAgri</td><td class="en">Fieldwatchers</td><td class="zh">田野守望者</td></tr>
+<tr class="tr"><td class="k">GuildCombo.FrontierCivic</td><td class="en">Pioneers</td><td class="zh">拓荒者</td></tr>
+<tr class="tr"><td class="k">GuildCombo.FrontierCommercial</td><td class="en">Prospectors</td><td class="zh">勘探者</td></tr>
+<tr class="tr"><td class="k">GuildCombo.FrontierIndustrial</td><td class="en">Lumberjacks</td><td class="zh">伐木工</td></tr>
+<tr class="tr"><td class="k">GuildCombo.FrontierMaritime</td><td class="en">Shoreward Rangers</td><td class="zh">沿岸游侠团</td></tr>
+<tr class="tr"><td class="k">GuildCombo.FrontierMartial</td><td class="en">3rd Legion Sentries</td><td class="zh">第三军团哨兵</td></tr>
+<tr class="tr"><td class="k">GuildCombo.MaritimeIndustrial</td><td class="en">Riggers</td><td class="zh">索具工</td></tr>
+<tr class="tr"><td class="k">GuildCombo.MartialCivic</td><td class="en">Court Guards</td><td class="zh">宫廷卫队</td></tr>
+<tr class="tr"><td class="k">GuildCombo.MartialCommercial</td><td class="en">Mercenaries</td><td class="zh">佣兵</td></tr>
+<tr class="tr"><td class="k">GuildCombo.MartialIndustrial</td><td class="en">Ironsmiths</td><td class="zh">铁匠行会</td></tr>
+<tr class="tr"><td class="k">GuildCombo.MartialMaritime</td><td class="en">Naval Officers</td><td class="zh">海军军官</td></tr>
+<tr class="tr"><td class="k">Heirloom.Abacus.Description</td><td class="en">Every time a building or heirloom earns [Gold] gain [CategoryScoreLuxury] for each [Luxury] on the map</td><td class="zh">每当建筑或传家宝 获得 [Gold] 时， 地图上每有一座 [Luxury] ， 获得 [CategoryScoreLuxury]</td></tr>
+<tr class="tr"><td class="k">Heirloom.Abacus.Name</td><td class="en">Sky Blue Diamond</td><td class="zh">天蓝钻石</td></tr>
+<tr class="tr"><td class="k">Heirloom.Alembic.Description</td><td class="en">Whenever you would gain [Gold] from a [Heirloom] or building - instead give a random [TargetCategory1] half as much [Mult]</td><td class="zh">原本将从 [Heirloom] 或建筑 获得 [Gold] 时， 改为使一座随机 [TargetCategory1] 获得该数值一半的 [Mult]</td></tr>
+<tr class="tr"><td class="k">Heirloom.Alembic.Name</td><td class="en">Alembic</td><td class="zh">蒸馏器</td></tr>
+<tr class="tr"><td class="k">Heirloom.Altar.Description</td><td class="en">When a [Common] is created [InRange] of a [Sacred] building, it has a [PercentageChance] chance to gain [MoneyCount] </td><td class="zh">在 [Sacred] 建筑的 [InRange] 建造 [Common] 建筑时， 有 [PercentageChance] 的概率 获得 [MoneyCount] </td></tr>
+<tr class="tr"><td class="k">Heirloom.Altar.Name</td><td class="en">Altar</td><td class="zh">祭坛</td></tr>
+<tr class="tr"><td class="k">Heirloom.AnimalFeedBag.Description</td><td class="en">Whenever a [Crop] transforms, give [Husbandry] [Adjacent] to it [MultParam]</td><td class="zh">每当 [Crop] 转化时， 使与其 [Adjacent] 的 [Husbandry] 获得 [MultParam]</td></tr>
+<tr class="tr"><td class="k">Heirloom.AnimalFeedBag.Name</td><td class="en">Grain Cereal</td><td class="zh">谷物麦片</td></tr>
+<tr class="tr"><td class="k">Heirloom.Arbalest.Description</td><td class="en">[Ballista] rotate and point to an additional target whenever they trigger</td><td class="zh">[Ballista] 每次触发时， 额外旋转一次 并瞄准一个目标</td></tr>
+<tr class="tr"><td class="k">Heirloom.Arbalest.Name</td><td class="en">Arbalest</td><td class="zh">重弩</td></tr>
+<tr class="tr"><td class="k">Heirloom.ArchitecturalCodes.Description</td><td class="en">The next [Cooldown] [Civic] buildings have no [Range] placement restrictions</td><td class="zh">接下来放置的 [Cooldown] 座 [Civic] 建筑 不受 [Range] 放置限制</td></tr>
+<tr class="tr"><td class="k">Heirloom.ArchitecturalCodes.Name</td><td class="en">Building Codes</td><td class="zh">建筑规范</td></tr>
+<tr class="tr"><td class="k">Heirloom.ArchmageStaff.Description</td><td class="en">{Every [Cooldown] weeks:} {Trigger} all buildings on the map corresponding to all your held [Blueprint]</td><td class="zh">{每 [Cooldown] 周：} {触发} 地图上所有 与手中 [Blueprint] 对应的建筑</td></tr>
+<tr class="tr"><td class="k">Heirloom.ArchmageStaff.Name</td><td class="en">Archmage&#x27;s Staff</td><td class="zh">大法师之杖</td></tr>
+<tr class="tr"><td class="k">Heirloom.Axe.Description</td><td class="en">[Woodcutter] and [Forester] affect an additional target</td><td class="zh">[Woodcutter] 和 [Forester] 额外影响 1 个目标</td></tr>
+<tr class="tr"><td class="k">Heirloom.Axe.Name</td><td class="en">Lumber Axe</td><td class="zh">伐木斧</td></tr>
+<tr class="tr"><td class="k">Heirloom.BaitHook.Description</td><td class="en">Whenever [Nature] is created [InRange] of a [Fisher], give the [Fisher] [MultParam]</td><td class="zh">每当 [Fisher] 的 [InRange] 生成 [Nature] ， 该 [Fisher] 获得 [MultParam]</td></tr>
+<tr class="tr"><td class="k">Heirloom.BaitHook.Name</td><td class="en">Baited Hook</td><td class="zh">诱饵钩</td></tr>
+<tr class="tr"><td class="k">Heirloom.Bedroll.Description</td><td class="en">Any building [InRange] of a [Barn] is considered [Residence]</td><td class="zh">[Barn] 的 [InRange] 所有建筑 视为 [Residence]</td></tr>
+<tr class="tr"><td class="k">Heirloom.Bedroll.Name</td><td class="en">Bedrolls</td><td class="zh">铺盖卷</td></tr>
+<tr class="tr"><td class="k">Heirloom.Bonsai.Description</td><td class="en">Buildings passively have [MultParam] for each [Adjacent] [Rocks]</td><td class="zh">建筑每与一处 [Rocks] [Adjacent] ， 被动获得 [MultParam]</td></tr>
+<tr class="tr"><td class="k">Heirloom.Bonsai.Name</td><td class="en">Bonsai</td><td class="zh">盆景</td></tr>
+<tr class="tr"><td class="k">Heirloom.BookAgri.Description</td><td class="en">[Agricultural] buildings passively have [MultParam]</td><td class="zh">[Agricultural] 建筑 被动获得 [MultParam]</td></tr>
+<tr class="tr"><td class="k">Heirloom.BookAgri.Name</td><td class="en">Agricultural Tome</td><td class="zh">农业典籍</td></tr>
+<tr class="tr"><td class="k">Heirloom.BookCivic.Description</td><td class="en">[Civic] buildings passively have [MultParam]</td><td class="zh">[Civic] 建筑被动获得 [MultParam]</td></tr>
+<tr class="tr"><td class="k">Heirloom.BookCivic.Name</td><td class="en">Civic Tome</td><td class="zh">市政典籍</td></tr>
+<tr class="tr"><td class="k">Heirloom.BookCommercial.Description</td><td class="en">[Commercial] buildings passively have [MultParam]</td><td class="zh">[Commercial] 建筑被动获得 [MultParam]</td></tr>
+<tr class="tr"><td class="k">Heirloom.BookCommercial.Name</td><td class="en">Commercial Tome</td><td class="zh">商贸典籍</td></tr>
+<tr class="tr"><td class="k">Heirloom.BookFrontier.Description</td><td class="en">[Frontier] buildings passively have [MultParam]</td><td class="zh">[Frontier] 建筑 被动获得 [MultParam]</td></tr>
+<tr class="tr"><td class="k">Heirloom.BookFrontier.Name</td><td class="en">Frontier Tome</td><td class="zh">边疆典籍</td></tr>
+<tr class="tr"><td class="k">Heirloom.BookIndustrial.Description</td><td class="en">[Industrial] buildings passively have [MultParam]</td><td class="zh">[Industrial] 建筑被动获得 [MultParam]</td></tr>
+<tr class="tr"><td class="k">Heirloom.BookIndustrial.Name</td><td class="en">Industrial Tome</td><td class="zh">工业典籍</td></tr>
+<tr class="tr"><td class="k">Heirloom.BookMarine.Description</td><td class="en">[Marine] buildings passively have [MultParam]</td><td class="zh">[Marine] 建筑被动获得 [MultParam]</td></tr>
+<tr class="tr"><td class="k">Heirloom.BookMarine.Name</td><td class="en">Maritime Tome</td><td class="zh">海事典籍</td></tr>
+<tr class="tr"><td class="k">Heirloom.BookMartial.Description</td><td class="en">[Martial] buildings passively have [MultParam]</td><td class="zh">[Martial] 建筑被动获得 [MultParam]</td></tr>
+<tr class="tr"><td class="k">Heirloom.BookMartial.Name</td><td class="en">Martial Tome</td><td class="zh">军事典籍</td></tr>
+<tr class="tr"><td class="k">Heirloom.BookOfTheSevenGuilds.Description</td><td class="en">{Every [Cooldown] weeks:} gain [BsRainbowPaint] @Passively: [Wild] have [MultParam]</td><td class="zh">{每 [Cooldown] 周：} 获得 [BsRainbowPaint] @ 被动： [Wild] 获得 [MultParam]</td></tr>
+<tr class="tr"><td class="k">Heirloom.BookOfTheSevenGuilds.Name</td><td class="en">Book of the 7 Guilds</td><td class="zh">七公会之书</td></tr>
+<tr class="tr"><td class="k">Heirloom.BookUncommon.Description</td><td class="en">[Uncommon] buildings passively have [MultParam]</td><td class="zh">[Uncommon] 建筑 被动获得 [MultParam]</td></tr>
+<tr class="tr"><td class="k">Heirloom.BookUncommon.Name</td><td class="en">Peculiar Tome</td><td class="zh">奇异典籍</td></tr>
+<tr class="tr"><td class="k">Heirloom.Bookshelf.Description</td><td class="en">Can hold up to 8 [Tome] @[Tome] within [Bookshelf] give an additional [MultParam] @If sold when full, gain a special [Legendary] [Heirloom] [BREAK]Cannot be duplicated</td><td class="zh">最多存放 8 本 [Tome] @ 存放在 [Bookshelf] 内的 [Tome] 额外提供 [MultParam] @ 装满后出售， 获得一件特殊的 [Legendary] [Heirloom] [BREAK] 无法复制</td></tr>
+<tr class="tr"><td class="k">Heirloom.Bookshelf.Name</td><td class="en">Bookshelf</td><td class="zh">书架</td></tr>
+<tr class="tr"><td class="k">Heirloom.Bouquet.Description</td><td class="en">[SunflowerFarm] and [Apiary] have no [Range] placement restriction</td><td class="zh">[SunflowerFarm] 和 [Apiary] 不受 [Range] 放置限制</td></tr>
+<tr class="tr"><td class="k">Heirloom.Bouquet.Name</td><td class="en">Bouquet</td><td class="zh">花束</td></tr>
+<tr class="tr"><td class="k">Heirloom.BrokenClock.Description</td><td class="en">Whenever you skip buildings, give buildings on the map corresponding to the skipped buildings [MultParam]</td><td class="zh">每当跳过建筑， 地图上与其 对应的建筑 获得 [MultParam]</td></tr>
+<tr class="tr"><td class="k">Heirloom.BrokenClock.Name</td><td class="en">Broken Watch</td><td class="zh">坏掉的怀表</td></tr>
+<tr class="tr"><td class="k">Heirloom.BuildersLadder.Description</td><td class="en">Whenever you use a [BuildingUpgrade] also give the target building [MultParam]</td><td class="zh">每当使用 [BuildingUpgrade] 时， 目标建筑额外获得 [MultParam]</td></tr>
+<tr class="tr"><td class="k">Heirloom.BuildersLadder.Name</td><td class="en">Builder&#x27;s Ladder</td><td class="zh">建筑梯</td></tr>
+<tr class="tr"><td class="k">Heirloom.BuildingSupplies.Description</td><td class="en">When sold, gain [BsStatModMult] [BsStatModCooldown] and [BsStatModRange] (must have space) [BREAK]Sells for 0 [Gold]</td><td class="zh">出售时， 获得 [BsStatModMult] 、 [BsStatModCooldown] 和 [BsStatModRange] （需要空栏位） [BREAK] 售价为 0 [Gold]</td></tr>
+<tr class="tr"><td class="k">Heirloom.BuildingSupplies.Name</td><td class="en">Building Supplies</td><td class="zh">建筑材料</td></tr>
+<tr class="tr"><td class="k">Heirloom.Calipers.Description</td><td class="en">Buildings created without being [Adjacent] to any other building gain [MultParam]</td><td class="zh">建造时不与任何 其他建筑 [Adjacent] 的建筑 获得 [MultParam]</td></tr>
+<tr class="tr"><td class="k">Heirloom.Calipers.Name</td><td class="en">Calipers</td><td class="zh">卡尺</td></tr>
+<tr class="tr"><td class="k">Heirloom.CaptainsHat.Description</td><td class="en">[Ship] passively have [MultParam]</td><td class="zh">[Ship] 被动获得 [MultParam]</td></tr>
+<tr class="tr"><td class="k">Heirloom.CaptainsHat.Name</td><td class="en">Captain&#x27;s Hat</td><td class="zh">船长帽</td></tr>
+<tr class="tr"><td class="k">Heirloom.Cauldron.Description</td><td class="en">Whenever you [Dismiss] a building, gain a random [Potion]</td><td class="zh">每当 [Dismiss] 一座建筑， 获得一瓶随机 [Potion]</td></tr>
+<tr class="tr"><td class="k">Heirloom.Cauldron.Name</td><td class="en">Cauldron</td><td class="zh">坩埚</td></tr>
+<tr class="tr"><td class="k">Heirloom.Charcoal.Description</td><td class="en">[Campfire] burn for [ActivationCount] times as long</td><td class="zh">[Campfire] 的燃烧时长 变为原来的 [ActivationCount] 倍</td></tr>
+<tr class="tr"><td class="k">Heirloom.Charcoal.Name</td><td class="en">Charcoal</td><td class="zh">木炭</td></tr>
+<tr class="tr"><td class="k">Heirloom.CheckeredFlag.Description</td><td class="en">The first building created each milestone gains [MultParam]</td><td class="zh">每个里程碑中最先 建造的建筑获得 [MultParam]</td></tr>
+<tr class="tr"><td class="k">Heirloom.CheckeredFlag.Name</td><td class="en">Start Flag</td><td class="zh">开拓旗</td></tr>
+<tr class="tr"><td class="k">Heirloom.ClearanceShovel.Description</td><td class="en">Whenever a building is created from a [Blueprint] - harvest all [Crop] [Adjacent] to it, transforming them back into empty fields</td><td class="zh">每当通过 [Blueprint] 建造建筑时，收获其 [Adjacent] 的所有 [Crop] ， 并将其转化回空田 地</td></tr>
+<tr class="tr"><td class="k">Heirloom.ClearanceShovel.Name</td><td class="en">Clearance Shovel</td><td class="zh">清理铲</td></tr>
+<tr class="tr"><td class="k">Heirloom.Clover.Description</td><td class="en">[Monument] are 3x more likely to be rolled</td><td class="zh">抽取时出现 [Monument] 的概率提高至 3 倍</td></tr>
+<tr class="tr"><td class="k">Heirloom.Clover.Name</td><td class="en">Lucky Clover</td><td class="zh">幸运四叶草</td></tr>
+<tr class="tr"><td class="k">Heirloom.CoinBag.Description</td><td class="en">Gain extra [MoneyCount] per week early every milestone</td><td class="zh">每个里程碑 提前完成时， 每提前一周 额外获得 [MoneyCount]</td></tr>
+<tr class="tr"><td class="k">Heirloom.CoinBag.Name</td><td class="en">Coin Bag</td><td class="zh">钱袋</td></tr>
+<tr class="tr"><td class="k">Heirloom.CoinStack.Description</td><td class="en">Every time you earn [Gold] from a building or [Heirloom] gain an additional [MoneyCount] @While this is equipped, you cannot enter the shop</td><td class="zh">每当建筑或 [Heirloom] 获得 [Gold] 时，额外获得 [MoneyCount] @ 装备此物时无法进 入商店</td></tr>
+<tr class="tr"><td class="k">Heirloom.CoinStack.Name</td><td class="en">Coin Stack</td><td class="zh">钱币堆</td></tr>
+<tr class="tr"><td class="k">Heirloom.CrystalBall.Description</td><td class="en">[BaseScore] building choice every week @[CategoryScorePrimary] weeks each milestone</td><td class="zh">每周建筑选项数 [BaseScore] @ 每个里程碑的 周数 [CategoryScorePrimary]</td></tr>
+<tr class="tr"><td class="k">Heirloom.CrystalBall.Name</td><td class="en">Crystal Ball</td><td class="zh">水晶球</td></tr>
+<tr class="tr"><td class="k">Heirloom.Darkstone.Description</td><td class="en">Every time a [Hazard] triggers, gain [MoneyCount] [RerollCount] and [RemoveCount]</td><td class="zh">每当 [Hazard] 触发时，获得 [MoneyCount] 、 [RerollCount] 和 [RemoveCount]</td></tr>
+<tr class="tr"><td class="k">Heirloom.Darkstone.Name</td><td class="en">Darkstone</td><td class="zh">暗石</td></tr>
+<tr class="tr"><td class="k">Heirloom.DeckOfCards.Description</td><td class="en">Every time you earn [Gold] from a building or [Heirloom] [PercentageChance] chance to gain [RerollCount]</td><td class="zh">每当建筑或 [Heirloom] 获得 [Gold] 时，有 [PercentageChance] 概率获得 [RerollCount]</td></tr>
+<tr class="tr"><td class="k">Heirloom.DeckOfCards.Name</td><td class="en">Deck of Cards</td><td class="zh">纸牌</td></tr>
+<tr class="tr"><td class="k">Heirloom.DeliveryCart.Description</td><td class="en">Any building [InRange] of a [Warehouse] is considered [Trader]</td><td class="zh">[Warehouse] 的 [InRange] 所有建筑 视为 [Trader]</td></tr>
+<tr class="tr"><td class="k">Heirloom.DeliveryCart.Name</td><td class="en">Delivery Cart</td><td class="zh">运货车</td></tr>
+<tr class="tr"><td class="k">Heirloom.Detonator.Description</td><td class="en">You can now build on [Rocks]</td><td class="zh">现在可以在 [Rocks] 上建造</td></tr>
+<tr class="tr"><td class="k">Heirloom.Detonator.Name</td><td class="en">Detonator</td><td class="zh">雷管</td></tr>
+<tr class="tr"><td class="k">Heirloom.DiamondPick.Description</td><td class="en">[Quarry] create [Ore] instead of [Rocks]</td><td class="zh">[Quarry] 改为生成 [Ore] 而不是 [Rocks]</td></tr>
+<tr class="tr"><td class="k">Heirloom.DiamondPick.Name</td><td class="en">Diamond Pick</td><td class="zh">钻石镐</td></tr>
+<tr class="tr"><td class="k">Heirloom.DiamondRing.Description</td><td class="en">Always has a base sell price of [MoneyCount]</td><td class="zh">基础售价始终为 [MoneyCount]</td></tr>
+<tr class="tr"><td class="k">Heirloom.DiamondRing.Name</td><td class="en">Jewelled Ring</td><td class="zh">珠宝戒指</td></tr>
+<tr class="tr"><td class="k">Heirloom.DiceCup.Description</td><td class="en">You may spend [RerollCount] to [Reroll] packs once [BREAK]Does not stack</td><td class="zh">可花费 [RerollCount] 对卡包进行一次 [Reroll] [BREAK] 不可叠加</td></tr>
+<tr class="tr"><td class="k">Heirloom.DiceCup.Name</td><td class="en">Rolling Cup</td><td class="zh">摇骰盅</td></tr>
+<tr class="tr"><td class="k">Heirloom.Disguise.Description</td><td class="en">[TargetCategory1] is also considered to be [TargetCategory2]</td><td class="zh">[TargetCategory1] 同时视为 [TargetCategory2]</td></tr>
+<tr class="tr"><td class="k">Heirloom.Disguise.Name</td><td class="en">Chameleon Statue</td><td class="zh">变色龙雕像</td></tr>
+<tr class="tr"><td class="k">Heirloom.DivingHelmet.Description</td><td class="en">Whenever you create a [FishingBoat] gain a [GemPearl]</td><td class="zh">每建造一艘 [FishingBoat] ， 获得一颗 [GemPearl]</td></tr>
+<tr class="tr"><td class="k">Heirloom.DivingHelmet.Name</td><td class="en">Diving Helmet</td><td class="zh">潜水头盔</td></tr>
+<tr class="tr"><td class="k">Heirloom.DraftingRuler.Description</td><td class="en">Whenever a building is created from a [Blueprint] {trigger} it immediately</td><td class="zh">每当通过 [Blueprint] 建造建筑时， 立即{触发}该建筑</td></tr>
+<tr class="tr"><td class="k">Heirloom.DraftingRuler.Name</td><td class="en">Drafting Ruler</td><td class="zh">制图尺</td></tr>
+<tr class="tr"><td class="k">Heirloom.Dynamite.Description</td><td class="en">When a building is removed, it triggers {on remove} effects twice</td><td class="zh">建筑被移除时， 其 {移除时} 效果 触发两次</td></tr>
+<tr class="tr"><td class="k">Heirloom.Dynamite.Name</td><td class="en">Dynamite</td><td class="zh">炸药</td></tr>
+<tr class="tr"><td class="k">Heirloom.EmptyCage.Description</td><td class="en">Whenever any building scores, [BaseScore] for each empty [Heirloom] slot</td><td class="zh">每当建筑得分， 每个空的 [Heirloom] 栏位 额外提供 [BaseScore]</td></tr>
+<tr class="tr"><td class="k">Heirloom.EmptyCage.Name</td><td class="en">Empty Cage</td><td class="zh">空笼</td></tr>
+<tr class="tr"><td class="k">Heirloom.FawkesMask.Description</td><td class="en">All [Rogues] buildings add score instead of subtracting</td><td class="zh">所有 [Rogues] 建筑改为增加分数， 而不是扣分</td></tr>
+<tr class="tr"><td class="k">Heirloom.FawkesMask.Name</td><td class="en">Fawkes Mask</td><td class="zh">福克斯面具</td></tr>
+<tr class="tr"><td class="k">Heirloom.Fertilizer.Description</td><td class="en">Any building that can be created on [Grass] can also be created on [Sand], and vice versa</td><td class="zh">所有可在 [Grass] 上建造的建筑也可 以在 [Sand] 上建造，反之亦然</td></tr>
+<tr class="tr"><td class="k">Heirloom.Fertilizer.Name</td><td class="en">Fertilizer</td><td class="zh">肥料</td></tr>
+<tr class="tr"><td class="k">Heirloom.FishingNet.Description</td><td class="en">The next [Cooldown] [Marine] buildings have no [Range] placement restrictions</td><td class="zh">接下来放置的 [Cooldown] 座 [Marine] 建筑 不受 [Range] 放置限制</td></tr>
+<tr class="tr"><td class="k">Heirloom.FishingNet.Name</td><td class="en">Fishing Net</td><td class="zh">渔网</td></tr>
+<tr class="tr"><td class="k">Heirloom.FishingRod.Description</td><td class="en">{Every [Cooldown] weeks:} Gain a random [Fishing] [Blueprint] (must have space)</td><td class="zh">{每 [Cooldown] 周：} 获得一张随机 [Fishing] [Blueprint] （需要空栏位）</td></tr>
+<tr class="tr"><td class="k">Heirloom.FishingRod.Name</td><td class="en">Old Rod</td><td class="zh">旧鱼竿</td></tr>
+<tr class="tr"><td class="k">Heirloom.ForemansHammer.Description</td><td class="en">Whenever [CooldownParam]  [Common] buildings are built in a row, gain a random [BuildingUpgrade]</td><td class="zh">每连续建造 [CooldownParam] 座 [Common] 建筑，获得一个随机 [BuildingUpgrade]</td></tr>
+<tr class="tr"><td class="k">Heirloom.ForemansHammer.Name</td><td class="en">Foreman&#x27;s Hammer</td><td class="zh">工头之锤</td></tr>
+<tr class="tr"><td class="k">Heirloom.Furniture.Description</td><td class="en">Every [Cooldown] weeks, each [HouseResidence] on the map gives [MoneyCount] @This cooldown resets whenever a [TaxCollector] triggers</td><td class="zh">每 [Cooldown] 周，地图上的每个 [HouseResidence] 给予 [MoneyCount] @ 每当 [TaxCollector] 触发时， 该冷却时间重置</td></tr>
+<tr class="tr"><td class="k">Heirloom.Furniture.Name</td><td class="en">Furniture</td><td class="zh">家具</td></tr>
+<tr class="tr"><td class="k">Heirloom.Gearwheel.Description</td><td class="en">The next [Cooldown] [Industrial] buildings have no [Range] placement restrictions</td><td class="zh">接下来放置的 [Cooldown] 座 [Industrial] 建筑 不受 [Range] 放置限制</td></tr>
+<tr class="tr"><td class="k">Heirloom.Gearwheel.Name</td><td class="en">Gearwheel</td><td class="zh">齿轮</td></tr>
+<tr class="tr"><td class="k">Heirloom.GemAmethyst.Description</td><td class="en">[BaseScore] whenever a building is triggered</td><td class="zh">每当建筑被触发， 获得 [BaseScore]</td></tr>
+<tr class="tr"><td class="k">Heirloom.GemAmethyst.Name</td><td class="en">Amethyst</td><td class="zh">紫水晶</td></tr>
+<tr class="tr"><td class="k">Heirloom.GemAquamarine.Description</td><td class="en">[BaseScore] whenever you start a milestone</td><td class="zh">每当开始一个里程 碑时， 获得 [BaseScore]</td></tr>
+<tr class="tr"><td class="k">Heirloom.GemAquamarine.Name</td><td class="en">Aquamarine</td><td class="zh">海蓝宝石</td></tr>
+<tr class="tr"><td class="k">Heirloom.GemEmerald.Description</td><td class="en">[BaseScore] whenever you gain a [Reroll]</td><td class="zh">每当获得 [Reroll] 时，获得 [BaseScore]</td></tr>
+<tr class="tr"><td class="k">Heirloom.GemEmerald.Name</td><td class="en">Emerald</td><td class="zh">祖母绿</td></tr>
+<tr class="tr"><td class="k">Heirloom.GemGarnet.Description</td><td class="en">[BaseScore] whenever a building is removed</td><td class="zh">每当建筑被移除， 获得 [BaseScore]</td></tr>
+<tr class="tr"><td class="k">Heirloom.GemGarnet.Name</td><td class="en">Garnet</td><td class="zh">石榴石</td></tr>
+<tr class="tr"><td class="k">Heirloom.GemJasper.Description</td><td class="en">[BaseScore] whenever a building is created</td><td class="zh">每当建造建筑， 获得 [BaseScore]</td></tr>
+<tr class="tr"><td class="k">Heirloom.GemJasper.Name</td><td class="en">Jasper</td><td class="zh">碧玉</td></tr>
+<tr class="tr"><td class="k">Heirloom.GemOnyx.Description</td><td class="en">[BaseScore] whenever you use a [Consumable]</td><td class="zh">每当使用 [Consumable] 时，获得 [BaseScore]</td></tr>
+<tr class="tr"><td class="k">Heirloom.GemOnyx.Name</td><td class="en">Onyx</td><td class="zh">缟玛瑙</td></tr>
+<tr class="tr"><td class="k">Heirloom.GemPearl.Description</td><td class="en">[BaseScore] whenever a building is transformed</td><td class="zh">每当建筑转化， 获得 [BaseScore]</td></tr>
+<tr class="tr"><td class="k">Heirloom.GemPearl.Name</td><td class="en">Pearl</td><td class="zh">珍珠</td></tr>
+<tr class="tr"><td class="k">Heirloom.GemSapphire.Description</td><td class="en">[BaseScore] whenever you [Dismiss] a building</td><td class="zh">每当你 [Dismiss] 一座建筑时，获得 [BaseScore]</td></tr>
+<tr class="tr"><td class="k">Heirloom.GemSapphire.Name</td><td class="en">Sapphire</td><td class="zh">蓝宝石</td></tr>
+<tr class="tr"><td class="k">Heirloom.GemTopaz.Description</td><td class="en">[BaseScore] whenever you earn [Gold]</td><td class="zh">每当获得 [Gold] ， 获得 [BaseScore]</td></tr>
+<tr class="tr"><td class="k">Heirloom.GemTopaz.Name</td><td class="en">Topaz</td><td class="zh">黄玉</td></tr>
+<tr class="tr"><td class="k">Heirloom.Goblet.Description</td><td class="en">When a building transforms, instead of a transformation trigger, it counts as both a removal and a creation trigger</td><td class="zh">当建筑发生转化时， 不再触发“转化”事件， 而是同时视为一次“ 移除”和一次“建造”事 件</td></tr>
+<tr class="tr"><td class="k">Heirloom.Goblet.Name</td><td class="en">Chalice of Revision</td><td class="zh">重铸圣杯</td></tr>
+<tr class="tr"><td class="k">Heirloom.GoldNugget.Description</td><td class="en">Whenever [Ore] is created, it has [PercentageChance] chance to be [GoldOre] instead</td><td class="zh">每当生成 [Ore] 时，有 [PercentageChance] 概率改为生成 [GoldOre]</td></tr>
+<tr class="tr"><td class="k">Heirloom.GoldNugget.Name</td><td class="en">Gold Nugget</td><td class="zh">金块</td></tr>
+<tr class="tr"><td class="k">Heirloom.GoldenEgg.Description</td><td class="en">Whenever a [Neutral] building is created, [BaseScore] to this heirloom&#x27;s sell value</td><td class="zh">每当建造 [Neutral] 建筑时， 使此传家宝的出售 价值增加 [BaseScore]</td></tr>
+<tr class="tr"><td class="k">Heirloom.GoldenEgg.Name</td><td class="en">Golden Egg</td><td class="zh">金蛋</td></tr>
+<tr class="tr"><td class="k">Heirloom.GoldenHorseshoe.Description</td><td class="en">Whenever a milestone is completed, gain [MoneyCount] extra</td><td class="zh">每完成一个里程碑， 额外获得 [MoneyCount]</td></tr>
+<tr class="tr"><td class="k">Heirloom.GoldenHorseshoe.Name</td><td class="en">Golden Horseshoe</td><td class="zh">金马蹄铁</td></tr>
+<tr class="tr"><td class="k">Heirloom.GuildSeal.Description</td><td class="en">The next [Cooldown] [Commercial] buildings have no [Range] placement restrictions</td><td class="zh">接下来放置的 [Cooldown] 座 [Commercial] 建筑 不受 [Range] 放置限制</td></tr>
+<tr class="tr"><td class="k">Heirloom.GuildSeal.Name</td><td class="en">Guild Seal</td><td class="zh">公会印章</td></tr>
+<tr class="tr"><td class="k">Heirloom.Harpoon.Description</td><td class="en">[Martial] buildings [Adjacent] to [Ocean] passively have [MultParam]</td><td class="zh">与 [Ocean] [Adjacent] 的 [Martial] 建筑 被动获得 [MultParam]</td></tr>
+<tr class="tr"><td class="k">Heirloom.Harpoon.Name</td><td class="en">Harpoon</td><td class="zh">鱼叉</td></tr>
+<tr class="tr"><td class="k">Heirloom.Heraldry.Description</td><td class="en">Whenever a building is removed, give other buildings [Adjacent] to it [MultParam]</td><td class="zh">建筑被移除时， 与其 [Adjacent] 的其他建筑 获得 [MultParam]</td></tr>
+<tr class="tr"><td class="k">Heirloom.Heraldry.Name</td><td class="en">Heraldry</td><td class="zh">纹章术</td></tr>
+<tr class="tr"><td class="k">Heirloom.HotelBell.Description</td><td class="en">Buildings [Adjacent] to [LodgingHouse] are considered [Residence]</td><td class="zh">与 [LodgingHouse] [Adjacent] 的建筑 视为 [Residence]</td></tr>
+<tr class="tr"><td class="k">Heirloom.HotelBell.Name</td><td class="en">Front Desk Bell</td><td class="zh">前台铃</td></tr>
+<tr class="tr"><td class="k">Heirloom.Hourglass.Description</td><td class="en">[BaseScore] week per milestone</td><td class="zh">每个里程碑的 周数 [BaseScore]</td></tr>
+<tr class="tr"><td class="k">Heirloom.Hourglass.Name</td><td class="en">Hourglass</td><td class="zh">沙漏</td></tr>
+<tr class="tr"><td class="k">Heirloom.HousingMandate.Description</td><td class="en">When placing [HousePlot], place 1 extra</td><td class="zh">放置 [HousePlot] 时，额外放置 1 个</td></tr>
+<tr class="tr"><td class="k">Heirloom.HousingMandate.Name</td><td class="en">Housing Laws</td><td class="zh">住房法案</td></tr>
+<tr class="tr"><td class="k">Heirloom.HuntingBow.Description</td><td class="en">When a building is created, it triggers {on create} effects twice @Does not apply if a building is triggered after creation</td><td class="zh">建筑建造时， 其 {建造时} 效果 触发两次 @ 不适用于 建造完成后 再次被触发的情况</td></tr>
+<tr class="tr"><td class="k">Heirloom.HuntingBow.Name</td><td class="en">Hunting Bow</td><td class="zh">猎弓</td></tr>
+<tr class="tr"><td class="k">Heirloom.Ingots.Description</td><td class="en">[Gold] gain is affected by [Mult] (max of x10) @All painted buildings passively have [MultParam]</td><td class="zh">获得 [Gold] 会受到 [Mult] 影响（最高 x10） @ 所有已涂装建筑被 动获得 [MultParam]</td></tr>
+<tr class="tr"><td class="k">Heirloom.Ingots.Name</td><td class="en">Ingots</td><td class="zh">金属锭</td></tr>
+<tr class="tr"><td class="k">Heirloom.JarOfHoney.Description</td><td class="en">[Apiary] passively have [RangeModificationParam] [Range] @[Apiary] also passively have  [MultParam] for each [Flowers] [InRange]</td><td class="zh">[Apiary] 被动获得 [RangeModificationParam] [Range] @ 此外， [Apiary] 的 [InRange] 每有一处 [Flowers] ， 被动获得 [MultParam]</td></tr>
+<tr class="tr"><td class="k">Heirloom.JarOfHoney.Name</td><td class="en">Honeypot</td><td class="zh">蜂蜜罐</td></tr>
+<tr class="tr"><td class="k">Heirloom.JesterHat.Description</td><td class="en">When this is sold, gain a copy of another random equipped [Heirloom]</td><td class="zh">出售此物时， 复制另一件随机已 装备 [Heirloom]</td></tr>
+<tr class="tr"><td class="k">Heirloom.JesterHat.Name</td><td class="en">Jester&#x27;s Hat</td><td class="zh">弄臣帽</td></tr>
+<tr class="tr"><td class="k">Heirloom.JewelleryBox.Description</td><td class="en">Can hold up to 8 [Gem] @[Gem] within [JewelleryBox] have [MultParam] @If sold when full, gain a special [Legendary] [Heirloom] [BREAK]Cannot be duplicated</td><td class="zh">最多存放 8 颗 [Gem] @ 存放在 [JewelleryBox] 内的 [Gem] 获得 [MultParam] @ 装满后出售， 获得一件特殊的 [Legendary] [Heirloom] [BREAK] 无法复制</td></tr>
+<tr class="tr"><td class="k">Heirloom.JewelleryBox.Name</td><td class="en">Jewellery Box</td><td class="zh">珠宝盒</td></tr>
+<tr class="tr"><td class="k">Heirloom.LegionStandard.Description</td><td class="en">The next [Cooldown] [Martial] buildings have no [Range] placement restrictions</td><td class="zh">接下来放置的 [Cooldown] 座 [Martial] 建筑 不受 [Range] 放置限制</td></tr>
+<tr class="tr"><td class="k">Heirloom.LegionStandard.Name</td><td class="en">Legion Flag</td><td class="zh">军团旗</td></tr>
+<tr class="tr"><td class="k">Heirloom.LoadedDice.Description</td><td class="en">When sold, gain [RerollCount] [BREAK]Sells for 0 [Gold]</td><td class="zh">出售时， 获得 [RerollCount] [BREAK] 售价为 0 [Gold]</td></tr>
+<tr class="tr"><td class="k">Heirloom.LoadedDice.Name</td><td class="en">Loaded Dice</td><td class="zh">灌铅骰子</td></tr>
+<tr class="tr"><td class="k">Heirloom.LookingGlass.Description</td><td class="en">All buildings passively have [RangeModificationParam] [Range]</td><td class="zh">所有建筑 被动获得 [RangeModificationParam] [Range]</td></tr>
+<tr class="tr"><td class="k">Heirloom.LookingGlass.Name</td><td class="en">Spyglass</td><td class="zh">望远镜</td></tr>
+<tr class="tr"><td class="k">Heirloom.LostCrown.Description</td><td class="en">Has a base sell price of [MoneyCount]
+@When sold, gain a [FavourWizard]</td><td class="zh">基础售价为 [MoneyCount] @ 出售时， 获得一张 [FavourWizard]</td></tr>
+<tr class="tr"><td class="k">Heirloom.LostCrown.Name</td><td class="en">Lost Crown</td><td class="zh">失落王冠</td></tr>
+<tr class="tr"><td class="k">Heirloom.LotteryTicket.Description</td><td class="en">There is always [BaseScore] pack in the shop [BREAK]Does not stack</td><td class="zh">商店始终提供 [BaseScore] 个卡包 [BREAK] 不可叠加</td></tr>
+<tr class="tr"><td class="k">Heirloom.LotteryTicket.Name</td><td class="en">Coupon</td><td class="zh">优惠券</td></tr>
+<tr class="tr"><td class="k">Heirloom.Mace.Description</td><td class="en">Whenever a [TargetCategory1] is removed, {trigger} up to [ActivationCount] random [TargetCategory1]</td><td class="zh">每当 [TargetCategory1] 被移除， {触发} 最多 [ActivationCount] 座随机 [TargetCategory1]</td></tr>
+<tr class="tr"><td class="k">Heirloom.Mace.Name</td><td class="en">Flanged Mace</td><td class="zh">凸缘钉头锤</td></tr>
+<tr class="tr"><td class="k">Heirloom.MarblePillar.Description</td><td class="en">[Statue] will now always give [CouncilVote] of the councillor with the most votes</td><td class="zh">[Statue] 此后只会提供 得票最多的议员 所对应的 [CouncilVote]</td></tr>
+<tr class="tr"><td class="k">Heirloom.MarblePillar.Name</td><td class="en">Marble Pillar</td><td class="zh">大理石柱</td></tr>
+<tr class="tr"><td class="k">Heirloom.MarketProduce.Description</td><td class="en">[Stall] passively have [MultParam] for each other [Adjacent] [Stall]</td><td class="zh">[Stall] 每与一座其他 [Stall] [Adjacent] ， 被动获得 [MultParam]</td></tr>
+<tr class="tr"><td class="k">Heirloom.MarketProduce.Name</td><td class="en">Harvest Basket</td><td class="zh">收获篮</td></tr>
+<tr class="tr"><td class="k">Heirloom.Millstone.Description</td><td class="en">[Common] buildings passively have [MultParam]</td><td class="zh">[Common] 建筑被动获得 [MultParam]</td></tr>
+<tr class="tr"><td class="k">Heirloom.Millstone.Name</td><td class="en">Millstone</td><td class="zh">磨石</td></tr>
+<tr class="tr"><td class="k">Heirloom.Mirror.Description</td><td class="en">Whenever a building is created, there is a [PercentageChance] chance to create a duplicate of it on an [Adjacent] tile</td><td class="zh">每当建造一座建筑 时， 有 [PercentageChance] 概率在一个 [Adjacent] 地块生成它的复制 品</td></tr>
+<tr class="tr"><td class="k">Heirloom.Mirror.Name</td><td class="en">Magic Mirror</td><td class="zh">魔镜</td></tr>
+<tr class="tr"><td class="k">Heirloom.Missive.Description</td><td class="en">When sold, gain [ActivationCount] random [CouncilVote] (must have space) [BREAK]Sells for 0 [Gold]</td><td class="zh">出售时，获得 [ActivationCount] 张随机 [CouncilVote] （需要有空位） [BREAK] 出售价格为 0 [Gold]</td></tr>
+<tr class="tr"><td class="k">Heirloom.Missive.Name</td><td class="en">Missive</td><td class="zh">密函</td></tr>
+<tr class="tr"><td class="k">Heirloom.ModelBridge.Description</td><td class="en">Whenever a [Resource] is created, create a [Plateau] on a random empty [Ocean] or [Shore] tile [Adjacent] to it</td><td class="zh">每当生成 [Resource] 时，在其 [Adjacent] 的随机空闲 [Ocean] 或 [Shore] 地块生成一个 [Plateau]</td></tr>
+<tr class="tr"><td class="k">Heirloom.ModelBridge.Name</td><td class="en">Model Bridge</td><td class="zh">桥梁模型</td></tr>
+<tr class="tr"><td class="k">Heirloom.ModifiedSapling.Description</td><td class="en">Whenever [Engineering] is created, create random empty [Farm] fields on up to [ActivationCount] empty [Adjacent] [Grass] and [Sand] tiles</td><td class="zh">每当建造 [Engineering] 时，最多在 [ActivationCount] 个空闲 [Adjacent] [Grass] 或 [Sand] 地块生成随机空 [Farm] 田地</td></tr>
+<tr class="tr"><td class="k">Heirloom.ModifiedSapling.Name</td><td class="en">Modified Seedling</td><td class="zh">改良幼苗</td></tr>
+<tr class="tr"><td class="k">Heirloom.MortarAndPestle.Description</td><td class="en">The next [Cooldown] [Frontier] buildings have no [Range] placement restrictions</td><td class="zh">接下来放置的 [Cooldown] 座 [Frontier] 建筑 不受 [Range] 放置限制</td></tr>
+<tr class="tr"><td class="k">Heirloom.MortarAndPestle.Name</td><td class="en">Mortar and Pestle</td><td class="zh">研钵与杵</td></tr>
+<tr class="tr"><td class="k">Heirloom.MossyLog.Description</td><td class="en">[Lumber] is [Wild]</td><td class="zh">[Lumber] 为 [Wild]</td></tr>
+<tr class="tr"><td class="k">Heirloom.MossyLog.Name</td><td class="en">Mossy Log</td><td class="zh">苔藓原木</td></tr>
+<tr class="tr"><td class="k">Heirloom.MysteryMeat.Description</td><td class="en">[Husbandry] is considered [Fishing]</td><td class="zh">[Husbandry] 视为 [Fishing]</td></tr>
+<tr class="tr"><td class="k">Heirloom.MysteryMeat.Name</td><td class="en">Mystery Meat</td><td class="zh">神秘肉块</td></tr>
+<tr class="tr"><td class="k">Heirloom.NestingDoll.Description</td><td class="en">Buildings may be placed on other buildings of the same type. When doing so, instead of replacing the existing building, it gains [MultParam]</td><td class="zh">建筑可以叠放在同 类型建筑上。 叠放时不会替换原 建筑， 而是使原建筑获得 [MultParam]</td></tr>
+<tr class="tr"><td class="k">Heirloom.NestingDoll.Name</td><td class="en">Nesting Dolls</td><td class="zh">套娃</td></tr>
+<tr class="tr"><td class="k">Heirloom.OldBlueprint.Description</td><td class="en">You have a [PercentageChance] increased chance to roll buildings whose [Blueprint] you are holding</td><td class="zh">手中持有 [Blueprint] 时， 对应建筑的 抽取概率 增加 [PercentageChance]</td></tr>
+<tr class="tr"><td class="k">Heirloom.OldBlueprint.Name</td><td class="en">Old Blueprint</td><td class="zh">旧蓝图</td></tr>
+<tr class="tr"><td class="k">Heirloom.Paintbrush.Description</td><td class="en">[BuildingUpgrade] paint durations are doubled</td><td class="zh">[BuildingUpgrade] 涂料的持续时间翻 倍</td></tr>
+<tr class="tr"><td class="k">Heirloom.Paintbrush.Name</td><td class="en">Paintbrush</td><td class="zh">画笔</td></tr>
+<tr class="tr"><td class="k">Heirloom.Palette.Description</td><td class="en">When sold, gain [BsRainbowPaint] and [BsSpectralPaint] (must have space) [BREAK]Sells for 0 [Gold]</td><td class="zh">出售时， 获得 [BsRainbowPaint] 和 [BsSpectralPaint] （需要空栏位） [BREAK] 售价为 0 [Gold]</td></tr>
+<tr class="tr"><td class="k">Heirloom.Palette.Name</td><td class="en">Palette</td><td class="zh">调色板</td></tr>
+<tr class="tr"><td class="k">Heirloom.PhilosophersStone.Description</td><td class="en">For every [MoneyCount] earned from buildings or heirlooms, gain [EnchantmentParam]</td><td class="zh">建筑或传家宝每赚 取 [MoneyCount] ，获得 [EnchantmentParam]</td></tr>
+<tr class="tr"><td class="k">Heirloom.PhilosophersStone.Name</td><td class="en">Philosopher&#x27;s Stone</td><td class="zh">贤者之石</td></tr>
+<tr class="tr"><td class="k">Heirloom.PiggyBank.Description</td><td class="en">For every [MoneyCount] earned from buildings or heirlooms, give up to [ActivationCount] random [TargetCategory1] [MultParam]</td><td class="zh">建筑或传家宝 每赚取 [MoneyCount] ， 最多使 [ActivationCount] 座随机 [TargetCategory1] 获得 [MultParam]</td></tr>
+<tr class="tr"><td class="k">Heirloom.PiggyBank.Name</td><td class="en">Piggybank</td><td class="zh">存钱罐</td></tr>
+<tr class="tr"><td class="k">Heirloom.Pitchfork.Description</td><td class="en">Whenever a [Crop] transforms, it has [PercentageChance] chance to {trigger} a random building [Adjacent] to it</td><td class="zh">每当 [Crop] 转化时，有 [PercentageChance] 概率{触发}其 [Adjacent] 的一座随机建筑</td></tr>
+<tr class="tr"><td class="k">Heirloom.Pitchfork.Name</td><td class="en">Pitchfork</td><td class="zh">干草叉</td></tr>
+<tr class="tr"><td class="k">Heirloom.Plow.Description</td><td class="en">The next [Cooldown] [Agricultural] buildings have no [Range] placement restrictions</td><td class="zh">接下来放置的 [Cooldown] 座 [Agricultural] 建筑 不受 [Range] 放置限制</td></tr>
+<tr class="tr"><td class="k">Heirloom.Plow.Name</td><td class="en">Plow</td><td class="zh">犁</td></tr>
+<tr class="tr"><td class="k">Heirloom.PocketWatch.Description</td><td class="en">All building cooldowns are reduced by [CooldownModificationParam]</td><td class="zh">所有建筑的冷却减 少 [CooldownModificationParam]</td></tr>
+<tr class="tr"><td class="k">Heirloom.PocketWatch.Name</td><td class="en">Timepiece</td><td class="zh">时计</td></tr>
+<tr class="tr"><td class="k">Heirloom.PokerChip.Description</td><td class="en">Whenever a [Reroll] is used, [BaseScore] to this heirloom&#x27;s sell value</td><td class="zh">每使用一次 [Reroll] ， 使此传家宝的出售 价值增加 [BaseScore]</td></tr>
+<tr class="tr"><td class="k">Heirloom.PokerChip.Name</td><td class="en">Poker Chip</td><td class="zh">筹码</td></tr>
+<tr class="tr"><td class="k">Heirloom.Pontoon.Description</td><td class="en">Any building that can be created on [Shore] can also be created on [Ocean], and vice versa</td><td class="zh">所有可在 [Shore] 上建造的建筑也可 以在 [Ocean] 上建造，反之亦然</td></tr>
+<tr class="tr"><td class="k">Heirloom.Pontoon.Name</td><td class="en">Pontoon</td><td class="zh">浮桥</td></tr>
+<tr class="tr"><td class="k">Heirloom.PotionRack.Description</td><td class="en">When sold, gain [ActivationCount] random [Potion] (must have space) [BREAK]Sells for 0 [Gold]</td><td class="zh">出售时，获得 [ActivationCount] 个随机 [Potion] （需要有空位） [BREAK] 出售价格为 0 [Gold]</td></tr>
+<tr class="tr"><td class="k">Heirloom.PotionRack.Name</td><td class="en">Potion Rack</td><td class="zh">药剂架</td></tr>
+<tr class="tr"><td class="k">Heirloom.Pottery.Description</td><td class="en">When a building is created on [Sand] give it [MultParam]</td><td class="zh">当建筑建造在 [Sand] 上时，使其获得 [MultParam]</td></tr>
+<tr class="tr"><td class="k">Heirloom.Pottery.Name</td><td class="en">Pottery</td><td class="zh">陶器坊</td></tr>
+<tr class="tr"><td class="k">Heirloom.PrayerFlags.Description</td><td class="en">[Trees] counts as [Frontier]</td><td class="zh">[Trees] 视为 [Frontier]</td></tr>
+<tr class="tr"><td class="k">Heirloom.PrayerFlags.Name</td><td class="en">Prayer Flags</td><td class="zh">祈愿旗</td></tr>
+<tr class="tr"><td class="k">Heirloom.Printer.Description</td><td class="en">Every [Cooldown] weeks, gain a copy of a random held [Consumable] (must have space)</td><td class="zh">每 [Cooldown] 周， 复制一个随机持有 的 [Consumable] （需要有空位）</td></tr>
+<tr class="tr"><td class="k">Heirloom.Printer.Name</td><td class="en">Printing Press</td><td class="zh">印刷机</td></tr>
+<tr class="tr"><td class="k">Heirloom.RabbitsFoot.Description</td><td class="en">When a [TargetCategory1] building triggers, it has a [PercentageChance] chance to gain [MultParam] and a [Percentage2Chance] chance to gain [MoneyCount]</td><td class="zh">当 [TargetCategory1] 建筑触发时，有 [PercentageChance] 概率获得 [MultParam] ，并有 [Percentage2Chance] 概率获得 [MoneyCount]</td></tr>
+<tr class="tr"><td class="k">Heirloom.RabbitsFoot.Name</td><td class="en">Rabbit&#x27;s Foot</td><td class="zh">幸运兔脚</td></tr>
+<tr class="tr"><td class="k">Heirloom.RainbowFlag.Description</td><td class="en">Your building rolls can contain buildings from any unlocked guilds </td><td class="zh">建筑抽取可以出现 任意已解锁公会的 建筑 </td></tr>
+<tr class="tr"><td class="k">Heirloom.RainbowFlag.Name</td><td class="en">Rainbow Flag</td><td class="zh">彩虹旗</td></tr>
+<tr class="tr"><td class="k">Heirloom.RareHerb.Description</td><td class="en">Whenever a [HerbGarden] triggers [ActivationCount] or more other buildings, give the triggered buildings [MultParam]</td><td class="zh">当 [HerbGarden] 一次触发 [ActivationCount] 座或更多 其他建筑时， 被触发的建筑 获得 [MultParam]</td></tr>
+<tr class="tr"><td class="k">Heirloom.RareHerb.Name</td><td class="en">Life Herb</td><td class="zh">生命药草</td></tr>
+<tr class="tr"><td class="k">Heirloom.RedEarth.Description</td><td class="en">[Wall] are considered [Martial] and can be placed on [Sand]</td><td class="zh">[Wall] 视为 [Martial] ， 且可放置在 [Sand] 上</td></tr>
+<tr class="tr"><td class="k">Heirloom.RedEarth.Name</td><td class="en">Red Clay</td><td class="zh">红黏土</td></tr>
+<tr class="tr"><td class="k">Heirloom.RustedBlade.Description</td><td class="en">[Cooldown] times per milestone, whenever you {remove} a building, gain a [Blueprint] of it (must have space)</td><td class="zh">每个里程碑可触发 [Cooldown] 次： 每当你{移除}一座建 筑时， 获得它的 [Blueprint] （需要有空位）</td></tr>
+<tr class="tr"><td class="k">Heirloom.RustedBlade.Name</td><td class="en">Rusted Blade</td><td class="zh">锈刃</td></tr>
+<tr class="tr"><td class="k">Heirloom.Saddle.Description</td><td class="en">Any tile [InRange] of a [Stable] is consider to be [InRange] of all [Stable]</td><td class="zh">任意 [Stable] 的 [InRange] 内地块， 也视为在所有 [Stable] 的 [InRange] 内</td></tr>
+<tr class="tr"><td class="k">Heirloom.Saddle.Name</td><td class="en">Courier&#x27;s Saddle</td><td class="zh">信使马鞍</td></tr>
+<tr class="tr"><td class="k">Heirloom.Saw.Description</td><td class="en">Gain a [Palisade] [Blueprint] whenever [Trees] is removed (must have space) [BREAK][Blueprint] gained by [Saw] only have 1 charge</td><td class="zh">每当 [Trees] 被移除时，获得一个 [Palisade] [Blueprint] （需要有空位） [BREAK] 由 [Saw] 获得的 [Blueprint] 只有 1 次使用次数</td></tr>
+<tr class="tr"><td class="k">Heirloom.Saw.Name</td><td class="en">Woodsaw</td><td class="zh">木锯</td></tr>
+<tr class="tr"><td class="k">Heirloom.Scythe.Description</td><td class="en">When placing [Farm], place 1 extra</td><td class="zh">放置 [Farm] 时，额外放置 1 个</td></tr>
+<tr class="tr"><td class="k">Heirloom.Scythe.Name</td><td class="en">Scythe</td><td class="zh">镰刀</td></tr>
+<tr class="tr"><td class="k">Heirloom.Shears.Description</td><td class="en">Whenever a building is removed, [PercentageChance] chance to gain [MoneyCount]</td><td class="zh">每当建筑被移除， 有 [PercentageChance] 的概率 获得 [MoneyCount]</td></tr>
+<tr class="tr"><td class="k">Heirloom.Shears.Name</td><td class="en">Shears</td><td class="zh">园艺剪</td></tr>
+<tr class="tr"><td class="k">Heirloom.Silk.Description</td><td class="en">When a [Marketplace] triggers, it targets all [Stall] on the map which are [Adjacent] to any [Marketplace]</td><td class="zh">[Marketplace] 触发时， 会作用于地图上 所有与任意 [Marketplace] [Adjacent] 的 [Stall]</td></tr>
+<tr class="tr"><td class="k">Heirloom.Silk.Name</td><td class="en">Bolt of Silk</td><td class="zh">一匹丝绸</td></tr>
+<tr class="tr"><td class="k">Heirloom.Sledgehammer.Description</td><td class="en">Whenever a building with increased [Mult] is removed, create a [Scaffolding] in its place</td><td class="zh">移除 [Mult] 已提升的建筑时， 在原位生成 [Scaffolding]</td></tr>
+<tr class="tr"><td class="k">Heirloom.Sledgehammer.Name</td><td class="en">Sledgehammer</td><td class="zh">大锤</td></tr>
+<tr class="tr"><td class="k">Heirloom.SlotMachine.Description</td><td class="en">At the start of each milestone, gain [RerollCount] and [RemoveCount]</td><td class="zh">每个里程碑开始时， 获得 [RerollCount] 和 [RemoveCount]</td></tr>
+<tr class="tr"><td class="k">Heirloom.SlotMachine.Name</td><td class="en">Slot Machine</td><td class="zh">老虎机</td></tr>
+<tr class="tr"><td class="k">Heirloom.Standard.Description</td><td class="en">Instead of their usual [Mult] [Wall] give [MultParam] for every [ActivationCount] tiles enclosed within [Wall] </td><td class="zh">[Wall] 不再提供 原本的 [Mult] ， 改为每围住 [ActivationCount] 格地块 提供 [MultParam] ； 按 [Wall] 围合的区域计算 </td></tr>
+<tr class="tr"><td class="k">Heirloom.Standard.Name</td><td class="en">Pennant</td><td class="zh">三角旗</td></tr>
+<tr class="tr"><td class="k">Heirloom.Statuette.Description</td><td class="en">When a building is {created}, if you have a councillor that provides [Mult] to any of its categories, [PercentageChance] chance to gain a [CouncilVote] for them</td><td class="zh">当建筑{建造}时， 若你的某位议员能 为该建筑任一类别 提供 [Mult] ，则有 [PercentageChance] 概率为该议员获得 1 张 [CouncilVote]</td></tr>
+<tr class="tr"><td class="k">Heirloom.Statuette.Name</td><td class="en">Statuette</td><td class="zh">小雕像</td></tr>
+<tr class="tr"><td class="k">Heirloom.Sundial.Description</td><td class="en">On the last week of a milestone, all buildings passively have [MultParam]</td><td class="zh">每个里程碑的最后 一周， 所有建筑被动获得 [MultParam]</td></tr>
+<tr class="tr"><td class="k">Heirloom.Sundial.Name</td><td class="en">Sundial</td><td class="zh">日晷</td></tr>
+<tr class="tr"><td class="k">Heirloom.Talisman.Description</td><td class="en">Whenever a building is created [Adjacent] to another building of a different, non- [Neutral] guild, gain [MoneyCount]</td><td class="zh">新建建筑与 不同公会的建筑 [Adjacent] 时， 若对方不是 [Neutral] 公会， 获得 [MoneyCount]</td></tr>
+<tr class="tr"><td class="k">Heirloom.Talisman.Name</td><td class="en">Talisman</td><td class="zh">护符</td></tr>
+<tr class="tr"><td class="k">Heirloom.TopHat.Description</td><td class="en">You can find duplicate [Heirloom] in the shop and in packs</td><td class="zh">商店和卡包中可以 出现重复的 [Heirloom]</td></tr>
+<tr class="tr"><td class="k">Heirloom.TopHat.Name</td><td class="en">Top Hat</td><td class="zh">礼帽</td></tr>
+<tr class="tr"><td class="k">Heirloom.Torch.Description</td><td class="en">Whenever [EffigyPyre] is removed, create another [EffigyPyre] on a random tile [Adjacent] to it</td><td class="zh">每当 [EffigyPyre] 被移除时，在其 [Adjacent] 的随机地块生成另 一座 [EffigyPyre]</td></tr>
+<tr class="tr"><td class="k">Heirloom.Torch.Name</td><td class="en">Flaming Brand</td><td class="zh">燃烧火把</td></tr>
+<tr class="tr"><td class="k">Heirloom.Transmutor.Description</td><td class="en">If you would already be placing more than [ActivationCount] building, place [ActivationCount] extra</td><td class="zh">如果原本已经要放 置超过 [ActivationCount] 座建筑，则额外放置 [ActivationCount] 座</td></tr>
+<tr class="tr"><td class="k">Heirloom.Transmutor.Name</td><td class="en">Transmutor</td><td class="zh">转化器</td></tr>
+<tr class="tr"><td class="k">Heirloom.TreasureMap.Description</td><td class="en">When sold, {create} [ActivationCount] [TreasureChest] on random [Sand] tiles [BREAK]Sells for 0 [Gold]</td><td class="zh">出售时， 在随机 [Sand] 地块 {生成} [ActivationCount] 个 [TreasureChest] [BREAK] 售价为 0 [Gold]</td></tr>
+<tr class="tr"><td class="k">Heirloom.TreasureMap.Name</td><td class="en">Treasure Map</td><td class="zh">藏宝图</td></tr>
+<tr class="tr"><td class="k">Heirloom.Triquetra.Description</td><td class="en">Whenever a [Nature] is created, trigger a random building [Adjacent] to it</td><td class="zh">每当生成 [Nature] ， 触发与其 [Adjacent] 的一座随机建筑</td></tr>
+<tr class="tr"><td class="k">Heirloom.Triquetra.Name</td><td class="en">Triquetra</td><td class="zh">三结符</td></tr>
+<tr class="tr"><td class="k">Heirloom.VoodooDoll.Description</td><td class="en">Whenever a building triggers, give it [MultParam] if it is [InRange] of [Hazard]</td><td class="zh">每当建筑触发时， 若其位于 [Hazard] 的 [InRange] 内，则给予它 [MultParam]</td></tr>
+<tr class="tr"><td class="k">Heirloom.VoodooDoll.Name</td><td class="en">Voodoo Doll</td><td class="zh">巫毒娃娃</td></tr>
+<tr class="tr"><td class="k">Heirloom.WeightedScale.Description</td><td class="en">All percentage chances are doubled. @Does not stack</td><td class="zh">所有百分比概率翻 倍 @ 不可叠加</td></tr>
+<tr class="tr"><td class="k">Heirloom.WeightedScale.Name</td><td class="en">Weighted Scale</td><td class="zh">加权天平</td></tr>
+<tr class="tr"><td class="k">Heirloom.WorkersRosary.Description</td><td class="en">[Engineering] and [Manufacturer] is considered [Sacred]</td><td class="zh">[Engineering] 和 [Manufacturer] 视为 [Sacred]</td></tr>
+<tr class="tr"><td class="k">Heirloom.WorkersRosary.Name</td><td class="en">Worker&#x27;s Rosary</td><td class="zh">工人念珠</td></tr>
+<tr class="tr"><td class="k">LanguageName</td><td class="en">English</td><td class="zh">简体中文</td></tr>
+<tr class="tr"><td class="k">MechanicUnlock.CanChooseToCompleteEarlyUnlockData.Description</td><td class="en">You may now choose whether or not to complete a milestone as soon as you hit the target</td><td class="zh">达到目标后， 现在可以自行选择 是否立即完成里程 碑</td></tr>
+<tr class="tr"><td class="k">MechanicUnlock.CouncilUnlockData.Description</td><td class="en">Unlock the city council @Vote for councillors using [CouncilVote] - each councillor has unique passive abilities.
+@[CouncilVote] can now appear in the shop or in packs</td><td class="zh">解锁城市议会 @ 使用 [CouncilVote] 为议员投票， 每位议员都有 独特的被动能力 @ 此后 [CouncilVote] 可出现在 商店和卡包中</td></tr>
+<tr class="tr"><td class="k">MechanicUnlock.DismissUnlockData.Description</td><td class="en">You may now purchase [Dismiss] in the shop @[Dismiss] is used to remove a building from the pool of available buildings for the duration of a run</td><td class="zh">现在可以在商店购 买 [Dismiss] @ [Dismiss] 可将一座建筑从本 局可用建筑池中移 除， 使其本局不再出现</td></tr>
+<tr class="tr"><td class="k">MechanicUnlock.EndlessUnlockData.Description</td><td class="en">You may now play endless mode after reaching Metropolis. Endless mode does not contribute towards unlocks</td><td class="zh">达到“大都会”后可进 入无尽模式。 无尽模式不会计入 解锁进度</td></tr>
+<tr class="tr"><td class="k">MechanicUnlock.PotionsUnlockData.Description</td><td class="en">[Potion] can now appear in the shop or in packs @These [Consumable] are used as once-off utilities with a variety of effects</td><td class="zh">[Potion] 此后可出现在 商店和卡包中 @ 这些 [Consumable] 为一次性用品， 具有不同效果</td></tr>
+<tr class="tr"><td class="k">MechanicUnlock.RanksUnlockData.Description</td><td class="en">{Ranks} have been unlocked. Ranks allow you to opt in to higher difficulties @ @Your {rank} increases every time you win a run at your highest unlocked rank</td><td class="zh">已解锁{头衔}系统。 头衔允许你主动选 择更高难度 @ @ 每当你以当前最高 已解锁头衔赢得一 局， {头衔}就会提升</td></tr>
+<tr class="tr"><td class="k">MechanicUnlock.ShopUnlockData.Description</td><td class="en">The {Shop} has been repaired, and will now always be available between milestones</td><td class="zh">{商店}已修复， 现在会在每个里程 碑之间始终开放</td></tr>
+<tr class="tr"><td class="k">MechanicUnlock.SkipUnlockData.Description</td><td class="en">You may now skip buildings for [Gold] from {Tiny Hamlet} onwards</td><td class="zh">从{小村落}阶段起， 可以跳过建筑并获 得 [Gold]</td></tr>
+<tr class="tr"><td class="k">Milestone.Name.BigCity</td><td class="en">Big City</td><td class="zh">大城市</td></tr>
+<tr class="tr"><td class="k">Milestone.Name.CapitalCity</td><td class="en">Capital City</td><td class="zh">首都</td></tr>
+<tr class="tr"><td class="k">Milestone.Name.Dwelling</td><td class="en">Isolated Dwelling</td><td class="zh">孤居聚落</td></tr>
+<tr class="tr"><td class="k">Milestone.Name.Ecumenopolis</td><td class="en">Ecumenopolis</td><td class="zh">世界都市</td></tr>
+<tr class="tr"><td class="k">Milestone.Name.Hamlet</td><td class="en">Tiny Hamlet</td><td class="zh">小村落</td></tr>
+<tr class="tr"><td class="k">Milestone.Name.LargeTown</td><td class="en">Large Town</td><td class="zh">大型城镇</td></tr>
+<tr class="tr"><td class="k">Milestone.Name.Megalopolis</td><td class="en">Megalopolis {0}</td><td class="zh">巨型都市 {0}</td></tr>
+<tr class="tr"><td class="k">Milestone.Name.Metropolis</td><td class="en">Metropolis {0}</td><td class="zh">大都会 {0}</td></tr>
+<tr class="tr"><td class="k">Milestone.Name.SmallCity</td><td class="en">Small City</td><td class="zh">小城市</td></tr>
+<tr class="tr"><td class="k">Milestone.Name.SmallTown</td><td class="en">Small Town</td><td class="zh">小镇</td></tr>
+<tr class="tr"><td class="k">Milestone.Name.Village</td><td class="en">Quaint Village</td><td class="zh">静谧村庄</td></tr>
+<tr class="tr"><td class="k">Nature.BerryBush.Description</td><td class="en">When triggered by [BerryPicker] {transforms} into [BerryBushEmpty]</td><td class="zh">被 [BerryPicker] 触发时， {转化} 为 [BerryBushEmpty]</td></tr>
+<tr class="tr"><td class="k">Nature.BerryBush.Name</td><td class="en">Berry Bush</td><td class="zh">浆果丛</td></tr>
+<tr class="tr"><td class="k">Nature.BerryBushEmpty.Description</td><td class="en">{Grows} (transforms) after [Cooldown] weeks</td><td class="zh">经过 [Cooldown] 周后 {成长}（转化）</td></tr>
+<tr class="tr"><td class="k">Nature.BerryBushEmpty.Name</td><td class="en">Empty Bush</td><td class="zh">空浆果丛</td></tr>
+<tr class="tr"><td class="k">Nature.Fish.Name</td><td class="en">Fish</td><td class="zh">鱼</td></tr>
+<tr class="tr"><td class="k">Nature.Flowers.Name</td><td class="en">Flowers</td><td class="zh">花朵</td></tr>
+<tr class="tr"><td class="k">Nature.GoldOre.Description</td><td class="en">{Triggers when removed:} [MoneyCount]</td><td class="zh">{移除时触发：} [MoneyCount]</td></tr>
+<tr class="tr"><td class="k">Nature.GoldOre.Name</td><td class="en">Gold Ore</td><td class="zh">金矿</td></tr>
+<tr class="tr"><td class="k">Nature.Herbs.Name</td><td class="en">Herbs</td><td class="zh">药草</td></tr>
+<tr class="tr"><td class="k">Nature.Lumber.Name</td><td class="en">Lumber</td><td class="zh">木材</td></tr>
+<tr class="tr"><td class="k">Nature.Ore.Name</td><td class="en">Ore</td><td class="zh">矿石</td></tr>
+<tr class="tr"><td class="k">Nature.Rocks.Name</td><td class="en">Rocks</td><td class="zh">岩石</td></tr>
+<tr class="tr"><td class="k">Nature.Trees.Name</td><td class="en">Forest</td><td class="zh">森林</td></tr>
+<tr class="tr"><td class="k">Potion.AddRandomBuildingSupplies.Description</td><td class="en">Gain up to 2 random [BuildingUpgrade] (must have space)</td><td class="zh">最多获得 2 个随机 [BuildingUpgrade] （需要空栏位）</td></tr>
+<tr class="tr"><td class="k">Potion.AddRandomBuildingSupplies.Name</td><td class="en">Mason&#x27;s Brew</td><td class="zh">石匠秘酿</td></tr>
+<tr class="tr"><td class="k">Potion.AddRandomHeirloom.Description</td><td class="en">Gain a random [Heirloom] (must have space)</td><td class="zh">获得一件随机 [Heirloom] （需要空栏位）</td></tr>
+<tr class="tr"><td class="k">Potion.AddRandomHeirloom.Name</td><td class="en">Elixir of Wealth</td><td class="zh">财富灵药</td></tr>
+<tr class="tr"><td class="k">Potion.AddRandomVotes.Description</td><td class="en">Gain up to 2 random [CouncilVote] (must have space)</td><td class="zh">最多获得 2 张随机 [CouncilVote] （需要空栏位）</td></tr>
+<tr class="tr"><td class="k">Potion.AddRandomVotes.Name</td><td class="en">Bribe in a Bottle</td><td class="zh">瓶装贿赂</td></tr>
+<tr class="tr"><td class="k">Potion.CanPlaceNextBuildingAnywhere.Description</td><td class="en">The next building you place can be placed {ANYWHERE} @If placed over another building, will not trigger removal effects</td><td class="zh">下一座建筑 可放置在 {任意位置} @ 覆盖其他建筑时， 不触发其移除效果</td></tr>
+<tr class="tr"><td class="k">Potion.CanPlaceNextBuildingAnywhere.Name</td><td class="en">Dimensional Dose</td><td class="zh">维度药剂</td></tr>
+<tr class="tr"><td class="k">Potion.DuplicateBuilding.Description</td><td class="en">Select two buildings, transform the second into an exact copy of the first</td><td class="zh">依次选择两座建筑， 将第二座转化为 第一座的完全副本</td></tr>
+<tr class="tr"><td class="k">Potion.DuplicateBuilding.Name</td><td class="en">Duplication Tonic</td><td class="zh">复制药剂</td></tr>
+<tr class="tr"><td class="k">Potion.GainBlueprint.Description</td><td class="en">Gain a [Blueprint] of target building</td><td class="zh">获得目标建筑的 [Blueprint]</td></tr>
+<tr class="tr"><td class="k">Potion.GainBlueprint.Name</td><td class="en">Imprint Charm</td><td class="zh">拓印护符</td></tr>
+<tr class="tr"><td class="k">Potion.GainGoldSellValue.Description</td><td class="en">Gain gold equal to the sell value of all equipped [Heirloom] [TotalHeirloomSellValueSum] @Max +50 [Gold]</td><td class="zh">获得的金币 等于已装备 [Heirloom] 的总售价 [TotalHeirloomSellValueSum] @ 最多 +50 [Gold]</td></tr>
+<tr class="tr"><td class="k">Potion.GainGoldSellValue.Name</td><td class="en">Lustrous Solution</td><td class="zh">闪耀溶液</td></tr>
+<tr class="tr"><td class="k">Potion.GainHeirloomSlot.Description</td><td class="en">Gain +1 [Heirloom] slot (up to a max of 10 total)</td><td class="zh">获得 +1 个 [Heirloom] 栏位（最多 10 个）</td></tr>
+<tr class="tr"><td class="k">Potion.GainHeirloomSlot.Name</td><td class="en">Negative Space</td><td class="zh">负空间</td></tr>
+<tr class="tr"><td class="k">Potion.GuaranteeNextRollIsRare.Description</td><td class="en">The next {building roll}, [Blueprint] satchel or [Heirloom] chest is guaranteed to only contain [Rare] or better. This effect persists through [Reroll] [BREAK]May only be used from {Quaint Village} onwards</td><td class="zh">下一次 {建筑抽取}、 [Blueprint] 包或 [Heirloom] 宝箱 必定只含 [Rare] 或更高稀有度内容。 [Reroll] 后效果仍保留 [BREAK] 仅从 {静谧村庄} 阶段起可用</td></tr>
+<tr class="tr"><td class="k">Potion.GuaranteeNextRollIsRare.Name</td><td class="en">Clover Extract</td><td class="zh">四叶草萃取液</td></tr>
+<tr class="tr"><td class="k">Potion.MoveBuilding.Description</td><td class="en">Select a building, then move it to a valid empty tile</td><td class="zh">选择一座建筑， 将其移动到 可放置的空地块</td></tr>
+<tr class="tr"><td class="k">Potion.MoveBuilding.Name</td><td class="en">Mobility Draught</td><td class="zh">机动药剂</td></tr>
+<tr class="tr"><td class="k">Potion.RemoveToGainRarity.Description</td><td class="en">Remove target building and gain a random [Blueprint] of a higher rarity</td><td class="zh">移除目标建筑， 并获得一个更高稀 有度的随机 [Blueprint]</td></tr>
+<tr class="tr"><td class="k">Potion.RemoveToGainRarity.Name</td><td class="en">Recycling Potion</td><td class="zh">回收药剂</td></tr>
+<tr class="tr"><td class="k">Potion.Trigger.Name</td><td class="en">Activation Philtre</td><td class="zh">触发药剂</td></tr>
+<tr class="tr"><td class="k">Quest.BuildBlueprints.Description</td><td class="en">Create [QuestAmount] more unique [Blueprint] this milestone</td><td class="zh">本里程碑内， 再用 [QuestAmount] 种不同的 [Blueprint] 建造建筑</td></tr>
+<tr class="tr"><td class="k">Quest.CreateBuildings.Description</td><td class="en">Create [QuestAmount] more buildings this milestone</td><td class="zh">本里程碑内， 再建造 [QuestAmount] 座建筑</td></tr>
+<tr class="tr"><td class="k">Quest.DismissBuildings.Description</td><td class="en">[Dismiss] [DismissCount] more buildings this milestone</td><td class="zh">本里程碑内， 再对建筑执行 [Dismiss] ： [DismissCount]</td></tr>
+<tr class="tr"><td class="k">Quest.EarnGold.Description</td><td class="en">Earn [MoneyCount] more this milestone</td><td class="zh">本里程碑内再获得 [MoneyCount]</td></tr>
+<tr class="tr"><td class="k">Quest.EarnPointsOfCategory.Description</td><td class="en">Score [QuestAmountPoints] more with [QuestTargetCategory] this milestone</td><td class="zh">本里程碑内使用 [QuestTargetCategory] 再获得 [QuestAmountPoints] 分</td></tr>
+<tr class="tr"><td class="k">Quest.IncreaseMult.Description</td><td class="en">Increase the {base} [Mult] of [QuestAmount] different buildings this milestone</td><td class="zh">本里程碑内提升 [QuestAmount] 座不同建筑的{基础} [Mult]</td></tr>
+<tr class="tr"><td class="k">Quest.RemoveBuildings.Description</td><td class="en">[Remove] [RemoveCount] more buildings this milestone</td><td class="zh">本里程碑内， 再对建筑执行 [Remove] ： [RemoveCount]</td></tr>
+<tr class="tr"><td class="k">Quest.RerollTimes.Description</td><td class="en">Gain [RerollCount] more [Reroll] this milestone</td><td class="zh">本里程碑内， 再获得 [RerollCount] 次 [Reroll]</td></tr>
+<tr class="tr"><td class="k">Quest.Reward.Blueprint</td><td class="en">[TargetTag1]  [Blueprint]</td><td class="zh">[TargetTag1] [Blueprint]</td></tr>
+<tr class="un"><td class="k">Quest.Reward.Dismiss</td><td class="en">[DismissCount]</td><td class="zh">[DismissCount]</td></tr>
+<tr class="un"><td class="k">Quest.Reward.FavourSingle</td><td class="en">[TargetTag1]</td><td class="zh">[TargetTag1]</td></tr>
+<tr class="un"><td class="k">Quest.Reward.Gold</td><td class="en">[MoneyCount]</td><td class="zh">[MoneyCount]</td></tr>
+<tr class="tr"><td class="k">Quest.Reward.Heirloom</td><td class="en">[TargetTag1]  [Heirloom]</td><td class="zh">[TargetTag1] [Heirloom]</td></tr>
+<tr class="un"><td class="k">Quest.Reward.Pack</td><td class="en">[QuestRewardPack]</td><td class="zh">[QuestRewardPack]</td></tr>
+<tr class="tr"><td class="k">Quest.Reward.RandomLegend</td><td class="en">Random [Legendary] [Heirloom]</td><td class="zh">随机 [Legendary] [Heirloom]</td></tr>
+<tr class="un"><td class="k">Quest.Reward.Removes</td><td class="en">[RemoveCount]</td><td class="zh">[RemoveCount]</td></tr>
+<tr class="un"><td class="k">Quest.Reward.Rerolls</td><td class="en">[RerollCount]</td><td class="zh">[RerollCount]</td></tr>
+<tr class="un"><td class="k">Quest.Reward.SkipPack</td><td class="en">[QuestRewardPack]</td><td class="zh">[QuestRewardPack]</td></tr>
+<tr class="tr"><td class="k">Quest.TransformBuildings.Description</td><td class="en">Transform [QuestAmount] more buildings this milestone</td><td class="zh">本里程碑内， 再转化 [QuestAmount] 座建筑</td></tr>
+<tr class="tr"><td class="k">Quest.UseBuildingSupplies.Description</td><td class="en">Use [QuestAmount] more [BuildingUpgrade] this milestone</td><td class="zh">本里程碑内再使用 [QuestAmount] 个 [BuildingUpgrade]</td></tr>
+<tr class="tr"><td class="k">Quest.UseSpells.Description</td><td class="en">Use [QuestAmount] more [Potion] this milestone</td><td class="zh">本里程碑内再使用 [QuestAmount] 个 [Potion]</td></tr>
+<tr class="tr"><td class="k">Rank0ExplorerData.Description</td><td class="en">Base Difficulty</td><td class="zh">基础难度</td></tr>
+<tr class="tr"><td class="k">Rank0ExplorerData.Name</td><td class="en">Explorer</td><td class="zh">探索者</td></tr>
+<tr class="tr"><td class="k">Rank10RegentData.Description</td><td class="en">A [Hazard] spawns every 2nd milestone after Village</td><td class="zh">村庄阶段之后， 每隔两个里程碑 生成一处 [Hazard]</td></tr>
+<tr class="tr"><td class="k">Rank10RegentData.Name</td><td class="en">Regent</td><td class="zh">摄政</td></tr>
+<tr class="tr"><td class="k">Rank1VillagerData.Description</td><td class="en">Less [Gold] for finishing milestones</td><td class="zh">完成里程碑时获得 的 [Gold] 减少</td></tr>
+<tr class="tr"><td class="k">Rank1VillagerData.Name</td><td class="en">Villager</td><td class="zh">村民</td></tr>
+<tr class="tr"><td class="k">Rank2YeomanData.Description</td><td class="en">Required score scales faster</td><td class="zh">目标分数提升得更 快</td></tr>
+<tr class="tr"><td class="k">Rank2YeomanData.Name</td><td class="en">Yeoman</td><td class="zh">自耕农</td></tr>
+<tr class="tr"><td class="k">Rank3CitizenData.Description</td><td class="en">A [Hazard] will spawn in Quaint Village</td><td class="zh">静谧村庄阶段 将生成一处 [Hazard]</td></tr>
+<tr class="tr"><td class="k">Rank3CitizenData.Name</td><td class="en">Citizen</td><td class="zh">市民</td></tr>
+<tr class="tr"><td class="k">Rank4EnvoyData.Description</td><td class="en">Buildings can roll with [BsNegCooldown]</td><td class="zh">建筑抽取时可能带 有 [BsNegCooldown]</td></tr>
+<tr class="tr"><td class="k">Rank4EnvoyData.Name</td><td class="en">Envoy</td><td class="zh">使节</td></tr>
+<tr class="tr"><td class="k">Rank5ConsulData.Description</td><td class="en">Buildings can roll with [BsNegRange]</td><td class="zh">建筑抽取时可能带 有 [BsNegRange]</td></tr>
+<tr class="tr"><td class="k">Rank5ConsulData.Name</td><td class="en">Consul</td><td class="zh">执政官</td></tr>
+<tr class="tr"><td class="k">Rank6AmbassadorData.Description</td><td class="en">[Reroll]  [Remove] and [Dismiss] start more expensive</td><td class="zh">[Reroll] 、 [Remove] 和 [Dismiss] 的初始价格更高</td></tr>
+<tr class="tr"><td class="k">Rank6AmbassadorData.Name</td><td class="en">Ambassador</td><td class="zh">大使</td></tr>
+<tr class="tr"><td class="k">Rank7GovenorData.Description</td><td class="en">Required score scales even faster</td><td class="zh">目标分数 增长得更快</td></tr>
+<tr class="tr"><td class="k">Rank7GovenorData.Name</td><td class="en">Governor</td><td class="zh">地方长官</td></tr>
+<tr class="tr"><td class="k">Rank8ChancellorData.Description</td><td class="en">Buildings can roll with [BsNegBlackPaint]</td><td class="zh">建筑抽取时可能带 有 [BsNegBlackPaint]</td></tr>
+<tr class="tr"><td class="k">Rank8ChancellorData.Name</td><td class="en">Chancellor</td><td class="zh">大臣</td></tr>
+<tr class="tr"><td class="k">Rank9ViceroyData.Description</td><td class="en">Buildings can roll with -0.5 [mult]</td><td class="zh">抽到的建筑 可能带有 -0.5 [mult]</td></tr>
+<tr class="tr"><td class="k">Rank9ViceroyData.Name</td><td class="en">Viceroy</td><td class="zh">总督</td></tr>
+<tr class="tr"><td class="k">Rarity.Common.Name</td><td class="en">Common</td><td class="zh">普通</td></tr>
+<tr class="tr"><td class="k">Rarity.Legendary.Name</td><td class="en">Legendary</td><td class="zh">传奇</td></tr>
+<tr class="tr"><td class="k">Rarity.Masterwork.Name</td><td class="en">Masterwork</td><td class="zh">杰作</td></tr>
+<tr class="tr"><td class="k">Rarity.Rare.Name</td><td class="en">Rare</td><td class="zh">稀有</td></tr>
+<tr class="tr"><td class="k">Rarity.Uncommon.Name</td><td class="en">Uncommon</td><td class="zh">罕见</td></tr>
+<tr class="tr"><td class="k">SpecialConsumable.Dismiss.Description</td><td class="en">Remove a building from the pool of available buildings. It will no longer be offered for the rest of the run</td><td class="zh">从本局可用建筑池 中移除一座建筑， 本局之后将不再抽 到它</td></tr>
+<tr class="tr"><td class="k">SpecialConsumable.Remove.Description</td><td class="en">Remove a building from the map, triggering on removal effects</td><td class="zh">从地图上 移除一座建筑， 并触发其 移除时的效果</td></tr>
+<tr class="tr"><td class="k">SpecialConsumable.Reroll.Description</td><td class="en">Refresh the current selection of building options</td><td class="zh">刷新当前 可选的建筑</td></tr>
+<tr class="tr"><td class="k">StringProcessor.EmptyFieldContext</td><td class="en">{Grows} (transforms) in [CurrentCooldown] weeks @</td><td class="zh">经过 [CurrentCooldown] 周 {成长}（转化） @</td></tr>
+<tr class="tr"><td class="k">StringProcessor.HazardRemovalCondition</td><td class="en">[BREAK]Requires [RemoveCount] and [MoneyCount] to remove</td><td class="zh">[BREAK] 移除需要 [RemoveCount] 和 [MoneyCount]</td></tr>
+<tr class="tr"><td class="k">StringProcessor.LimitedTriggersContext</td><td class="en">[BREAK]May only &lt;b&gt;trigger&lt;/b&gt; {0} times per week</td><td class="zh">[BREAK] 每周最多 &lt;b&gt;触发&lt;/b&gt; {0} 次</td></tr>
+<tr class="tr"><td class="k">StringProcessor.MultiplePlacement</td><td class="en">[BREAK]You may place up to {0} [{1}] at a time</td><td class="zh">[BREAK] 每次最多放置 {0} 个 [{1}]</td></tr>
+<tr class="tr"><td class="k">StringProcessor.NextVoteEffectContext</td><td class="en">[BREAK]&lt;b&gt;Next&lt;/b&gt; &lt;b&gt;vote&lt;/b&gt; &lt;b&gt;effect:&lt;/b&gt; {0}</td><td class="zh">[BREAK] &lt;b&gt;下一票效果：&lt;/b&gt; {0}</td></tr>
+<tr class="tr"><td class="k">StringProcessor.VariableTargets</td><td class="en">[BREAK]This [Heirloom] will have different target categories every time it appears</td><td class="zh">[BREAK] 此 [Heirloom] 每次出现时 目标类别均会变化</td></tr>
+<tr class="tr"><td class="k">TileType.Grass.Name</td><td class="en">Ground</td><td class="zh">土地</td></tr>
+<tr class="tr"><td class="k">TileType.Ocean.Name</td><td class="en">Ocean</td><td class="zh">海洋</td></tr>
+<tr class="tr"><td class="k">TileType.Sand.Name</td><td class="en">Sand</td><td class="zh">沙地</td></tr>
+<tr class="tr"><td class="k">TileType.Shore.Name</td><td class="en">Shoreline</td><td class="zh">海岸</td></tr>
+<tr class="tr"><td class="k">UI.Canvas.CreditsPanel.Title</td><td class="en">Credits</td><td class="zh">制作人员</td></tr>
+<tr class="tr"><td class="k">UI.Canvas.DebugSpawner.Title</td><td class="en">Debug Spawner</td><td class="zh">调试生成器</td></tr>
+<tr class="tr"><td class="k">UI.Canvas.EndingScreen.Desc</td><td class="en">You&#x27;ve truly created a city to rival all others.
+You may continue to play on in endless mode
+but after this point the game may start to
+break in colourful and expected ways.</td><td class="zh">你已建成一座足以媲美任何城市的都会。
+你可以继续游玩无尽模式，
+但从此刻起，游戏可能会以各种
+五花八门、不足为奇的方式出问题。</td></tr>
+<tr class="tr"><td class="k">UI.Canvas.EndingScreen.Lose</td><td class="en">Out of Weeks</td><td class="zh">周数耗尽</td></tr>
+<tr class="tr"><td class="k">UI.Canvas.EndingScreen.Win</td><td class="en">Endless Victory!</td><td class="zh">无尽模式胜利！</td></tr>
+<tr class="tr"><td class="k">UI.Canvas.MainMenu.PlayButton</td><td class="en">New Run</td><td class="zh">新开一局</td></tr>
+<tr class="tr"><td class="k">UI.Canvas.ScorePanel.CompleteEarlyButton.Text</td><td class="en">Complete milestone early</td><td class="zh">提前完成里程碑</td></tr>
+<tr class="tr"><td class="k">UI.Canvas.StartingSelectScreen.Randomize</td><td class="en">Randomize Guilds</td><td class="zh">随机选择公会</td></tr>
+<tr class="tr"><td class="k">UI.Generic.Saving</td><td class="en">Saving...</td><td class="zh">保存中……</td></tr>
+<tr class="tr"><td class="k">Ui.AutoCompleteMilestone</td><td class="en">Auto-complete milestone</td><td class="zh">自动完成里程碑</td></tr>
+<tr class="tr"><td class="k">Ui.BuildingChoiceBar.SkipRemaining</td><td class="en">Skip Remaining</td><td class="zh">跳过剩余选择</td></tr>
+<tr class="tr"><td class="k">Ui.Button.Bribe</td><td class="en">Pay Bribe @{0} [Gold]</td><td class="zh">支付贿赂 @ {0} [Gold]</td></tr>
+<tr class="tr"><td class="k">Ui.Canvas.EndingScreen.BestWeek</td><td class="en">Best Week</td><td class="zh">最佳周</td></tr>
+<tr class="tr"><td class="k">Ui.Canvas.EndingScreen.CouncilVotes</td><td class="en">Most Votes</td><td class="zh">最高票数</td></tr>
+<tr class="tr"><td class="k">Ui.Canvas.EndingScreen.FavGuild</td><td class="en">Favourite Guild</td><td class="zh">最喜爱的公会</td></tr>
+<tr class="tr"><td class="k">Ui.Canvas.EndingScreen.GoldEarned</td><td class="en">Gold Earned</td><td class="zh">获得金币</td></tr>
+<tr class="tr"><td class="k">Ui.Canvas.EndingScreen.MilestoneReached</td><td class="en">Milestone Reached</td><td class="zh">达成里程碑</td></tr>
+<tr class="tr"><td class="k">Ui.CityCouncilPanel.Title</td><td class="en">City Council</td><td class="zh">城市议会</td></tr>
+<tr class="tr"><td class="k">Ui.CouncilRequests.Title</td><td class="en">Council Requests: </td><td class="zh">议会委托： </td></tr>
+<tr class="tr"><td class="k">Ui.FailedToReachTargetExtraWeek</td><td class="en">Failed to reach target@+1 extra week</td><td class="zh">未达到目标 @ 获得 1 周额外时间</td></tr>
+<tr class="tr"><td class="k">Ui.Generic.Continue</td><td class="en">Continue</td><td class="zh">继续</td></tr>
+<tr class="tr"><td class="k">Ui.Generic.Council</td><td class="en">Council</td><td class="zh">议会</td></tr>
+<tr class="tr"><td class="k">Ui.Generic.Defeat</td><td class="en">Defeat</td><td class="zh">失败</td></tr>
+<tr class="tr"><td class="k">Ui.Generic.Enter</td><td class="en">Enter</td><td class="zh">进入</td></tr>
+<tr class="tr"><td class="k">Ui.Generic.Refresh</td><td class="en">Refresh</td><td class="zh">刷新</td></tr>
+<tr class="tr"><td class="k">Ui.Generic.Sell</td><td class="en">Sell</td><td class="zh">出售</td></tr>
+<tr class="tr"><td class="k">Ui.Generic.Skip</td><td class="en">Skip</td><td class="zh">跳过</td></tr>
+<tr class="tr"><td class="k">Ui.Generic.Total</td><td class="en">Total</td><td class="zh">总计</td></tr>
+<tr class="tr"><td class="k">Ui.Generic.Use</td><td class="en">Use</td><td class="zh">使用</td></tr>
+<tr class="tr"><td class="k">Ui.Generic.ViewMap</td><td class="en">View Map</td><td class="zh">查看地图</td></tr>
+<tr class="tr"><td class="k">Ui.HighestRank</td><td class="en">Highest Rank:</td><td class="zh">最高头衔：</td></tr>
+<tr class="tr"><td class="k">Ui.LevelWithNumber</td><td class="en">Level {0}</td><td class="zh">等级 {0}</td></tr>
+<tr class="tr"><td class="k">Ui.LowerButtons.ShowEndScreen</td><td class="en">Show End Screen</td><td class="zh">显示结算界面</td></tr>
+<tr class="tr"><td class="k">Ui.LowerButtons.ShowPack</td><td class="en">Show Pack</td><td class="zh">显示卡包</td></tr>
+<tr class="tr"><td class="k">Ui.LowerButtons.ShowPackOptions</td><td class="en">Show Choices</td><td class="zh">查看选项</td></tr>
+<tr class="tr"><td class="k">Ui.LowerButtons.ShowRequests</td><td class="en">Show Requests</td><td class="zh">查看委托</td></tr>
+<tr class="tr"><td class="k">Ui.LowerButtons.ShowShop</td><td class="en">Show Shop</td><td class="zh">查看商店</td></tr>
+<tr class="tr"><td class="k">Ui.MaxLevel</td><td class="en">Max Level</td><td class="zh">满级</td></tr>
+<tr class="tr"><td class="k">Ui.MessagePanel.EndlessDesc</td><td class="en">@In endless mode, you start with 0 gold and only building totals are shown in order to save time with scoring.@You will also earn no additional experience for your guilds during endless.@How far can you go?</td><td class="zh">@ 在无尽模式中，你从 0 金币开始，并且为了加快结算，只显示建筑总分。 @ 无尽模式中公会不会再获得额外经验。 @ 你能坚持多久？</td></tr>
+<tr class="tr"><td class="k">Ui.MessagePanel.EndlessTitle</td><td class="en">Welcome to Endless</td><td class="zh">欢迎进入无尽模式</td></tr>
+<tr class="tr"><td class="k">Ui.MessagePanel.IntroDesc</td><td class="en">The High Council congratulates you on breaking ground on your new island settlement!@@Reach population targets to grow your town into a thriving metropolis.@@Good luck</td><td class="zh">最高议会祝贺你在新的岛屿定居点破土开工！ @ @ 达到人口目标，将小镇发展为繁荣的大都会。 @ @ 祝你好运</td></tr>
+<tr class="tr"><td class="k">Ui.MessagePanel.IntroSigned</td><td class="en">Chief Councillor</td><td class="zh">首席议员</td></tr>
+<tr class="tr"><td class="k">Ui.MessagePanel.IntroTitle</td><td class="en">To the new Viceroy</td><td class="zh">致新任总督</td></tr>
+<tr class="tr"><td class="k">Ui.MilestoneCompletion.NewMilestoneReached</td><td class="en">New Milestone Reached</td><td class="zh">达成新里程碑</td></tr>
+<tr class="tr"><td class="k">Ui.MilestoneCompletionScore.Completed</td><td class="en">Milestone Completed</td><td class="zh">里程碑完成</td></tr>
+<tr class="tr"><td class="k">Ui.MilestoneCompletionScore.RequestCompleted</td><td class="en">Request Completed</td><td class="zh">委托完成</td></tr>
+<tr class="tr"><td class="k">Ui.MilestoneCompletionScore.RequestFailed</td><td class="en">Request Failed</td><td class="zh">委托失败</td></tr>
+<tr class="tr"><td class="k">Ui.MilestoneCompletionScore.Title</td><td class="en">Milestone Score</td><td class="zh">里程碑得分</td></tr>
+<tr class="tr"><td class="k">Ui.MilestoneCompletionScore.WeeksEarly</td><td class="en">Weeks Early</td><td class="zh">提前周数</td></tr>
+<tr class="tr"><td class="k">Ui.MilestoneReward.BuildingChoices</td><td class="en">+{0}  Building choice each week</td><td class="zh">每周增加 {0} 个建筑选项</td></tr>
+<tr class="tr"><td class="k">Ui.MilestoneReward.Completed</td><td class="en">{0}: Milestone completed</td><td class="zh">{0}：里程碑完成</td></tr>
+<tr class="tr"><td class="k">Ui.MilestoneReward.Dismisses</td><td class="en">{0}: Dismisses</td><td class="zh">{0}：弃置次数</td></tr>
+<tr class="tr"><td class="k">Ui.MilestoneReward.GoldenHorseshoe</td><td class="en">{0}: Golden horseshoe</td><td class="zh">{0}：金马蹄铁</td></tr>
+<tr class="tr"><td class="k">Ui.MilestoneReward.GuildLevel10</td><td class="en">{1}: {0} max level</td><td class="zh">{1}：{0} 满级</td></tr>
+<tr class="tr"><td class="k">Ui.MilestoneReward.GuildLevel5</td><td class="en">{1}: {0} level 5</td><td class="zh">{1}：{0} 等级 5</td></tr>
+<tr class="tr"><td class="k">Ui.MilestoneReward.Removes</td><td class="en">{0}: Removes</td><td class="zh">{0}：移除次数</td></tr>
+<tr class="tr"><td class="k">Ui.MilestoneReward.Rerolls</td><td class="en">{0}: Rerolls</td><td class="zh">{0}：重抽次数</td></tr>
+<tr class="tr"><td class="k">Ui.MilestoneReward.WeeksEarly</td><td class="en">{0}: Weeks early</td><td class="zh">{0}：提前周数</td></tr>
+<tr class="tr"><td class="k">Ui.NewHazardSpawned</td><td class="en">New Hazard Spawned</td><td class="zh">出现新的灾厄</td></tr>
+<tr class="tr"><td class="k">Ui.Notification.NewVote</td><td class="en">{0} {1} vote</td><td class="zh">{0} {1} 票</td></tr>
+<tr class="tr"><td class="k">Ui.Overlays.Button</td><td class="en">Overlays</td><td class="zh">信息图层</td></tr>
+<tr class="tr"><td class="k">Ui.Overlays.Dropdown</td><td class="en">Show buildings of category</td><td class="zh">显示该类别建筑</td></tr>
+<tr class="tr"><td class="k">Ui.Overlays.HoverToShowLastWeek</td><td class="en">Last week&#x27;s scores</td><td class="zh">上周得分</td></tr>
+<tr class="tr"><td class="k">Ui.Overlays.HoverToShowMults</td><td class="en">Show multipliers</td><td class="zh">显示倍率</td></tr>
+<tr class="tr"><td class="k">Ui.Overlays.HoverToShowTotal</td><td class="en">Max possible scores</td><td class="zh">最高可能得分</td></tr>
+<tr class="tr"><td class="k">Ui.Pack.Blueprint.WildDesc</td><td class="en">Choose [PackPicksAllowed] of up to [PackOptionCount] [Blueprint] from any unlocked guild</td><td class="zh">从已解锁公会的 最多 [PackOptionCount] 张 [Blueprint] 中， 选择 [PackPicksAllowed] 张</td></tr>
+<tr class="tr"><td class="k">Ui.Pack.BlueprintsDesc</td><td class="en">Choose [PackPicksAllowed] of up to [PackOptionCount] [TargetCategory1] [Blueprint]</td><td class="zh">从最多 [PackOptionCount] 张 [TargetCategory1] [Blueprint] 中， 选择 [PackPicksAllowed] 张</td></tr>
+<tr class="tr"><td class="k">Ui.Pack.BlueprintsRarityDesc</td><td class="en">Choose [PackPicksAllowed] of up to [PackOptionCount] [RarityScore]  [Blueprint] from any unlocked guild</td><td class="zh">从已解锁公会的 最多 [PackOptionCount] 张 [RarityScore] [Blueprint] 中， 选择 [PackPicksAllowed] 张</td></tr>
+<tr class="tr"><td class="k">Ui.Pack.GenericDesc</td><td class="en">Choose [PackPicksAllowed] of up to [PackOptionCount] [PackContentsType]</td><td class="zh">从最多 [PackOptionCount] 个 [PackContentsType] 中， 选择 [PackPicksAllowed] 个</td></tr>
+<tr class="tr"><td class="k">Ui.Pack.ImmediateDesc</td><td class="en">Choose [PackPicksAllowed] of up to [PackOptionCount] [PackContentsType] to be used immediately</td><td class="zh">从最多 [PackOptionCount] 个 [PackContentsType] 中， 选择 [PackPicksAllowed] 个并立即使用</td></tr>
+<tr class="tr"><td class="k">Ui.PicksRemaining</td><td class="en">{0} Pick(s) Remaining</td><td class="zh">剩余 {0} 次选择</td></tr>
+<tr class="tr"><td class="k">Ui.PurchaseDismiss.Title</td><td class="en">Purchase Dismiss</td><td class="zh">购买弃置</td></tr>
+<tr class="tr"><td class="k">Ui.PurchaseRemove.Title</td><td class="en">Purchase Remove</td><td class="zh">购买移除</td></tr>
+<tr class="tr"><td class="k">Ui.PurchaseReroll.Title</td><td class="en">Purchase Reroll</td><td class="zh">购买重抽</td></tr>
+<tr class="tr"><td class="k">Ui.QuestRewardIfSuccessfulPrepend</td><td class="en">If successful: </td><td class="zh">成功奖励： </td></tr>
+<tr class="tr"><td class="k">Ui.RequestCompleted.ClaimReward</td><td class="en">Claim Reward</td><td class="zh">领取奖励</td></tr>
+<tr class="tr"><td class="k">Ui.RequestCompleted.Title</td><td class="en">Request Completed</td><td class="zh">委托完成</td></tr>
+<tr class="tr"><td class="k">Ui.ScorePanel.NextMilestone</td><td class="en">Next Milestone:</td><td class="zh">下一个里程碑：</td></tr>
+<tr class="tr"><td class="k">Ui.ScorePanel.WeeksRemaining</td><td class="en">{0} weeks remaining</td><td class="zh">剩余 {0} 周</td></tr>
+<tr class="tr"><td class="k">Ui.SelectGuilds</td><td class="en">Select Guilds</td><td class="zh">选择公会</td></tr>
+<tr class="tr"><td class="k">Ui.Shop.ConsumableSlotsFull</td><td class="en">Consumable slots full</td><td class="zh">消耗品栏已满</td></tr>
+<tr class="tr"><td class="k">Ui.Shop.HeirloomSlotsFull</td><td class="en">Heirloom slots full</td><td class="zh">传家宝栏已满</td></tr>
+<tr class="tr"><td class="k">Ui.ShopExterior.RepairButton</td><td class="en">Repair {0} [Gold]</td><td class="zh">修复：{0} [Gold]</td></tr>
+<tr class="tr"><td class="k">Ui.ShowLoadout</td><td class="en">Show guild contents</td><td class="zh">查看公会内容</td></tr>
+<tr class="tr"><td class="k">Ui.StartingSelectScreen.NoVictories</td><td class="en">No Victories</td><td class="zh">尚无胜利</td></tr>
+<tr class="tr"><td class="k">Ui.StartingSelectScreen.VictoriesCount</td><td class="en">{0} Win(s)</td><td class="zh">{0} 次胜利</td></tr>
+<tr class="tr"><td class="k">Ui.Tooltip.Bribe</td><td class="en">Pay gold to instantly complete the current milestone. Cost doubles every use</td><td class="zh">花费金币可 立即完成 当前里程碑。 每次使用后 费用翻倍</td></tr>
+<tr class="tr"><td class="k">Ui.Tooltip.Enchantment</td><td class="en">Your total score at the end of the week is multiplied by your enchantment score. Enchantment reduces by 0.1 every week until it reaches 1</td><td class="zh">每周结算总分会乘以附魔值。附魔值每周降低 0.1，最低降至 1</td></tr>
+<tr class="tr"><td class="k">Ui.Tooltip.ExtraWeeks</td><td class="en">Extra weeks are used if you fail to reach a milestone. If you run out of extra weeks, you are defeated</td><td class="zh">未能达到里程碑时会消耗额外周数；如果额外周数耗尽，你将失败</td></tr>
+<tr class="tr"><td class="k">Ui.Tooltip.Money</td><td class="en">Gold is used to purchase heirlooms and consumables in the shop between milestones</td><td class="zh">金币可用于 在里程碑之间 进入商店购买 传家宝和消耗品</td></tr>
+<tr class="tr"><td class="k">Ui.Tooltip.Score</td><td class="en">Reach the target goal to progress to the next milestone</td><td class="zh">达到目标分数， 即可进入 下一个里程碑</td></tr>
+<tr class="tr"><td class="k">Ui.VictoryScreen.Congrats</td><td class="en">The Council congratulates the</td><td class="zh">议会祝贺</td></tr>
+<tr class="tr"><td class="k">Ui.VictoryScreen.GoldRemaining</td><td class="en">Gold + Heirlooms Remaining</td><td class="zh">剩余金币 + 传家宝</td></tr>
+<tr class="tr"><td class="k">Ui.VictoryScreen.HoverOverMilestones</td><td class="en">Hover over milestones to examine</td><td class="zh">将鼠标移到 里程碑上查看详情</td></tr>
+<tr class="tr"><td class="k">GameItemType.Blueprint.Desc</td><td class="en">Once off free building placement</td><td class="zh">免费放置一座建筑， 使用后消耗</td></tr>
+<tr class="tr"><td class="k">GameItemType.Blueprint.Name</td><td class="en">Blueprint</td><td class="zh">蓝图</td></tr>
+<tr class="tr"><td class="k">GameItemType.BuildingUpgrade.Desc</td><td class="en">Modify a building with a once off effect</td><td class="zh">对一座建筑进行一 次性强化</td></tr>
+<tr class="tr"><td class="k">GameItemType.BuildingUpgrade.Name</td><td class="en">Building Upgrade</td><td class="zh">建筑强化</td></tr>
+<tr class="tr"><td class="k">GameItemType.Consumable.Name</td><td class="en">Consumable</td><td class="zh">消耗品</td></tr>
+<tr class="tr"><td class="k">GameItemType.CouncilVote.Desc</td><td class="en">Add a vote to a council member. Council members have various passive effects at different numbers of votes</td><td class="zh">为一名议员增加 1 票。 议员在达到不同票 数时会提供不同的 被动效果</td></tr>
+<tr class="tr"><td class="k">GameItemType.CouncilVote.Name</td><td class="en">Council Vote</td><td class="zh">议会选票</td></tr>
+<tr class="tr"><td class="k">GameItemType.Dismiss.Desc</td><td class="en">Remove a building from pool of available buildings</td><td class="zh">从本局可抽取的建 筑池中移除一座建 筑</td></tr>
+<tr class="tr"><td class="k">GameItemType.Dismiss.Name</td><td class="en">Dismiss</td><td class="zh">弃置</td></tr>
+<tr class="tr"><td class="k">GameItemType.Enchantment.Desc</td><td class="en">Your total score at the end of the week is multiplied by your enchantment score. Enchantment reduces by 0.1 every week until it reaches 1</td><td class="zh">每周结算总分会乘 以附魔值。 附魔值每周降低 0.1，最低降至 1</td></tr>
+<tr class="tr"><td class="k">GameItemType.Enchantment.Name</td><td class="en">Enchantment</td><td class="zh">附魔</td></tr>
+<tr class="tr"><td class="k">GameItemType.Heirloom.Desc</td><td class="en">Provides a passive effect. The number you can equip is limited by the slots available</td><td class="zh">提供被动效果。 可装备数量受传家 宝栏位限制</td></tr>
+<tr class="tr"><td class="k">GameItemType.Heirloom.Name</td><td class="en">Heirloom</td><td class="zh">传家宝</td></tr>
+<tr class="tr"><td class="k">GameItemType.Mult.Desc</td><td class="en">A building&#x27;s score is multiplied by this value. Everything starts with a default mult of 1</td><td class="zh">建筑得分会乘以该 倍率。 所有建筑初始倍率 均为 1</td></tr>
+<tr class="tr"><td class="k">GameItemType.Mult.Name</td><td class="en">Mult</td><td class="zh">倍率</td></tr>
+<tr class="tr"><td class="k">GameItemType.Potion.Desc</td><td class="en">Once off use with a variety of magical effects</td><td class="zh">一次性使用， 产生不同的魔法效 果</td></tr>
+<tr class="tr"><td class="k">GameItemType.Potion.Name</td><td class="en">Potion</td><td class="zh">药剂</td></tr>
+<tr class="tr"><td class="k">GameItemType.Remove.Desc</td><td class="en">Remove a building from the map</td><td class="zh">从地图上移除一座 建筑</td></tr>
+<tr class="tr"><td class="k">GameItemType.Remove.Name</td><td class="en">Remove</td><td class="zh">移除</td></tr>
+<tr class="tr"><td class="k">GameItemType.Reroll.Desc</td><td class="en">Refresh the current selection of buildings</td><td class="zh">刷新当前可选的建 筑</td></tr>
+<tr class="tr"><td class="k">GameItemType.Reroll.Name</td><td class="en">Reroll</td><td class="zh">重抽</td></tr>
+<tr class="tr"><td class="k">Potion.Trigger.Description</td><td class="en">{Trigger} target building without ending the week [BREAK]Does not count towards a building&#x27;s weekly trigger limit</td><td class="zh">{触发} 目标建筑， 不会结束本周 [BREAK] 不计入该建筑 每周的触发上限</td></tr>
+<tr class="tr"><td class="k">UI.Canvas.GuildLoadoutInfoPanel.BuildingsTitle</td><td class="en">Buildings</td><td class="zh">建筑</td></tr>
+<tr class="tr"><td class="k">UI.Canvas.GuildLoadoutInfoPanel.HeirloomsTitle</td><td class="en">Heirlooms</td><td class="zh">传家宝</td></tr>
+<tr class="tr"><td class="k">UI.Canvas.OptionsMenu.Title</td><td class="en">Options</td><td class="zh">选项</td></tr>
+<tr class="tr"><td class="k">UI.Canvas.SettingsMenu.AmbienceVolumeLabel</td><td class="en">Ambience Volume</td><td class="zh">环境音量</td></tr>
+<tr class="tr"><td class="k">UI.Canvas.SettingsMenu.DebugMenu</td><td class="en">Debug Menu</td><td class="zh">调试菜单</td></tr>
+<tr class="tr"><td class="k">UI.Canvas.SettingsMenu.GameSpeedLabel</td><td class="en">Game Speed</td><td class="zh">游戏速度</td></tr>
+<tr class="tr"><td class="k">UI.Canvas.SettingsMenu.HiResFontLabel</td><td class="en">High Res Font</td><td class="zh">高清字体</td></tr>
+<tr class="tr"><td class="k">UI.Canvas.SettingsMenu.LanguageLabel</td><td class="en">Language</td><td class="zh">语言</td></tr>
+<tr class="tr"><td class="k">UI.Canvas.SettingsMenu.MasterVolumeLabel</td><td class="en">Master Volume</td><td class="zh">主音量</td></tr>
+<tr class="tr"><td class="k">UI.Canvas.SettingsMenu.MusicVolumeLabel</td><td class="en">Music Volume</td><td class="zh">音乐音量</td></tr>
+<tr class="tr"><td class="k">UI.Canvas.SettingsMenu.PixelPerfect</td><td class="en">Pixel Perfect\n&lt;size=70%&gt;(Turn off to scale non 16/9 resolutions)&lt;/size&gt;</td><td class="zh">像素完美\n&lt;size=70%&gt;（关闭后按非 16:9 分辨率缩放）&lt;/size&gt;</td></tr>
+<tr class="tr"><td class="k">UI.Canvas.SettingsMenu.ResetProgress</td><td class="en">Reset Progress</td><td class="zh">重置进度</td></tr>
+<tr class="tr"><td class="k">UI.Canvas.SettingsMenu.ResolutionLabel</td><td class="en">Resolution</td><td class="zh">分辨率</td></tr>
+<tr class="tr"><td class="k">UI.Canvas.SettingsMenu.RunInBackground</td><td class="en">Run in Background</td><td class="zh">后台运行</td></tr>
+<tr class="tr"><td class="k">UI.Canvas.SettingsMenu.Screenshake</td><td class="en">Screenshake</td><td class="zh">屏幕震动</td></tr>
+<tr class="tr"><td class="k">UI.Canvas.SettingsMenu.SfxVolumeLabel</td><td class="en">SFX Volume</td><td class="zh">音效音量</td></tr>
+<tr class="tr"><td class="k">UI.Canvas.SettingsMenu.Title</td><td class="en">Settings</td><td class="zh">设置</td></tr>
+<tr class="tr"><td class="k">UI.Canvas.SettingsMenu.VsyncLabel</td><td class="en">Vsync</td><td class="zh">垂直同步</td></tr>
+<tr class="tr"><td class="k">UI.Canvas.SettingsMenu.WindowModeBorderless</td><td class="en">Borderless</td><td class="zh">无边框窗口</td></tr>
+<tr class="tr"><td class="k">UI.Canvas.SettingsMenu.WindowModeFullscreen</td><td class="en">Fullscreen</td><td class="zh">全屏</td></tr>
+<tr class="tr"><td class="k">UI.Canvas.SettingsMenu.WindowModeLabel</td><td class="en">Window Mode</td><td class="zh">窗口模式</td></tr>
+<tr class="tr"><td class="k">UI.Canvas.SettingsMenu.WindowModeWindowed</td><td class="en">Windowed</td><td class="zh">窗口化</td></tr>
+<tr class="tr"><td class="k">UI.Compendium.AllUnlock</td><td class="en">All Unlocks</td><td class="zh">全部解锁内容</td></tr>
+<tr class="tr"><td class="k">UI.Compendium.BuildingsButton</td><td class="en">Buildings</td><td class="zh">建筑</td></tr>
+<tr class="tr"><td class="k">UI.Compendium.ConsumablesButton</td><td class="en">Consumables</td><td class="zh">消耗品</td></tr>
+<tr class="tr"><td class="k">UI.Compendium.CouncillorsButton</td><td class="en">Councillors</td><td class="zh">议员</td></tr>
+<tr class="tr"><td class="k">UI.Compendium.CurrentRun</td><td class="en">Current Run Only</td><td class="zh">仅限本局</td></tr>
+<tr class="tr"><td class="k">UI.Compendium.HeirloomsButton</td><td class="en">Heirlooms</td><td class="zh">传家宝</td></tr>
+<tr class="tr"><td class="k">UI.Compendium.Title</td><td class="en">Compendium</td><td class="zh">图鉴</td></tr>
+<tr class="tr"><td class="k">UI.Generic.Loading</td><td class="en">Loading...</td><td class="zh">加载中……</td></tr>
+<tr class="tr"><td class="k">Ui.BuildableOnPrefix</td><td class="en">Can be created on:</td><td class="zh">可建造于：</td></tr>
+<tr class="tr"><td class="k">Ui.CantBeActivated.Description</td><td class="en">Cannot be triggered by something else</td><td class="zh">无法被其他效果触 发</td></tr>
+<tr class="tr"><td class="k">Ui.CouncilFavour.EffectHeader</td><td class="en">Effect at number of votes [BREAK]</td><td class="zh">对应票数的效果 [BREAK]</td></tr>
+<tr class="tr"><td class="k">Ui.CouncilFavourVotes.Count</td><td class="en">{0} Vote(s)</td><td class="zh">{0} 票</td></tr>
+<tr class="tr"><td class="k">Ui.CurrentRank</td><td class="en">Current Rank: {0}</td><td class="zh">当前头衔：{0}</td></tr>
+<tr class="tr"><td class="k">Ui.Debug.LevelUpAllButton</td><td class="en">Max level all unlocked guilds</td><td class="zh">将所有已解锁公会升至满级</td></tr>
+<tr class="tr"><td class="k">Ui.Debug.MaxAllUnlockedGuilds</td><td class="en">Really set all unlocked guilds to max level? (Not recommended for first time players)</td><td class="zh">确定将所有已解锁公会设为满级吗？（不建议首次游玩的玩家使用）</td></tr>
+<tr class="tr"><td class="k">Ui.Debug.UnlockAllButton</td><td class="en">Unlock all guilds</td><td class="zh">解锁全部公会</td></tr>
+<tr class="tr"><td class="k">Ui.Debug.UnlockAllGuilds</td><td class="en">Really unlock all guilds at level 0? (Not recommended for first time players)</td><td class="zh">确定解锁所有公会，并将其设为 0 级吗？（不建议初次游玩的玩家使用）</td></tr>
+<tr class="tr"><td class="k">Ui.ExtraInfo.LmbSell</td><td class="en">[LMB] to sell</td><td class="zh">[LMB] 出售</td></tr>
+<tr class="tr"><td class="k">Ui.ExtraInfo.LmbShowAdjacency</td><td class="en">[LMB] show [Adjacency]</td><td class="zh">[LMB] 显示 [Adjacency]</td></tr>
+<tr class="tr"><td class="k">Ui.ExtraInfo.LmbShowRange</td><td class="en">[LMB] show [Range]</td><td class="zh">[LMB] 显示 [Range]</td></tr>
+<tr class="tr"><td class="k">Ui.ExtraInfo.LmbShowRangeAndAdjacency</td><td class="en">[LMB] show [Range] + [Adjacency]</td><td class="zh">[LMB] 显示 [Range] + [Adjacency]</td></tr>
+<tr class="tr"><td class="k">Ui.ExtraInfo.LmbUseOrSell</td><td class="en">[LMB] to use or sell</td><td class="zh">[LMB] 使用或出售</td></tr>
+<tr class="tr"><td class="k">Ui.ExtraInfo.RmbExtraInfo</td><td class="en">[RMB] extra info</td><td class="zh">[RMB] 查看详情</td></tr>
+<tr class="tr"><td class="k">Ui.FeedbackMessage</td><td class="en">Press F7 to submit feedback</td><td class="zh">按 F7 提交反馈</td></tr>
+<tr class="tr"><td class="k">Ui.Generic.AbandonRun</td><td class="en">Abandon Run</td><td class="zh">放弃本局</td></tr>
+<tr class="tr"><td class="k">Ui.Generic.Apply</td><td class="en">Apply</td><td class="zh">应用</td></tr>
+<tr class="tr"><td class="k">Ui.Generic.Back</td><td class="en">Back</td><td class="zh">返回</td></tr>
+<tr class="tr"><td class="k">Ui.Generic.Cancel</td><td class="en">Cancel</td><td class="zh">取消</td></tr>
+<tr class="tr"><td class="k">Ui.Generic.Confirm</td><td class="en">Confirm</td><td class="zh">确认</td></tr>
+<tr class="tr"><td class="k">Ui.Generic.Done</td><td class="en">Done</td><td class="zh">完成</td></tr>
+<tr class="tr"><td class="k">Ui.Generic.GuildProgress</td><td class="en">Guild Progress</td><td class="zh">公会进度</td></tr>
+<tr class="tr"><td class="k">Ui.Generic.MainMenu</td><td class="en">Main Menu</td><td class="zh">主菜单</td></tr>
+<tr class="tr"><td class="k">Ui.Generic.Next</td><td class="en">Next</td><td class="zh">下一步</td></tr>
+<tr class="tr"><td class="k">Ui.Generic.Quit</td><td class="en">Quit</td><td class="zh">退出</td></tr>
+<tr class="tr"><td class="k">Ui.Generic.Restart</td><td class="en">New Run</td><td class="zh">新开一局</td></tr>
+<tr class="tr"><td class="k">Ui.MessageDialog.ConfirmAbandon</td><td class="en">Abandon current run? This will be counted as a loss.</td><td class="zh">确定放弃本局吗？这将计为一次失败。</td></tr>
+<tr class="tr"><td class="k">Ui.MessageDialog.ConfirmMainMenu</td><td class="en">Return to main menu? All progress since the start of the current milestone will be lost.</td><td class="zh">返回主菜单吗？当前里程碑开始后尚未保存的进度将丢失。</td></tr>
+<tr class="tr"><td class="k">Ui.MessageDialog.ConfirmReset</td><td class="en">Are you sure you want to reset your save? You will lose all of your unlocked progress.</td><td class="zh">确定重置存档吗？所有已解锁进度都会丢失。</td></tr>
+<tr class="tr"><td class="k">Ui.MessageDialog.ConfirmRestart</td><td class="en">Start a new run? All progress on the current in-progress run will be lost.</td><td class="zh">确定开始新一局吗？当前这局的全部进度都会丢失。</td></tr>
+<tr class="tr"><td class="k">Ui.TriggersRemainingThisWeek</td><td class="en">Can &lt;b&gt;trigger&lt;/b&gt; {0} more times this week</td><td class="zh">本周还可&lt;b&gt;触发&lt;/b&gt; {0} 次</td></tr>
+<tr class="tr"><td class="k">Ui.UnlockScreen.NewUnlocks</td><td class="en">New Unlocks</td><td class="zh">新解锁内容</td></tr>
+<tr class="tr"><td class="k">Ui.UnlockScreen.Victories</td><td class="en">Victories</td><td class="zh">胜利次数</td></tr>
+<tr class="tr"><td class="k">Unlock.Condition.Civic</td><td class="en">Use {0} more consumables to unlock</td><td class="zh">再使用 {0} 个消耗品即可解锁</td></tr>
+<tr class="tr"><td class="k">Unlock.Condition.Commercial</td><td class="en">Earn {0} more gold to unlock</td><td class="zh">再获得 {0} 金币即可解锁</td></tr>
+<tr class="tr"><td class="k">Unlock.Condition.Industrial</td><td class="en">Create {0} more buildings to unlock</td><td class="zh">再建造 {0} 座建筑即可解锁</td></tr>
+<tr class="tr"><td class="k">Unlock.Condition.Maritime</td><td class="en">Equip {0} more heirlooms to unlock</td><td class="zh">再装备 {0} 件传家宝即可解锁</td></tr>
+<tr class="tr"><td class="k">Unlock.Condition.Martial</td><td class="en">Start {0} more run to unlock</td><td class="zh">再开始 {0} 局即可解锁</td></tr>
+<tr class="tr"><td class="k">Unlock.Condition.WillUnlockAtEndOfRun</td><td class="en">Will unlock at the end of the current run</td><td class="zh">将在本局结束时解锁</td></tr></tbody></table>
+<script>
+const q=document.getElementById('q'),rows=[...document.querySelectorAll('#tb tr')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();
+ rows.forEach(r=>{r.style.display=!v||r.textContent.toLowerCase().includes(v)?'':'none';});});
+</script></body></html>

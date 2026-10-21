@@ -1,0 +1,26 @@
+{
+ "base_build": "25997697",
+ "localized_entries_in_build": 1090,
+ "translated": 1083,
+ "left_original": 7,
+ "left_original_reason": "仅标签占位符（如 [MoneyCount]），无需翻译",
+ "assets_objects_checked": {
+  "resources.assets": 5037,
+  "sharedassets0.assets": 1016
+ },
+ "objects_changed": {
+  "resources.assets": 991,
+  "sharedassets0.assets": 92
+ },
+ "font_assets_adjusted": "NotoSans-Bold SDF / NotoSansSC-Bold SDF 开启多图集",
+ "unexpected_byte_changes": 0,
+ "dll_strings_replaced": 11,
+ "dll_file_size_unchanged": true,
+ "dll_diff_outside_slots": 0,
+ "font": "游戏自带 NotoSansSC-Bold SDF，位于 NotoSans-Bold SDF 回退链，动态生成字形，无需 BepInEx",
+ "not_verified": [
+  "未在游戏内实机截图逐条验收",
+  "动态拼接文本（前缀/后缀组合）可能仍有空白或截断",
+  "成就、云同步、存档未做回归测试"
+ ]
+}
